@@ -865,12 +865,12 @@ footer {
 @media (max-width: 760px) {
 
   .sidebar > .nav-item[data-category="all"] {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   #categoryNav {
-    margin-top: 3px;
-    padding-bottom: 8px;
+    margin-top: 2px;
+    padding-bottom: 7px;
   }
 
 }
