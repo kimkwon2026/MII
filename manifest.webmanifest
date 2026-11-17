@@ -1,0 +1,23 @@
+{
+  "name": "김명길의 보험 인사이트",
+  "short_name": "보험 인사이트",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061944",
+  "theme_color": "#061944",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
