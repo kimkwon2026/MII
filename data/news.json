@@ -1,5 +1,1626 @@
 {
-  "updated_at": "",
-  "notice": "초기 화면용 안내입니다. GitHub에 업로드한 뒤 Actions 탭에서 Update news feed를 실행하면 기사가 수집됩니다.",
-  "articles": []
+  "updated_at": "2026-11-17T10:14:15.493464+00:00",
+  "articles": [
+    {
+      "id": "9318c5537720c36a",
+      "category": "insurer",
+      "title": "교보생명·사랑의달팽이, 청각장애아동 ‘소리 찾아주기’ 8년째 - 중앙일보",
+      "summary": "교보생명·사랑의달팽이, 청각장애아동 ‘소리 찾아주기’ 8년째 &nbsp;&nbsp; 중앙일보",
+      "source": "중앙일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE02SWhJdnZFeUR5N0FFWDY2ZUxuejlBNU44QXkyTVkwTXVMUDlaRl96UUtjQUE3NHl0bHZ5a0ZjamdkUGdnTHpWNWJQN0RXQVRvODZKN3BR?oc=5",
+      "published_at": "2026-11-17T09:53:00+00:00"
+    },
+    {
+      "id": "0fab7dda609054e7",
+      "category": "healthcare",
+      "title": "저수가가 낳은 ‘생존 몸부림’ 산후조리원…50년 묵은 건강보험 체계, 어떻게 손댈 것인가. - 슬로우뉴스",
+      "summary": "저수가가 낳은 ‘생존 몸부림’ 산후조리원…50년 묵은 건강보험 체계, 어떻게 손댈 것인가. &nbsp;&nbsp; 슬로우뉴스",
+      "source": "슬로우뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5qNWNHaHBQSnJPY2paZGh4UV9LZWoyUGMwTWxTZi1ReGptNTl6ZldETzlRYm9TZ09Bak5vSFk1RQ?oc=5",
+      "published_at": "2026-11-17T09:45:15+00:00"
+    },
+    {
+      "id": "49682a141a75e753",
+      "category": "insurer",
+      "title": "교보생명 최근 1년 배타적사용권 6건 생보업계 최다 : 유병자 보험료 부담 낮추고 치료 보장 넓혔다 - 허프포스트코리아",
+      "summary": "교보생명 최근 1년 배타적사용권 6건 생보업계 최다 : 유병자 보험료 부담 낮추고 치료 보장 넓혔다 &nbsp;&nbsp; 허프포스트코리아",
+      "source": "허프포스트코리아",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1KRXpXNlhwMnRhVFhLZWxJUjU2Y3VXVTQ3dUR6dC1CckRIZ2U0aEtCcHA1cHg0enZSWWNtQmpqUC1Fc0FoeDFyX3UxTzV0bkk1cWJHOWVNMA?oc=5",
+      "published_at": "2026-11-17T08:36:37+00:00"
+    },
+    {
+      "id": "f1fa0b9520dce496",
+      "category": "general",
+      "title": "“비싼 게 더 촉촉할까?”…보습크림 8종, 보습력·가성비 따져보니 - 헬스조선",
+      "summary": "“비싼 게 더 촉촉할까?”…보습크림 8종, 보습력·가성비 따져보니 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50empMTWdabmR6TFdOTjZTNEJNdnljTTZCZ0FuMzVMQjdhS1NYTUo4TnlpX2xsZDBkREtfSC1BZzNQSFQ0ejZELW1KSGZUZmtFbDVDSW9ERmxob2xSZlF4dHgxckVmcmlSMnVINlhSa1M?oc=5",
+      "published_at": "2026-11-17T08:21:00+00:00"
+    },
+    {
+      "id": "3e6da1cc36de7642",
+      "category": "insurer",
+      "title": "한화생명, '젊은 부자 보고서' 자산이전 편 발간 - 펜앤마이크",
+      "summary": "한화생명, '젊은 부자 보고서' 자산이전 편 발간 &nbsp;&nbsp; 펜앤마이크",
+      "source": "펜앤마이크",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5reUF0WUpCWWhXaThaaE1xaFNKbmRudnltLWlOYlktNzZTQ1MtQnBUdTBIcmdzclhiU1JoSkJYSnFUWUI1MkpEU2VhR3JnaFl6SzZ2Z2pDT0tkdkZGWTA1WnZBN1YybG9STlln0gFvQVVfeXFMT3BxVEwwdC0xTlk0LVRHajBxT0g1bktRWExad3VFUkx4MnB3Q2VQRk04OEhQQjVraGNYeHFYR0pCNHJLMVpHbHE4YzlSTlcxNVp5Vm02azNWUl9zMW9fUU1ieXloM19qZ1BaT0g2Nm84?oc=5",
+      "published_at": "2026-11-17T08:10:47+00:00"
+    },
+    {
+      "id": "88c33e1347bcb942",
+      "category": "disease",
+      "title": "고지혈증 약 먹으면 치매·암 걸린다? 콜레스테롤 오해와 진실 [이러면 낫는다] - 조선일보",
+      "summary": "고지혈증 약 먹으면 치매·암 걸린다? 콜레스테롤 오해와 진실 [이러면 낫는다] &nbsp;&nbsp; 조선일보",
+      "source": "조선일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9SMTNGWVBQOVBtZ2p2N1lFOGVucU0wX3ZwWTk3M2pNLUtKMDZjYVpuMjVGcGVSdGx6ZlJWb3czS20yX2xOLURDWWtPekRGalBhd2xvUjdNckotTjRwS052Um1rTy13QWxxSEVCTUlWT3hxMUVZS2RUVA?oc=5",
+      "published_at": "2026-11-17T08:03:00+00:00"
+    },
+    {
+      "id": "ec3fd8889bedc3e2",
+      "category": "insurer",
+      "title": "교보생명, 1년간 배타적사용권 6건…생보업계 최다 - 한국아이닷컴",
+      "summary": "교보생명, 1년간 배타적사용권 6건…생보업계 최다 &nbsp;&nbsp; 한국아이닷컴",
+      "source": "한국아이닷컴",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5IVW9FT0w2LVBVdDQ5RFY1cHRTQk45U25fdnNCa0ppcnljaklaUkpwLV9pOWU4eGg0YU5OdVA5em8xejFnWFI3M2J1M0JraG5hM1hNVzJXOUpEeURCSDM4cURpZ2JKZ0RjZTVj0gFvQVVfeXFMT2F5akVUREhzWkdDaURlM0lKTWRtX1VBeERJNF9wbE1sNmM4cm5HeDNRNzhKUjZnYTl2ZXpOWFMyUG1JczFxV1E2eVRRMW1pR3dobXZIMVBOMjU5cGZoQmtIaGtzY09NZEoyMm5wLTA0?oc=5",
+      "published_at": "2026-11-17T07:45:04+00:00"
+    },
+    {
+      "id": "d6c189081efd99a0",
+      "category": "insurer",
+      "title": "[기업경쟁력]교보생명, 배타적사용권 최다 ‘확보’…생보사 중 총 6건 획득 - NSP통신",
+      "summary": "[기업경쟁력]교보생명, 배타적사용권 최다 ‘확보’…생보사 중 총 6건 획득 &nbsp;&nbsp; NSP통신",
+      "source": "NSP통신",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIb0VDSVhaMk12S0hCbldXN1phMXprLU9CREpJYWM2c1R3dm1FWkpNT1VuTXo1c0U4d3QzYlFmUUpEMVBMcVBwcVp6NmFpdkRsZE9qS3h4YVRDZlNJUEhDbQ?oc=5",
+      "published_at": "2026-11-17T07:19:36+00:00"
+    },
+    {
+      "id": "61c6229d0e8ba7bc",
+      "category": "insurer",
+      "title": "검사부터 치료까지…교보생명, 최근 1년 배타적사용권 6건 - 뉴시스",
+      "summary": "검사부터 치료까지…교보생명, 최근 1년 배타적사용권 6건 &nbsp;&nbsp; 뉴시스",
+      "source": "뉴시스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UM3JhUkh1bkJYdWJZYUo3WlZBTlZtdG5FdXlfS0NvMEJndzdLRGJNYjV1VWs2bVhYT21Ha2R6Nk5LaG1wUjBaVXpMdUdGQloyTjFJQVlIMnBneHFtblRtSA?oc=5",
+      "published_at": "2026-11-17T07:18:55+00:00"
+    },
+    {
+      "id": "399bf88f85c875ab",
+      "category": "policy",
+      "title": "금감원, 한국보험금융 등록취소 사전통지…지사 리베이트 혐의 - 뉴스저널리즘",
+      "summary": "금감원, 한국보험금융 등록취소 사전통지…지사 리베이트 혐의 &nbsp;&nbsp; 뉴스저널리즘",
+      "source": "뉴스저널리즘",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9CUU5XVW8yOTVYR2E5WkZUaE1LQjJacEhscDNHQlNZbWt0YU5JVUV2elBuVW1EWXBYZ2pxckQ1WVN1Z0o4ZmdJZEgxeF9FTWZ1bDkzb284eFFDWjZnc1p3dkc0aXpYRHdIX3Vv?oc=5",
+      "published_at": "2026-11-17T07:12:57+00:00"
+    },
+    {
+      "id": "ce2b249297cfe1a9",
+      "category": "insurer",
+      "title": "교보생명, 최근 1년 배타적사용권 6건…생보업계 최다 - www.gukjenews.com",
+      "summary": "교보생명, 최근 1년 배타적사용권 6건…생보업계 최다 &nbsp;&nbsp; www.gukjenews.com",
+      "source": "www.gukjenews.com",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RYTRvV2RsNGhSek84MWZ4RGlZeS1NLUJYUnRFWVRuYnNUb1h3M3o2Zk04ci1vaVpZNGlfZjA5dWZSWXZvX0tnM2hCUEZCMWpfSjdBZFEyUldfRWJlX1FOLUlWSWlsWF9YVzI2cVJB?oc=5",
+      "published_at": "2026-11-17T07:09:01+00:00"
+    },
+    {
+      "id": "6851936988fae674",
+      "category": "insurer",
+      "title": "한화생명금융서비스 '정규직 전환 갈등' 부당해고 구제 신청 접수 - 뉴스토마토",
+      "summary": "한화생명금융서비스 '정규직 전환 갈등' 부당해고 구제 신청 접수 &nbsp;&nbsp; 뉴스토마토",
+      "source": "뉴스토마토",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIVlBGOXFQTUlTcEpiUFFKYkZDNkFRaDladnFIdlNHU3hveURncEhVcDYzeS0zQlJkX0syRnNRUGo5azBPdzdxUGRDbjVVVDQtbVJtZ05tdG1iWFB4bDlDLQ?oc=5",
+      "published_at": "2026-11-17T06:39:19+00:00"
+    },
+    {
+      "id": "805cf513abf256f1",
+      "category": "insurer",
+      "title": "교보생명, CSM 잔액 7兆 돌파…건강보험 판매 확대 - FETV",
+      "summary": "교보생명, CSM 잔액 7兆 돌파…건강보험 판매 확대 &nbsp;&nbsp; FETV",
+      "source": "FETV",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBUGtWRFd1M0pkWUV2X3d0eHczbENRQ0dPR3dSbnFjUHpwRjN0cWQydG5JZEtnWkpJZTVOZGpZaTJ3eVhiSlNveWVXeUZWYkhPcmZwd0llS00wQkw0TkNoek9qY0dLNGd2?oc=5",
+      "published_at": "2026-11-17T06:18:21+00:00"
+    },
+    {
+      "id": "0d4d0826fd188e90",
+      "category": "insurer",
+      "title": "현대해상, 보험영업 '세 축' 모두 개선...본업 수익성 강화 '결실' - 녹색경제신문",
+      "summary": "현대해상, 보험영업 '세 축' 모두 개선...본업 수익성 강화 '결실' &nbsp;&nbsp; 녹색경제신문",
+      "source": "녹색경제신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UaXhhRVpIZTJUV093NVEybUVrOUZhWGN6QUlzSG4xVUlobEt1SmI2Mi1FSHEzYzM5MkladGozWDN0QkIta1hMVzFWcVRia2NxVGM0b2V0M0tVT2x0VGNjMmN4Zk94NjVQ?oc=5",
+      "published_at": "2026-11-17T06:18:14+00:00"
+    },
+    {
+      "id": "7343b6963c49d418",
+      "category": "insurer",
+      "title": "현대해상 배당 재개, 앞서나간 시장..제도의 벽 '굳건' - 스마트투데이",
+      "summary": "현대해상 배당 재개, 앞서나간 시장..제도의 벽 '굳건' &nbsp;&nbsp; 스마트투데이",
+      "source": "스마트투데이",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ObDdJVHlReTZxcnJhXzNScUw4em9NZTMxUHk3cjlpRHU0Q3htZzVWUUVwNlVlVjJxdVJuaHNvTDVnZDZPWG5xbFpWUDJNTDg0cHlPUmFCTmlLVE5oQ0Jj?oc=5",
+      "published_at": "2026-11-17T05:22:00+00:00"
+    },
+    {
+      "id": "c8c177257f463f04",
+      "category": "insurer",
+      "title": "‘국대’ 이해란 막아도 소용없다…용인 삼성생명, 고른 득점으로 선두 질주 - 경기일보",
+      "summary": "‘국대’ 이해란 막아도 소용없다…용인 삼성생명, 고른 득점으로 선두 질주 &nbsp;&nbsp; 경기일보",
+      "source": "경기일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMSnNibV9wWkVIRzRXNUFRNHUwZWRXdDFxeVR0RFBJdDJKTG85YWVScF96SjVUSHFxcTFlblFMSFhrX3NsQ001R2ZMMUg4VTJMMUJPMXEzZ3JzNTg?oc=5",
+      "published_at": "2026-11-17T05:18:53+00:00"
+    },
+    {
+      "id": "b53a8b4c73f4bad0",
+      "category": "policy",
+      "title": "한국보험금융 등록취소 갈림길…금감원, 732억 리베이트에 사전통지 - 스페셜경제",
+      "summary": "한국보험금융 등록취소 갈림길…금감원, 732억 리베이트에 사전통지 &nbsp;&nbsp; 스페셜경제",
+      "source": "스페셜경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ybF9sOS1uRVNoQkRXUUhvQ1hVZHFxU1FXekxmTkROYnFWcm1uaTZtMjZCWHhDQm1xMW9PYk42Ui1lT2M1X3RudEZ4bk8ydUpjXy1GTlYtT2VCZmJfMnU4LWZLNjhjMHc5NUtsYQ?oc=5",
+      "published_at": "2026-11-17T05:10:54+00:00"
+    },
+    {
+      "id": "d6cea600037222e8",
+      "category": "insurer",
+      "title": "교보생명, 최근 1년 배타적사용권 6건…생보업계 최다 - 신아일보",
+      "summary": "교보생명, 최근 1년 배타적사용권 6건…생보업계 최다 &nbsp;&nbsp; 신아일보",
+      "source": "신아일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ub1dzdjhFOU94VTFOSC1FZ21aWU9ZOElFUV9KWTRIbFVxTk4wLUNYNUE3NndoYlJGTWtVd3pPVlJMMDI1VW1ScUdCbjdPVlBVcWxJd29SN1A1ci1LZU0xUE40NWpWZmZlNFhzT0J0bzI?oc=5",
+      "published_at": "2026-11-17T04:57:42+00:00"
+    },
+    {
+      "id": "f2e1db9fc0748e72",
+      "category": "policy",
+      "title": "금감원, '732억 불법 리베이트' 한국보험금융에 등록취소 초강수 - 알파경제",
+      "summary": "금감원, '732억 불법 리베이트' 한국보험금융에 등록취소 초강수 &nbsp;&nbsp; 알파경제",
+      "source": "알파경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XWW9zWDRFQXdQc2pVSW9CLXFYUUNwWmlJREJRblhUNFZUUC1QOVNXZk96T1NqemNxYl9tQ2V5X2lSdDh2MDd5N1hWY3VFc0lUU2htSmhxTmhPYUZBU1B2UV8yR1I3TXBXZWp4dWRB?oc=5",
+      "published_at": "2026-11-17T04:45:30+00:00"
+    },
+    {
+      "id": "fd310b0bb3752b15",
+      "category": "insurer",
+      "title": "[오늘Who] 삼성생명 생보업계서 '수익성 초격차' 입증, 홍원학 연임해 해외 M&A 힘 싣나 - 비즈니스포스트",
+      "summary": "[오늘Who] 삼성생명 생보업계서 '수익성 초격차' 입증, 홍원학 연임해 해외 M&A 힘 싣나 &nbsp;&nbsp; 비즈니스포스트",
+      "source": "비즈니스포스트",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9XVGFOSVdjQjhRZDFfQkZlOXZseTB5SXNtM2M0Z0I3ZHd2Wkg2VG9FU094djhBbG94cE9KSHpMb0dRWllHdnRPdl9sTUt0aE1ia2lEWGNIeV9lQ00ydEpmZjF0RnhuazNXQVE0ZVF6ZzBwMUU?oc=5",
+      "published_at": "2026-11-17T03:24:36+00:00"
+    },
+    {
+      "id": "04a6a433f188d03f",
+      "category": "policy",
+      "title": "금감원, 대형 GA 한국보험금융 '등록취소' 사전 통지…불법 리베이트 혐의 - ER 이코노믹리뷰",
+      "summary": "금감원, 대형 GA 한국보험금융 '등록취소' 사전 통지…불법 리베이트 혐의 &nbsp;&nbsp; ER 이코노믹리뷰",
+      "source": "ER 이코노믹리뷰",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwNkxFUEhfcTZXSmhyLXpnVGQ4WjZORlhNdkdQUkx1OWJDT3BGanVNOXRyY1lxTWRzeHRvRnVOaDNCbm45WnJIUUVVWlpQWWxDVE1zMDJYd29xSVRVQlNRcVZ6LUFYamZDTC1IOA?oc=5",
+      "published_at": "2026-11-17T03:01:07+00:00"
+    },
+    {
+      "id": "c40cdcfd2585171c",
+      "category": "general",
+      "title": "온코닉, GLP-1 병용 신약 美 비만학회서 첫 공개 - 헬스조선",
+      "summary": "온코닉, GLP-1 병용 신약 美 비만학회서 첫 공개 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE55MUNrdkIyRDRQSjJFZ0VpeDVqeWZxZXB0SVNDQ2NkT3RCRkhSUThHV3ZWVFJpaUpIaTlPVkZnWFItN2ZmV3p4NThKcnZERGl6WlBrLUJjMlpPbkhYNVpZRW5nbm9QbnhfaXctR3p6OGo?oc=5",
+      "published_at": "2026-11-17T03:01:00+00:00"
+    },
+    {
+      "id": "f1c58ab3350510d4",
+      "category": "general",
+      "title": "『노인정신의학』 4판 출간…임상 평가부터 디지털 치료·지역사회 정책까지 - 메디포뉴스",
+      "summary": "『노인정신의학』 4판 출간…임상 평가부터 디지털 치료·지역사회 정책까지 &nbsp;&nbsp; 메디포뉴스",
+      "source": "메디포뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBTWk41ZzYyUHhqOVFUVllVWFRvMjRkZkNWOGQzSXpsTXpSUVo1VVJxdjROaVZvWDJVOXE0LVlYWkFxaGN2S3BhUVRRcGctRnVuaWFic3J3b3VQZnVqWkdrajNjRjQ?oc=5",
+      "published_at": "2026-11-17T02:52:24+00:00"
+    },
+    {
+      "id": "61130d9fd3a332fb",
+      "category": "policy",
+      "title": "금감원, '불법 리베이트 의혹' 한국보험금융에 등록취소 사전 통지 - 서울경제TV",
+      "summary": "금감원, '불법 리베이트 의혹' 한국보험금융에 등록취소 사전 통지 &nbsp;&nbsp; 서울경제TV",
+      "source": "서울경제TV",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uWG9oa2NUdmh2OWhZQnRMX3JKc2J6MkpKeWJzcnFRd0dCMVZnZndhUVJmNEItUFJRT2FtRExNQmNSN0doTWJ4YjU2c0FqMm9xQW9YTkU2eDRjNE1yTXlfemZJMGo?oc=5",
+      "published_at": "2026-11-17T02:32:46+00:00"
+    },
+    {
+      "id": "f2b745f62721e44e",
+      "category": "insurer",
+      "title": "교보생명, 배타적사용권 생보업계 최다⋯1년간 6건 획득 - 이투데이",
+      "summary": "교보생명, 배타적사용권 생보업계 최다⋯1년간 6건 획득 &nbsp;&nbsp; 이투데이",
+      "source": "이투데이",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1TT3hsZ2dsWGw2UnkzVi0tX3BlRl9DMVBDV2M2MS1qaGlXaHdFZXVnRlZHcVBrZkVlMnIxaVc3cnRlcHJJOExFc2F2bXhqZ0xfNGRvdg?oc=5",
+      "published_at": "2026-11-17T02:29:00+00:00"
+    },
+    {
+      "id": "70abfb7a913916fa",
+      "category": "insurer",
+      "title": "한화생명, ‘3040 자산가’ 자산이전 트렌드 보고서 발간 - CNB뉴스",
+      "summary": "한화생명, ‘3040 자산가’ 자산이전 트렌드 보고서 발간 &nbsp;&nbsp; CNB뉴스",
+      "source": "CNB뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aZG1vQmx5WXVGclJGbGEzWi1HeUpoRnpxa1UzdWc0VG1GRnAwYmRPb0JtUjNhZTJPcmpBd0hSS0FxRkNWYktFTHEzem5NVDRJbEd1OUVqbXNuTTlVZXYycTgxSkRXb3hndi1n?oc=5",
+      "published_at": "2026-11-17T02:21:23+00:00"
+    },
+    {
+      "id": "c46a55cccb0c09c3",
+      "category": "policy",
+      "title": "\"대표가 리베이트\" 등록취소 예고된 설계사 6천명 한국보험금융 어떤 곳? - 데일리브리프",
+      "summary": "\"대표가 리베이트\" 등록취소 예고된 설계사 6천명 한국보험금융 어떤 곳? &nbsp;&nbsp; 데일리브리프",
+      "source": "데일리브리프",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9YY1g2YnQza19aSmN3UDNSSUNXb0ZaMjFtYjZDRTFEWi1IOV9kang5NVdzVWk5czcwazdrRUtQY21OR2p0YU05TVNHRDczLWJma2hQUndmVjJwSW5hcTMwQ3Q5OEpDN1JNUUNkUHlR?oc=5",
+      "published_at": "2026-11-17T02:06:56+00:00"
+    },
+    {
+      "id": "964e128222b28e94",
+      "category": "policy",
+      "title": "설계사 6,000명 대형 GA 한국보험금융, 불법 리베이트로 등록취소 사전통지 - CEO저널",
+      "summary": "설계사 6,000명 대형 GA 한국보험금융, 불법 리베이트로 등록취소 사전통지 &nbsp;&nbsp; CEO저널",
+      "source": "CEO저널",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DbUlXM0tTSGxYbWwwVDZ3X29jczNVOGhmSWFidUdaQWdtY3VlbUwtU1JwemxxN2EtV3JVX2ZtcEFsNnpXUG1rQ3lSNVhremV5bUVuRWk2UnkwSVVod0xfT0dBNWdxeG_SAWtBVV95cUxPWUQzSUlrRHhVYVYwWWw4YllyTE5WY0ZvaGI3d3E1X01ZUTE3VjBuQ0ZOMTJHb21wZGJjUjNqWHJ1VmUtMXZfbjBhWEVhMUlrT3VwZEFqMEdYdjRuRFk2ZGREZHAtTmgxMUxfOA?oc=5",
+      "published_at": "2026-11-17T02:03:59+00:00"
+    },
+    {
+      "id": "a3b1c6b40e37e44b",
+      "category": "insurer",
+      "title": "교보생명, 최근 1년 배타적사용권 6건 획득···생보업계 최다 - 보험신보",
+      "summary": "교보생명, 최근 1년 배타적사용권 6건 획득···생보업계 최다 &nbsp;&nbsp; 보험신보",
+      "source": "보험신보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJaFY3ZUQ2SEZnV0FDTlRuUVFQclhRUVFUY1FVQV9kUnhDZm1aQTh4RmtQWWc3c1JsYzJsQXZlcGFRM2Z0YS1xY3VESVZqYmJBNEdFeS0zdjJGZjlrM1h4T3g3N3ZVZFNENjln?oc=5",
+      "published_at": "2026-11-17T02:00:00+00:00"
+    },
+    {
+      "id": "edb2ea1daf917fe0",
+      "category": "policy",
+      "title": "금감원, 한국보험금융에 등록취소 사전통지…대형 GA 중징계 이례적 - SR타임스",
+      "summary": "금감원, 한국보험금융에 등록취소 사전통지…대형 GA 중징계 이례적 &nbsp;&nbsp; SR타임스",
+      "source": "SR타임스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WWWdqU2c5X1g5OTB6N0phM3c3YjNxeE93VkVxcHdEZ3BBMXFoV04xbnRiTnNNT2dUaGxrTHpaSEFxSS10OWhUcVpPWVNkeDFLeEJtLXQ2ZWItSEhwamNuSlExaXlDa1XSAWtBVV95cUxNMmgxc1k5V3hwemx3R1FuRnBUNnZCclV4Rm43NXZxWU5YRThxejBmWURnNlpDOEhkd25pMUhBNTBCSDRuVV9IQ1FiYVFsRnpVSlFELWoxZ2tGcEhpN1NQRkhLU1NaYmF3MC1Dbw?oc=5",
+      "published_at": "2026-11-17T01:59:27+00:00"
+    },
+    {
+      "id": "1a3e13a427789236",
+      "category": "insurer",
+      "title": "교보생명, 1년간 배타적사용권 6건…생보업계 최다 - 파이낸셜뉴스",
+      "summary": "교보생명, 1년간 배타적사용권 6건…생보업계 최다 &nbsp;&nbsp; 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xRUFNdEc1bnBoSEFhLWI4aDNRNXBSTEU1SVJpVkpzMXdBbmNOQTdyVGVtbFhUOXdMeFRKTjR1WjlKRm00QnBmV3djVkF6SXVud2k0V0ZmMU0yZw?oc=5",
+      "published_at": "2026-11-17T01:47:21+00:00"
+    },
+    {
+      "id": "733c803284afc4b6",
+      "category": "policy",
+      "title": "금소연 \"동양생명 과징금 95% 축소…금융위, 산정 근거 밝혀야\" - 파이낸셜포스트",
+      "summary": "금소연 \"동양생명 과징금 95% 축소…금융위, 산정 근거 밝혀야\" &nbsp;&nbsp; 파이낸셜포스트",
+      "source": "파이낸셜포스트",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oU1FBX2RHT005UjhkN28wbU44YzhpV01nTGdaMl9VUUZxTUdjMU5CZHV6ZG0tZXEtWGpKNkhzVTFLVXpMcjJtUmowZkVva0N2ZWtnc1dvRFpkMklzUE16Wms2V3JEOWZILVUzU3VySmJiRGlH?oc=5",
+      "published_at": "2026-11-17T01:27:10+00:00"
+    },
+    {
+      "id": "24f8274ee65718fb",
+      "category": "policy",
+      "title": "금감원, '불법 리베이트' 한국보험금융 등록취소 사전 통지 - 뉴스락",
+      "summary": "금감원, '불법 리베이트' 한국보험금융 등록취소 사전 통지 &nbsp;&nbsp; 뉴스락",
+      "source": "뉴스락",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBFM21jcHJnOEY2X2xfbVlZVldBbDFBX0FjYnI2dEFBalRfM1gybFU1aHBuZ2dXX09oUWRxNmNXekxUMzlsUFctT3JyR1ctb3p2N3lScWl5T2Y3ZlJvYk9tSnBqWUdWUzlldThhRg?oc=5",
+      "published_at": "2026-11-17T01:26:52+00:00"
+    },
+    {
+      "id": "60d96738a7a21ddd",
+      "category": "policy",
+      "title": "금감원, 한국보험금융에 '등록취소' 사전 통지…리베이트 혐의 - 금융소비자뉴스",
+      "summary": "금감원, 한국보험금융에 '등록취소' 사전 통지…리베이트 혐의 &nbsp;&nbsp; 금융소비자뉴스",
+      "source": "금융소비자뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Rb05VazRxcnFzc3JQSmtOaXdlbXNEdW1vRDNSNjhMMFAwYTUwTjFGVzljZkpfNzZVTTJYOVRyanZKQjZraDVlV3pkbFhuZXh1TTRtYXdVSDUwVkpyUkg4clluVWZvTVFnMUE?oc=5",
+      "published_at": "2026-11-17T01:26:00+00:00"
+    },
+    {
+      "id": "fb3e135b9a6ce4ba",
+      "category": "policy",
+      "title": "금감원, 732억 원 리베이트 혐의 한국보험금융에 '등록취소' 사전통지 - 소비자가 만드는 신문",
+      "summary": "금감원, 732억 원 리베이트 혐의 한국보험금융에 '등록취소' 사전통지 &nbsp;&nbsp; 소비자가 만드는 신문",
+      "source": "소비자가 만드는 신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBPNjUwOHdFMUJwSllqOE9RMDZDbUZ0RGdHU052My1wRG1raVdNNGV1bjBEeHQxckFYSll0VTl2cDh3SVBCVW96MXI0cWFGRzl6WUFHazQ4TVNpbERpRzFjN2NDOWlDVDc0Z1lPcG9hcXo0OTA?oc=5",
+      "published_at": "2026-11-17T01:13:00+00:00"
+    },
+    {
+      "id": "0f4db4a67eb38312",
+      "category": "policy",
+      "title": "[금융당국 중징계] 700억대 불법 리베이트에 등록취소 칼 빼 든 금감원… 대형 GA 한국보험금융의 운명은? - CBC뉴스",
+      "summary": "[금융당국 중징계] 700억대 불법 리베이트에 등록취소 칼 빼 든 금감원… 대형 GA 한국보험금융의 운명은? &nbsp;&nbsp; CBC뉴스",
+      "source": "CBC뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1WTS1IcTRNZWZEYlFvanNzZUtmenJlMkpxZVBYZnVXQWFDYmZsUEpfYmNlRzMta0pXYXBuakw5RU5aUTBuQlBvRjBVNXh4NFV2VndjUkh2S3JrSnE0eW1mLTJEbHNKbnhD?oc=5",
+      "published_at": "2026-11-17T01:00:00+00:00"
+    },
+    {
+      "id": "9a159ab166bc06fc",
+      "category": "insurer",
+      "title": "교보생명, 최근 1년간 배타적사용권 6건 확보…생보업계 최다 - 연합인포맥스",
+      "summary": "교보생명, 최근 1년간 배타적사용권 6건 확보…생보업계 최다 &nbsp;&nbsp; 연합인포맥스",
+      "source": "연합인포맥스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE94TFhyTW1UeC1mUThpZ3dTTVpKV0pUYTBwanVfOEFHVm5DM25Gcno4UmxJbE5UNTlmdjJWaVZQM1NwOUpRdW5DVEtaNjhTWWhveEhhM2J5UlM1a3JVdjNXVTIwblBkVlpJZWxBMnkwM2I?oc=5",
+      "published_at": "2026-11-17T00:54:58+00:00"
+    },
+    {
+      "id": "23585931663e4c07",
+      "category": "policy",
+      "title": "금감원, 대형 GA 한국보험금융 등록 취소 추진 - 파이낸셜포스트",
+      "summary": "금감원, 대형 GA 한국보험금융 등록 취소 추진 &nbsp;&nbsp; 파이낸셜포스트",
+      "source": "파이낸셜포스트",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAzaTVOWEVQN2JiZjdrNjJJLVQxUHpBMnVpenpkeXAxVlM5SWdwOW5aelRQQUQwMkhPcjE5SURvcUVvdElEYWNUSWRvdEh6LVIxVi03WVpadHFnZDRUNUIzTmtxUF9MQ1ZCWVR5ZHI4S0U1SUNQ?oc=5",
+      "published_at": "2026-11-17T00:11:48+00:00"
+    },
+    {
+      "id": "1158bc1230efeb88",
+      "category": "policy",
+      "title": "금감원, 한국보험금융에 '등록취소' 사전 통지…리베이트 혐의 - 연합인포맥스",
+      "summary": "금감원, 한국보험금융에 '등록취소' 사전 통지…리베이트 혐의 &nbsp;&nbsp; 연합인포맥스",
+      "source": "연합인포맥스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SV0RtVzJBcXd0RFVwbGdBemJqcGJpbFJuQW85eWZ3VVQzelA5enVUREpsb0RFOFFoNjI5OVNRZGg1WERCYjNVX2xabG1pU09Gam1idmJnd2hWeGRhZXVfTThXT19CZXRNLTF4QlNkR0zSAXRBVV95cUxOQ1dTRTR4aUliYk4tbkVIYVJSeHBkZFN1dnZWaVhwMkJSbXFZUUhOMkFqaFJwbFNYT2JsekR1TF9va1JHVzNTdzJ6VnFXWEg5cG9IUDJSWnNPcGNGVktVZEpNVW9QdExSN2g2aEQ2bjNpUk00cQ?oc=5",
+      "published_at": "2026-11-17T00:11:38+00:00"
+    },
+    {
+      "id": "e2ec8531a89160f6",
+      "category": "policy",
+      "title": "금감원, '불법 리베이트' 한국보험금융에 등록취소 사전통지…대형GA 이례적 중징계 - 이데일리",
+      "summary": "금감원, '불법 리베이트' 한국보험금융에 등록취소 사전통지…대형GA 이례적 중징계 &nbsp;&nbsp; 이데일리",
+      "source": "이데일리",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUjZ4WVdkMGxXTG05SnRJVWVfMTFLZTFsVXhXc2EzaWJZTjFza2NmV0F6Q0RXUTFwY3JBekNHN3I4VzhzVnNWVk9mck1fZk40SWwwa1F0alJOZTg2SHkxdThoZ0MtYlIxS0o1WkhtUkE2M0FCb2NFWm1zWGVYMVlZeg?oc=5",
+      "published_at": "2026-11-16T23:44:29+00:00"
+    },
+    {
+      "id": "7fa70c4fbc2f1fa0",
+      "category": "insurer",
+      "title": "금리·환율 변동에 투자 손익 '뚝'…교보·한화 줄줄이 적자 - KB Think",
+      "summary": "금리·환율 변동에 투자 손익 '뚝'…교보·한화 줄줄이 적자 &nbsp;&nbsp; KB Think",
+      "source": "KB Think",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSSWg3dXVZSGFIR0ZWc29IVUVaZFRlcHdPY2ljMTlyRTlVU19oTFJNZ2ZKVUJibVBKZ1Jpa2E0QXAwYV9jR0JBaVFFUWVuOGdTV2U2M3ltZnVHRVdQb2pkeHpqVTk1OUlsOTljdnhBRG1XQQ?oc=5",
+      "published_at": "2026-11-16T23:20:05+00:00"
+    },
+    {
+      "id": "c51b1bde62be5806",
+      "category": "general",
+      "title": "계명대 동산병원, 보건복지부장관 표창 수상 - 헬스조선",
+      "summary": "계명대 동산병원, 보건복지부장관 표창 수상 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TWlBmazROZko1U2tWVVFRR0dkX0ZZMnZ6aUM5SmxLX3lUUEZ3OW1aNl9iVkM0Q25zRVUzZmJMQjlaS0lnc3RzUkNfNDlTUzJjWUhjNEdacWswTThEV3dFUlBGeDlrQzFTMTd1d1VJUkU?oc=5",
+      "published_at": "2026-11-16T22:31:00+00:00"
+    },
+    {
+      "id": "673af5e19db4adae",
+      "category": "general",
+      "title": "의료AI, '개별 수가보다 기관 성과 보상' 가능성 - 의학신문",
+      "summary": "의료AI, '개별 수가보다 기관 성과 보상' 가능성 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tM3NKNlRKMDJia0pBdmhEUTFfUTVfS1Q3NUtlY0xlcUdxTTR3eEt6QnAyQk1jYWhrV1RkbUJNRFpUUDl6dERTWXFKZ2RRVmFrc1F3bEZUMUczV1V2TW1JTnVId3VpV1BTZHc?oc=5",
+      "published_at": "2026-11-16T21:00:00+00:00"
+    },
+    {
+      "id": "f69ee8995e11b166",
+      "category": "policy",
+      "title": "금감원, '보험설계사 6천명' 한국보험금융에 등록취소 사전통지 - 파이낸셜뉴스",
+      "summary": "금감원, '보험설계사 6천명' 한국보험금융에 등록취소 사전통지 &nbsp;&nbsp; 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LNFE4WTJSWVdSeHlIa3JOc1ZsRDdleURLRnc5MU9OanJGUjlhSjlxckgyYUlhYjhMdk9mVVgzWk01SGlieGE3eFZhZEFSQWNmWnpFLUphOV8zUQ?oc=5",
+      "published_at": "2026-11-16T13:28:49+00:00"
+    },
+    {
+      "id": "442ff2287633ec2f",
+      "category": "policy",
+      "title": "금감원, ‘불법 리베이트 혐의’ 한국보험금융에 등록 취소 사전 통지 - Chosunbiz",
+      "summary": "금감원, ‘불법 리베이트 혐의’ 한국보험금융에 등록 취소 사전 통지 &nbsp;&nbsp; Chosunbiz",
+      "source": "Chosunbiz",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNd01CMHVNTzZkakhTNkNtSFZQdXIzclEtRm04Z1ZSWFpibFB5bnJiM1prX2ZodnNhdzczdzZBUFFJVF9mMVhtQWkwTndxZnlxd2tsWjhaaEllOU1YWU96SDR3cTJ5LWJPOExhZC00cTNMRS01SHdRNEVjaE1XRmxDVUcwblRwbVF00gGcAUFVX3lxTE0yYk1uMFhpSGZ2dkdWRGdRakNpY1d1dGF4Zk1zam5RS1d3bkE4VEw2amEyMUMxQ2pCcVhSUEw5d1BFVDVGU2ZEVXBHNklrbk53UF83N2hiNVFfWEhRemdjMHRYNjlWeC11bnkxUmw2dHEzVkR6SnVlT1oweFcxUUw2bVFJTlJzdlh2aDdJTEJ4MlFsSXV2YlVZX1VVZQ?oc=5",
+      "published_at": "2026-11-16T11:22:00+00:00"
+    },
+    {
+      "id": "420f0627f8fa9b3c",
+      "category": "policy",
+      "title": "금감원, '732억 불법 리베이트' 한국보험금융 등록취소 사전통지 - 이투데이",
+      "summary": "금감원, '732억 불법 리베이트' 한국보험금융 등록취소 사전통지 &nbsp;&nbsp; 이투데이",
+      "source": "이투데이",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ndElkOUFJeC1PRVJ3TmJJdzA2WF84ZjlseXZiMlFMV2drRnU3WG45T2o3SFBTNFJqb3BrQzRmVzEyeGRLR01tMlU2bjRwOXhiU1ZFcw?oc=5",
+      "published_at": "2026-11-16T11:04:00+00:00"
+    },
+    {
+      "id": "a8b00dce20610990",
+      "category": "policy",
+      "title": "금감원, '불법리베이트' 한국보험금융에 등록취소 사전통지 - 연합뉴스",
+      "summary": "금감원, '불법리베이트' 한국보험금융에 등록취소 사전통지 &nbsp;&nbsp; 연합뉴스",
+      "source": "연합뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52WEEtVUpOWmJpVnNKWExWelJUN0UyX0FuVVRURHVpWmdQM015QmZxSjVTel80WVpabzl5NDBPUkNVRWR5dm5oZ3UxeXBuSUpnQkVyelpLOW1SbVnSAWBBVV95cUxPV01vV2w0QWxjZ3Z3SkFIaHZiNm9LWWNLemx0RUQyelZoWWtiX3pkT25wUDRWWTRTRGNBMGNYYUhYMm84cFFsVjFmVDJlRUJla0NJUzI5azJoX2lfa25OSVc?oc=5",
+      "published_at": "2026-11-16T10:40:55+00:00"
+    },
+    {
+      "id": "398d919fe0e7065f",
+      "category": "general",
+      "title": "건보 일산병원, 18일 '고령장애인 건강권 보장' 심포지엄 - 의학신문",
+      "summary": "건보 일산병원, 18일 '고령장애인 건강권 보장' 심포지엄 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MWnZOVzNwQWx0Ni1FQnJtdVQ1SkVEZkpsbnRwZXNrU09sODJZTmlJYVJhejhxREhBQ00yUTliVHZwcEl5WGNKeWNiUkpvUDlPRThhZW1fTlVQR044bVRNUjFtemVtSDFTeFE?oc=5",
+      "published_at": "2026-11-16T06:46:40+00:00"
+    },
+    {
+      "id": "a385fd0938a934b7",
+      "category": "general",
+      "title": "중수청, 명륜당 압수수색…가맹점 상대 ‘이자 장사’ 의혹 - 헬스조선",
+      "summary": "중수청, 명륜당 압수수색…가맹점 상대 ‘이자 장사’ 의혹 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBGRDB0UWdKQzUzdGtSUGM3ZjFJUlhIS2VqalcxM3U2YjYtdmVtbElHdEREZGFRbUpQVkZpNDBKRHlnRE5aQkZ4dTNMOFBjSFFpdmc0RS1zanNwTHpXTmZIVWd6c3BhRlJ5OUZtZWMwRWc?oc=5",
+      "published_at": "2026-11-16T05:01:00+00:00"
+    },
+    {
+      "id": "489054f691c1c613",
+      "category": "general",
+      "title": "명지성모병원, 지역 어르신 대상 뇌졸중·근골격계 건강강좌 진행 - 의학신문",
+      "summary": "명지성모병원, 지역 어르신 대상 뇌졸중·근골격계 건강강좌 진행 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKd2RCdmhrTU0tN0gyNTgydEtoclRucm1kTV9wY1piYWltazdabVJDRGNPaEdFenlhWWF0LVp1TGREM25sLXRJOXJIN3ZJcXJRNVFUNElDanBNMktEVmJLREFIYVB2eUZDS0E?oc=5",
+      "published_at": "2026-11-16T02:47:47+00:00"
+    },
+    {
+      "id": "00b1b5b82fa1780d",
+      "category": "general",
+      "title": "의협, '특사경법 폐기 끝까지 항쟁' 선언 - 의학신문",
+      "summary": "의협, '특사경법 폐기 끝까지 항쟁' 선언 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PUDhwSlhodWhxUGhZVnhKQXFqMmhzcWFFSC1Od3p1Q1hpZl9RZDRxSEh5QWJKYWd0MmYtMWE1TGFfNjY2bWduZUNEanRmYlphdlRQVDhUQkVhRzJ5ck1RLWdrUk1RUW9ycFE?oc=5",
+      "published_at": "2026-11-16T00:44:44+00:00"
+    },
+    {
+      "id": "47dc4fadf4d2ed51",
+      "category": "general",
+      "title": "건양대병원, 한국대학야구연맹 선수단 건강증진 업무협약 - 의학신문",
+      "summary": "건양대병원, 한국대학야구연맹 선수단 건강증진 업무협약 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NUktrSzlBdU9maGVJT1JQcUJ1Wk5yUjZkX2FhZjFFOFR2VjNJYXdEYXMyX0ZfRkNSU0N4NzlyQVUxeWJjTkVOb19HdFlBaGU2am5DY1VvTHhoUldGOWoxT1NubmRFN1N1d0E?oc=5",
+      "published_at": "2026-11-16T00:01:10+00:00"
+    },
+    {
+      "id": "324787d55c8818c4",
+      "category": "general",
+      "title": "롯데건설 ‘청담 르엘’, ‘2026 대한민국 조경대상’서 국가유산청장상 수상 - 헬스조선",
+      "summary": "롯데건설 ‘청담 르엘’, ‘2026 대한민국 조경대상’서 국가유산청장상 수상 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1VaUFib3RtVFptc2I1bENxWWZHN2d3VjhoMUJoczJGX01odWlLNV9MeXREVkJJNDdERU91cWQ0WDlaMEplcFhDMlhITDBTTVZiSV9HelBpSzNaTWV1aXhkejlLdkNCeFVCU05obW8wWVc?oc=5",
+      "published_at": "2026-11-15T23:01:00+00:00"
+    },
+    {
+      "id": "3e72e64900b7a59b",
+      "category": "product",
+      "title": "KDB생명, 사망보험금 10년간 늘어나는 ‘더!행복플러스종신보험(무)’ 출시 - 한국보험신문",
+      "summary": "KDB생명, 사망보험금 10년간 늘어나는 ‘더!행복플러스종신보험(무)’ 출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aeXZwS09Jc09XQ2s2ekNxNkRnaDE5M3NCdmRuY1FzcFZJbnBPcWNJblF5dkJqWnRCOEFzYlB2T1NERTlaX2JlVlFqRUZ3TG9BbkdnWXI3QkpVc0EwdEtxTlJtdHFLR2dVWWFJ0gFvQVVfeXFMTXBhUUpfMF8zV2pTMG1KUWJVNlBlRVVnS19CMUpPbmUtMWZGbEc2dldRV3VtSTBDT3dmeEluWFdkMEd1TkppOWxkM0xHcU5hNGV2a1VMeE5lWEl3MV9OM0JxdlFBODZjREF2cTZXZjFj?oc=5",
+      "published_at": "2026-11-11T05:28:18+00:00"
+    },
+    {
+      "id": "6b1e0339efd4f5eb",
+      "category": "healthcare",
+      "title": "[편집국에서] 비급여 규제 확대와 건강보험 당연지정제의 딜레마 - 라포르시안",
+      "summary": "[편집국에서] 비급여 규제 확대와 건강보험 당연지정제의 딜레마 &nbsp;&nbsp; 라포르시안",
+      "source": "라포르시안",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91S1B5WDF1b1pUdkI1TmljZ2VuZTQybFY2MmU5OXFCWDR3X1BqbFktalpNRHV3OXJCMDVjQ3hmb2dGY3JpUlduN01vczAxYVBFMGI0bWxDV3hWbDl4c3lRMTA1dWJ0R3U3ejhwRFNB?oc=5",
+      "published_at": "2026-11-10T00:31:00+00:00"
+    },
+    {
+      "id": "d2e508e4e9c044ac",
+      "category": "disease",
+      "title": "GLP-1 비만치료제, 치매·중독·암에도 효과?…가능성·한계 공존 - DongA Science",
+      "summary": "GLP-1 비만치료제, 치매·중독·암에도 효과?…가능성·한계 공존 &nbsp;&nbsp; DongA Science",
+      "source": "DongA Science",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBxZzZlNnh4VDM5YjJsOWhVb3NMVU1sd0VYSUxHc3FEMHlhMmNGazB5RFU5aEljRWFDWHRrWWV6NkNMQW9wX0xzUVVZVHFxaVNtM3Y1Sw?oc=5",
+      "published_at": "2026-11-06T08:00:00+00:00"
+    },
+    {
+      "id": "59580963718012b3",
+      "category": "product",
+      "title": "Sh수협보험 여행 공제 신상품 출시…해외 상해사망 최대 2억 원, 무엇이 달라졌나 - 창업일보",
+      "summary": "Sh수협보험 여행 공제 신상품 출시…해외 상해사망 최대 2억 원, 무엇이 달라졌나 &nbsp;&nbsp; 창업일보",
+      "source": "창업일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBrMVIzRF9QeUhIeDNTdlMyWGN0UkdqbWxTQzZHREhXSnM1eVVJSkFfVHUyNnNoVnNSV19UclFXZ2VyeEx2eEh5ME9BR0FNdk4zRWNRbHB2MWVoN1I3azMtdUFMbWpSVzBl?oc=5",
+      "published_at": "2026-11-04T08:28:35+00:00"
+    },
+    {
+      "id": "4d02554293199ad5",
+      "category": "product",
+      "title": "Sh수협보험, 국내외 여행 맞춤형 공제 신상품 출시 - 현대해양",
+      "summary": "Sh수협보험, 국내외 여행 맞춤형 공제 신상품 출시 &nbsp;&nbsp; 현대해양",
+      "source": "현대해양",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9OdmtBWjBObmJ3ZmlNU1B5ZTlQN0wyUTNzYmNGSGVuSkdDZHg3ZG1tc0dBOTQwR1lUWU44ajg0WmJCdkVJdjdyM2FnNG1LcTA1VHJ5NTNUWk1uQXdQX012Z1dGQlEzb00?oc=5",
+      "published_at": "2026-11-04T08:00:00+00:00"
+    },
+    {
+      "id": "abd6755b98dfe88b",
+      "category": "product",
+      "title": "Sh수협보험, 국내외 여행 리스크 종합 보장하는 ‘Sh여행공제’ 신상품 출시 - 어업in수산",
+      "summary": "Sh수협보험, 국내외 여행 리스크 종합 보장하는 ‘Sh여행공제’ 신상품 출시 &nbsp;&nbsp; 어업in수산",
+      "source": "어업in수산",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBR2dGdFJnVm9PempOdGNfWE9UcG9nNjZWWGpOdzBjX25yUThxRE9aSER1ajNjLXMyVnJhcFpRQTlBcGt1SkZacHJJSXE2aG44SEJrLVUwb0Exa1NFVXppRENXLUYzSWJEUzZGY2NnRQ?oc=5",
+      "published_at": "2026-11-03T08:00:00+00:00"
+    },
+    {
+      "id": "23f445450bd89818",
+      "category": "hospital",
+      "title": "삼성서울병원 스마트헬스케어연구소, 국제심포지엄 20일 개최 - MEDI:GATE NEWS",
+      "summary": "삼성서울병원 스마트헬스케어연구소, 국제심포지엄 20일 개최 &nbsp;&nbsp; MEDI:GATE NEWS",
+      "source": "MEDI:GATE NEWS",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB0RmVMWUNCSnJqM0pqbWpLTTEtUWVzVFpMTjZGTkx1bTFIdFQ1Y2NmOTlLSl9mNUtIdWNwR21mQVo1QmZQT0tBTmZVdUF6UmRLSG5NYk82OA?oc=5",
+      "published_at": "2026-11-03T08:00:00+00:00"
+    },
+    {
+      "id": "d26a4aa12d52e4b9",
+      "category": "hospital",
+      "title": "루푸스부터 세포치료까지…서울성모병원, 류마티스 연구성과 공유 - 헬스경향",
+      "summary": "루푸스부터 세포치료까지…서울성모병원, 류마티스 연구성과 공유 &nbsp;&nbsp; 헬스경향",
+      "source": "헬스경향",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZeGh6RldJQ0ZBQ3hxMkZDQUdhRXZDQTgtc2VpRnA0RnZTZmlJLXBIeVBhZUlhSEF0cDdBS2sxVWVwYXUtWlF6TTVjOGN3MDBtQXF2aThKSVE5Zmp0cmQ5Q3pTX0JlUUdId3V3?oc=5",
+      "published_at": "2026-10-29T07:00:00+00:00"
+    },
+    {
+      "id": "38d555e3b0a124bb",
+      "category": "general",
+      "title": "국내 바이오시밀러 시장 1년 내 침투율 11.4% 불과 - 의학신문",
+      "summary": "국내 바이오시밀러 시장 1년 내 침투율 11.4% 불과 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vWVdmM29Fb1VJX2otY0t0VEtRTUlBRy0wY0M3QmxaWHdoOXpfeTFtX3BuX1pUMGRwanpVOWZXSjRoQ2dQZk5vaUdLazRMcmtTeWsxZGt1WVl3VHJkMktZVEZtaGtYajZ2Mmc?oc=5",
+      "published_at": "2026-10-22T07:00:00+00:00"
+    },
+    {
+      "id": "1274331aca25ef42",
+      "category": "general",
+      "title": "건보공단, 예방의학회 학술대회서 생애주기별 비만관리 정책 논의 - 의학신문",
+      "summary": "건보공단, 예방의학회 학술대회서 생애주기별 비만관리 정책 논의 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBwcG9teXJXaGF5N2kxNldCSkJURlVMWlA4MHZtNVJZM1BPUGF2ZC1mcUF0ODFMSnBESlNSS25FeUwxTkRtY01mb0ZqQTZzRmlQa3R6V1ZkRl9ENldSQVJQNHYyQU1xamhTZUE?oc=5",
+      "published_at": "2026-10-21T07:00:00+00:00"
+    },
+    {
+      "id": "631766ed00f06942",
+      "category": "claim",
+      "title": "실손보험금 지급 거절·삭감 민원...처리 절차와 한계는 - 한양경제",
+      "summary": "실손보험금 지급 거절·삭감 민원...처리 절차와 한계는 &nbsp;&nbsp; 한양경제",
+      "source": "한양경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1iRmlHNnBfc3FzeTBlRmdZRFpHODZya1pPbzVIZkdsNXFBVFhCMGhHalNOMjVkM1B2Mm55YzlrajBPSDhXc2RzbTAxMUd4QjlYc1lZODBxazFNaEpRaXZ1b3FnSUZ3a21iRHZNcEs3QzBaUQ?oc=5",
+      "published_at": "2026-10-19T07:00:00+00:00"
+    },
+    {
+      "id": "ff5fff032d883f27",
+      "category": "general",
+      "title": "경희대병원 이상민 교수, ‘2026 정신건강의 날’ 국무총리 표창 - 의학신문",
+      "summary": "경희대병원 이상민 교수, ‘2026 정신건강의 날’ 국무총리 표창 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA1UHM0c3dmSU5POGx6NHZZd3lUNlg0T0cwZUhuOHJRY0c0M3lSWW9TdzhQMlFOUzFJd3FCNE1SZ0tXeHZPQ2FaYXJIYmVfelVGRmQxbVBMczd2eDItVmYzSU5ZSThzaHVFOWc?oc=5",
+      "published_at": "2026-10-13T07:00:00+00:00"
+    },
+    {
+      "id": "27beb837f10d9d9b",
+      "category": "product",
+      "title": "교보생명, 업계 최초 ‘뇌졸중 집중치료실 특약’ 6개월 배타적사용권 획득 - 한국보험신문",
+      "summary": "교보생명, 업계 최초 ‘뇌졸중 집중치료실 특약’ 6개월 배타적사용권 획득 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GRmhWYWNfWnF0V3JERGpqZlZLWC1IaHRaN1FHV0JOQ182cGZ0bktmbzgxd1RrcG9mYzNpQ0dqLW10RnU1XzRNM2lsaGhZTFFpcjBCZVRiM0Z6RWRmU0RRcEp5VkZ5QTFVakg00gFvQVVfeXFMTXpVaW82bnhvZjNLRkJha1c0cW4xWFF0Q1dPX1ZMd2dPbTZneUlWbk5Qbk8tLTUwY0tzMGV6UmdaZDVfRFluODhHRy1xZml6bDRxRDhiR0V6VWRCcmRRR3dWaHNSaXgwYlFVREl3OHVF?oc=5",
+      "published_at": "2026-10-08T07:00:00+00:00"
+    },
+    {
+      "id": "58ad7fd2fae67b8f",
+      "category": "hospital",
+      "title": "작은 세포에서 치료의 희망을 연다 | 아산인 이야기 | 피플 - 서울아산병원 뉴스룸",
+      "summary": "작은 세포에서 치료의 희망을 연다 | 아산인 이야기 | 피플 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5NdUxFcFdFYTlaaV95NVVSRUpnS2JPUnFWMWl0NWluZC1zVlM1NUlPMVZzMWptOVZuSDFLY3dRWFliUWRCZnBBQVFJaTNCcTNYYUlmNnNrSXRyeUdLT1ZRN2ZqdTN4X3c?oc=5",
+      "published_at": "2026-10-08T00:28:38+00:00"
+    },
+    {
+      "id": "009142f7518211b0",
+      "category": "claim",
+      "title": "“보험금 다툼 끊이질 않네”…민원·분쟁신청 꾸준한데 5세대 실손 앞날은 - 매일경제",
+      "summary": "“보험금 다툼 끊이질 않네”…민원·분쟁신청 꾸준한데 5세대 실손 앞날은 &nbsp;&nbsp; 매일경제",
+      "source": "매일경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBrLURta2ZkUy1OLUk2MUtfNWtoN2RQZTNZMWhKRXBhdnc1M3RVUkZ0TEs5UmMtZHFDMmNOem1oc2dhT0t4cDhuMk84NXU0amFuQTE2NQ?oc=5",
+      "published_at": "2026-10-03T07:00:00+00:00"
+    },
+    {
+      "id": "a6fa525df4e6cfd0",
+      "category": "claim",
+      "title": "'백내장 사태 때보다 심하다'…손해보험, 분쟁 신청 '역대 최대' - 전자신문",
+      "summary": "'백내장 사태 때보다 심하다'…손해보험, 분쟁 신청 '역대 최대' &nbsp;&nbsp; 전자신문",
+      "source": "전자신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE03eTJ5ZmF3NHVSTHQxZThoaFBWd0hST0J4bzFWRmtQWERKNG9TZnB2aENodzlEMUVMSUktOFVZR1VQZUljZGczbk1sRVJDZw?oc=5",
+      "published_at": "2026-09-22T07:00:00+00:00"
+    },
+    {
+      "id": "2040b453b673bf1f",
+      "category": "hospital",
+      "title": "삼성서울병원 세포∙유전자치료연구소, 제13회 국제 심포지엄 개최 - MEDI:GATE NEWS",
+      "summary": "삼성서울병원 세포∙유전자치료연구소, 제13회 국제 심포지엄 개최 &nbsp;&nbsp; MEDI:GATE NEWS",
+      "source": "MEDI:GATE NEWS",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0zM1Fid1JPUDFVSnZwZ3plaFAwSk1pU0FDaUtUcFBGaDR0b3FyV29mSzRBb2RKMUUtTmdzZG1MbldiekhMQkZPSHFRX2xMVmlmOGg5bWk4SQ?oc=5",
+      "published_at": "2026-09-11T07:51:05+00:00"
+    },
+    {
+      "id": "fdb88a48ef09ea9e",
+      "category": "claim",
+      "title": "금감원, 보험사 ‘분쟁 민원 관리’ 현장점검… KB·DB손보 첫 타자 - 한국보험신문",
+      "summary": "금감원, 보험사 ‘분쟁 민원 관리’ 현장점검… KB·DB손보 첫 타자 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfR05CQ3lnNDdMak5oVjZiamdFbm1saU1ZZW8tLWFTOXFjV2dRVFFPTlRSdnNLZFJXNHFINWc3MXBYWkUxOWU4UFZYeXN5ekNRdWtyZTJfbXJvcTl6Y2swd282dUFwZVE3TFU00gFvQVVfeXFMUENlbzg1a3FpMVhQVjNFdGVCZGI2MTFrT1g5MnR5OExCb28zMHBQRWRpejRGTmlkOVJVS3ViNk9PR2JoSXRkYWI0cHUteE1RRFBIdlBvTDZBSHBWNWtQelF2REh6VVRGMkdNalZuUHg0?oc=5",
+      "published_at": "2026-09-10T07:00:00+00:00"
+    },
+    {
+      "id": "d1af22498292e6d9",
+      "category": "industry",
+      "title": "사고 많고 부품 비싸…'적자늪' 전기차 보험 - 한국경제",
+      "summary": "사고 많고 부품 비싸…'적자늪' 전기차 보험 &nbsp;&nbsp; 한국경제",
+      "source": "한국경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hTzIxS0Zrd21fMVF6YjJnaHdPZWxHdUNuSU94RUJpeGFzWDNMN3VGZnpaRVluemloOFFES25xYmFDRGI0VFQyWkV1U0J2OG5CTVpWMk95bzE5dw?oc=5",
+      "published_at": "2026-08-26T07:00:00+00:00"
+    },
+    {
+      "id": "30921f2c0f8550f3",
+      "category": "hospital",
+      "title": "서울아산병원, 치료 불응성 고형암 치료법 개발 착수 - 데일리메디",
+      "summary": "서울아산병원, 치료 불응성 고형암 치료법 개발 착수 &nbsp;&nbsp; 데일리메디",
+      "source": "데일리메디",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vUDdBakxXNTZFUmNNZ3dqTzdrR1lPTjZrSThLV0dKWHdzMnV2eWQydG9iWXdOdjRBREFlcnI2WUlGZndqd0JHNkF2Q1RoSG8xbUFVTTNQN0tXYjRQa2h1NzJjY3RPZDlr?oc=5",
+      "published_at": "2026-08-22T07:00:00+00:00"
+    },
+    {
+      "id": "c21867f37fb4710c",
+      "category": "disease",
+      "title": "채소·통곡물 중심 식단, 심혈관질환 위험 28% 낮춰…연구 - 디지털투데이",
+      "summary": "채소·통곡물 중심 식단, 심혈관질환 위험 28% 낮춰…연구 &nbsp;&nbsp; 디지털투데이",
+      "source": "디지털투데이",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qbXE0OFBYS1lPanFnNkZnbFo4amFjemZPWmpaY0xtdFp4LUpWY2JyTlFCNGZuakhqVE45bHJLX09UV05hWWdkT3JKRGFCN0FtR0MyNVBhcDVhc0s5TVBkSlpOME9hTmtxWHd5NDBpcV9lcGs?oc=5",
+      "published_at": "2026-08-06T07:00:00+00:00"
+    },
+    {
+      "id": "681a4be6676aa4ae",
+      "category": "hospital",
+      "title": "\"서울대병원에 ‘국립희귀질환센터’ 설치해야\"…국민동의청원 진행 - 지디넷코리아",
+      "summary": "\"서울대병원에 ‘국립희귀질환센터’ 설치해야\"…국민동의청원 진행 &nbsp;&nbsp; 지디넷코리아",
+      "source": "지디넷코리아",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHVWRnazNsNHBtRE1yelJ2dkV6VXFwMElWYlZJU0lINEZhYmJKWFpfc3ZqcHF4bHYtQ3VDVU10S01LRjhfRjF5N3J3QlZwbEozMC1HWDJR?oc=5",
+      "published_at": "2026-08-05T07:00:00+00:00"
+    },
+    {
+      "id": "b1b9a4999273b7c6",
+      "category": "claim",
+      "title": "보험민원, AI 타고 더 커졌다…건강보험·실손 심사 강화에 분쟁 폭증 - 금융경제신문",
+      "summary": "보험민원, AI 타고 더 커졌다…건강보험·실손 심사 강화에 분쟁 폭증 &nbsp;&nbsp; 금융경제신문",
+      "source": "금융경제신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80Skx3LTFXRmJ4bHZTeEVuNFRUa0VLanhfTXhncDZGZEJZcnFzZG1PbEVLNjN5azlqRlJaU1JRS0lyRHI4NUNicHdzS2tNaDBiZTUteVVSTWZpcE84eWs5X25xTmlsX1BPQW9qRtIBb0FVX3lxTE1iWUZKTTRBWU9qaDNuOHJ1aDUxelNfSkczSmNlaE9lVXlQMDJUekFWSTFmcnNlOHBEMFo0cGRIdU1paDBmUEFXaHIyUmhaZTREdk8zT0FTTTl6WUFaYmNxTlI3Z2FFUWdQTkpxZlJncw?oc=5",
+      "published_at": "2026-08-04T07:00:00+00:00"
+    },
+    {
+      "id": "61f2548fe042b9da",
+      "category": "hospital",
+      "title": "CAR-T 생산 12일로 단축…국내 첨단재생의료 임상연구 성과는? - medicalworldnews.co.kr",
+      "summary": "CAR-T 생산 12일로 단축…국내 첨단재생의료 임상연구 성과는? &nbsp;&nbsp; medicalworldnews.co.kr",
+      "source": "medicalworldnews.co.kr",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1YRHNnSVRNdXJRQXJkbjdEZXRwWEhHamhYNjJ4TGZwN3psYkwtZHVTeTNGdGJoZWJtaUNfd04td2V3aGFkQnlJdWtkZnl1Mks5aUsyRkEzRzNuclluLW53enJCM05SN0NQX1VMQjJ0ZXU?oc=5",
+      "published_at": "2026-07-31T07:00:00+00:00"
+    },
+    {
+      "id": "522fd45e8dce3353",
+      "category": "hospital",
+      "title": "세브란스병원, 줄기세포 기반 무릎 골관절염 첨단재생의료 임상연구 착수…21개월간 29억원 규모 - medicalworldnews.co.kr",
+      "summary": "세브란스병원, 줄기세포 기반 무릎 골관절염 첨단재생의료 임상연구 착수…21개월간 29억원 규모 &nbsp;&nbsp; medicalworldnews.co.kr",
+      "source": "medicalworldnews.co.kr",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45V1BxUTBJR3lIZHc1WUZGU2l2S3FKV2lFN1R1c3RZdlZxa2wwWEltUG9UOXA5TE03YTAtamJFX2pWNUppUm5IYVlZMzlLWG9sMV9hT1RzUHEzeWRoNkNPWTlydW03VzhyMGV0YVkwd1U?oc=5",
+      "published_at": "2026-07-25T07:00:00+00:00"
+    },
+    {
+      "id": "e8b33d0b8261ee1b",
+      "category": "industry",
+      "title": "태국 의료비 급등, 보험업계 부담 가중 - 한국보험신문",
+      "summary": "태국 의료비 급등, 보험업계 부담 가중 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5LZlNJRkJtRjdndDZIX0JZbVlQTkREaFUzSE5CVHNYdnZVVHduVWxuc2xXUkhhU2lndTRBUjdFbnFMTXF3SzQyWXJSZGxUSWN3S2dPZjQxWDBjVjBxZ0hRNFVUeDVyX0ZoOHhJ0gFvQVVfeXFMTnRnbXRQeHQyREQ1N1JfNW9KT2NITXRJdklsenBxT1VFLVZ6Q21oRlRGdHJGQ3dHY05VYUFiOFp2UTdNS0xFVUZ0N0xTOExRT3VFR1ZDMVlhQldURlE0U3hXUWhlME5rbkswejllY3pB?oc=5",
+      "published_at": "2026-06-29T07:00:00+00:00"
+    },
+    {
+      "id": "26d009c32141a294",
+      "category": "industry",
+      "title": "[창간 24주년 기획②] 금융의 한 축으로… 보험산업 24년의 변화 - 한국보험신문",
+      "summary": "[창간 24주년 기획②] 금융의 한 축으로… 보험산업 24년의 변화 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE15YTRCQVVhekwzTGp4ZDV5RExCM0F5N3NGV1FBSnNkWnVhdktEN1dQaUJHLVNPUWt4VENLcUNyZ25uUGVLOWF0R1V0SVBDUkdIMGRvRF9vaDh2bzdvbEpFRENWSk9uU2JpLUpz0gFvQVVfeXFMUFdKTWRmdkxSaU14bFNaOVJPYkRvRzA3SldGMHVlV214cjVJZTFRN1NxS0lVSUVtV0p3ei05OUphTmJxQzZIS3lPSFdQdVVyNkJpSEJaTDBHdWtaaGF5SjNrOTA5ZGZidEV6dnY0Um04?oc=5",
+      "published_at": "2026-06-29T07:00:00+00:00"
+    },
+    {
+      "id": "0f76b1eb30f6ad39",
+      "category": "medical",
+      "title": "국립암센터 연구소-㈜HITS, AI 기반 항암 신약개발 협력 … 암센터 전용 AI 신약개발 플랫폼 구축 - 헬스오",
+      "summary": "국립암센터 연구소-㈜HITS, AI 기반 항암 신약개발 협력 … 암센터 전용 AI 신약개발 플랫폼 구축 &nbsp;&nbsp; 헬스오",
+      "source": "헬스오",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TSjlkR0tnZ1VTSzBWbFU2cUstalhPVThCQlUyNElZWlBKZ3RYNnMwRlVDZDYyMEl6SzZ3SXRITFgzWHJ6di1rcEtIWlZmREpYZnpMZg?oc=5",
+      "published_at": "2026-06-23T07:00:00+00:00"
+    },
+    {
+      "id": "dcf83d265d931249",
+      "category": "general",
+      "title": "복지부 \"디지털 헬스케어법, 의료데이터 활용·국민 권리보호 법제화\" - 의학신문",
+      "summary": "복지부 \"디지털 헬스케어법, 의료데이터 활용·국민 권리보호 법제화\" &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6b0NGSmNteWczckFlZ3g3blhTLU1GUjljRUxKRXpmUnVENlNGZWFpX2lLRk9Bc1pic1ljaEJ6NE85MzNwR2w2Uk9hZkNVWFBTdUtvblhtQlhncG15eDlqSGZYcFYtWXYzd3c?oc=5",
+      "published_at": "2026-06-22T07:00:00+00:00"
+    },
+    {
+      "id": "02db65c9c8086191",
+      "category": "industry",
+      "title": "'안갯속' 車보험 8주룰…내년 보험료 상승 우려↑ - 전자신문",
+      "summary": "'안갯속' 車보험 8주룰…내년 보험료 상승 우려↑ &nbsp;&nbsp; 전자신문",
+      "source": "전자신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4zVDlpM2FkM1JWQl9PVjVLWG82eDdxejc3bEkyOWY5TXR4UkVXUlpXNnMzMENRcFV6T2tuUTdOLW1xM0ZGYm9ZR0pEdzk3dw?oc=5",
+      "published_at": "2026-06-17T07:00:00+00:00"
+    },
+    {
+      "id": "b1d474d6fbac13b3",
+      "category": "industry",
+      "title": "손보사 '입찰 담합' 의혹, 재점화된 보험업계 카르텔 - 이비엔(EBN)뉴스센터 - www.ebn.co.kr",
+      "summary": "손보사 '입찰 담합' 의혹, 재점화된 보험업계 카르텔 - 이비엔(EBN)뉴스센터 &nbsp;&nbsp; www.ebn.co.kr",
+      "source": "www.ebn.co.kr",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XQnVNX19pQ1hLa3lwSGxGYjJMeE9Wc2gxdmNSWkREWFEyREdpQ2VKSm9KVG9Nd0ozUExxb2NIeXpMQi00Zkk5OFdHTU1sd0wtdm1DRGlvZDY4ZWJldHlWc2d4U1paODZQ?oc=5",
+      "published_at": "2026-05-27T07:00:00+00:00"
+    },
+    {
+      "id": "5f93472764b539b3",
+      "category": "industry",
+      "title": "[단독] '간병인 특약' 4년 만에 20배 커졌다 - 한국경제",
+      "summary": "[단독] '간병인 특약' 4년 만에 20배 커졌다 &nbsp;&nbsp; 한국경제",
+      "source": "한국경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TZThyaDdjd1ItNnVHVTZ2c1dYci1HYjNDQkl2Sjcwb1FGZGwyckVzQkhKd3JOOWZfV0VPN3QxTnNnWWVDX0p2YTdDSUJ5Y2J4V3lxVk5INmxHUQ?oc=5",
+      "published_at": "2026-05-20T07:00:00+00:00"
+    },
+    {
+      "id": "bceb302d00987554",
+      "category": "product",
+      "title": "‘배달용 전기 이륜차’ 공제보험료 할인율 1%에서 17.5%로 확대 - 한국보험신문",
+      "summary": "‘배달용 전기 이륜차’ 공제보험료 할인율 1%에서 17.5%로 확대 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5sWHpDS1p5UVAyUkxJSGlEeWs5MXY3LXRHZDZZRHVmc0RVMWxNcDFmUFhWazI5OXFfYnV0aEdldTJZcWwwaHhJdlEzMHpQOGpKVHNZeUFnLWRFV1hIV1pGM0VHQ3dVbkk4bjJJ0gFvQVVfeXFMT1hWWmpiZGprRFRsQ0EtdUg0WU5sRHlNc1R4dHZzbGw0ZjlVM0ZTY3lDWnRQSWVwR052ekFtN3dyamxOVmpxRjN6dXdlT1dhdDFudFkyYmxzRnNxb0tTQ2ZmUVNyYjcwSS1XekwtbWNz?oc=5",
+      "published_at": "2026-05-11T07:00:00+00:00"
+    },
+    {
+      "id": "56ca3c5edb22a7ed",
+      "category": "claim",
+      "title": "실손보험 분쟁 공시 강화에 보험사 긴장···\"지급심사 부담\" - 서울파이낸스",
+      "summary": "실손보험 분쟁 공시 강화에 보험사 긴장···\"지급심사 부담\" &nbsp;&nbsp; 서울파이낸스",
+      "source": "서울파이낸스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82OGQ1d1V0bzJNMmFVWVc2SE91TTB6dkRlSDVHNHVFZDF4dmlac2ZUTGRMWE43XzRxNGhqclNGdEVyRTRfd094VGRFY0NBc3hUbFlMX3pfYkduYUxSRWZ3YWtlSE8wbWtDWkE?oc=5",
+      "published_at": "2026-05-08T07:00:00+00:00"
+    },
+    {
+      "id": "a8d938fdc5671afc",
+      "category": "claim",
+      "title": "실손보험 분쟁 줄인다…보험금 청구 급증 항목 3개월마다 공개 - 산경투데이",
+      "summary": "실손보험 분쟁 줄인다…보험금 청구 급증 항목 3개월마다 공개 &nbsp;&nbsp; 산경투데이",
+      "source": "산경투데이",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FTk8xYjNwbDFtcVgyeVZwU1IyTEpWMWNOemQ5UEgwVnBEQnlQTnZia1U1TEtSSW1DbWJlemNTdmxVb1Rxa3BseHhCdmNFUzY0M1dUUWVmcGpVbkpicFNGejhhV25yRlF0SmtCRDM1ekXSAXRBVV95cUxNNGd0V0pSQ1d1NEcwN2NwUk1jV2F0NU1fejVKYUhMbDh1TDhKb1IyMmZZblNtU2Y4ZUotdFpEVmlsODFFQW5JQTNFYTI1ZDZkdFdWMFBOWHdHNm1ZcXQ0bzl2U29HdGk4RkNRbkdPTU52ZmFZdA?oc=5",
+      "published_at": "2026-05-07T07:00:00+00:00"
+    },
+    {
+      "id": "0abdbfa2d6dfe00a",
+      "category": "claim",
+      "title": "민원·분쟁 잦은 실손 치료 항목… 보험사가 원인 분석해 소비자에 알려야 - 한국일보",
+      "summary": "민원·분쟁 잦은 실손 치료 항목… 보험사가 원인 분석해 소비자에 알려야 &nbsp;&nbsp; 한국일보",
+      "source": "한국일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fM2ZEdV96WmU5Sl9kMlhFbmlMS29SaXVGNFhCcFJ2VmQ1SmhsZjlsU1F6MVMxdXpNbV9CNDVsYktZbDVKS3oxN2FDSFhQZUZGc2tfT2wycVB0NVZlVkpwT2dwYWZwNklZdzIzUjhn0gFzQVVfeXFMTjVwTkV5TFZIT3RDVkhPSWYwX2I0d2pNaHRKbGdRVlJScFNaQ0p5MkY5c1J1NDJUSEhGRktYQ1Z1dGM3eFpXUVlvWEVxTTdTaHdOV0staGdEMmVINXUwckN0dFpDQUJkZHM1SWxhUUpVTVdkOA?oc=5",
+      "published_at": "2026-05-07T07:00:00+00:00"
+    },
+    {
+      "id": "442c09bafaff9961",
+      "category": "claim",
+      "title": "\"백내장 분쟁 재발 막는다\"…실손보험, 보상기준 변경 시 소비자 안내 의무화 - 조세일보",
+      "summary": "\"백내장 분쟁 재발 막는다\"…실손보험, 보상기준 변경 시 소비자 안내 의무화 &nbsp;&nbsp; 조세일보",
+      "source": "조세일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxMkltN2JxUTVMbm1YdDNMRHROM28xbklVdUNtSlNXSmxRVHJkYnlQcVV1b2JsUkFjY3VQNkJJN3k0bnVoclBrOFRTYk9ITE9zNlItTmZMOFJRcjB4cTVN?oc=5",
+      "published_at": "2026-05-07T07:00:00+00:00"
+    },
+    {
+      "id": "fc81b525d7eb9907",
+      "category": "claim",
+      "title": "“백내장 보험 믿고 수술했다가 낭패 봤는데”…‘분쟁 잦은’ 실손보험 이젠 공개 - 매일경제",
+      "summary": "“백내장 보험 믿고 수술했다가 낭패 봤는데”…‘분쟁 잦은’ 실손보험 이젠 공개 &nbsp;&nbsp; 매일경제",
+      "source": "매일경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBiR2dQQlF5ZTlzZFl0SHQ2MHVqcy1mTjRyN3pwdXhlRXk0T0Qza2J2dHR0M2pQOFFzWE0xcUVZTnE2RkkwUEc5MlpMNWhKemotVVJKQw?oc=5",
+      "published_at": "2026-05-07T07:00:00+00:00"
+    },
+    {
+      "id": "3340dfd43ea73c5e",
+      "category": "disease",
+      "title": "어느날 갑자기?…습관이 병 만든다! - 헬스경향",
+      "summary": "어느날 갑자기?…습관이 병 만든다! &nbsp;&nbsp; 헬스경향",
+      "source": "헬스경향",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jVGxURG9YdlJnRXZiYkthUndZaTZFaEFfWV9tNEJtLTBYTTd1WG0zTExtMTBna3V4dGlmT3B6OWVoZGtOR2RQZ3NMWTlKYS1RSFFrMERweHM1Wjh6X01JQUdNcEhBZ0FXUHc?oc=5",
+      "published_at": "2026-04-23T07:00:00+00:00"
+    },
+    {
+      "id": "0278a2e33b63e2be",
+      "category": "industry",
+      "title": "\"팔수록 손해\" 차보험 합산비율 103%…수리비 '비상' - 경제타임스",
+      "summary": "\"팔수록 손해\" 차보험 합산비율 103%…수리비 '비상' &nbsp;&nbsp; 경제타임스",
+      "source": "경제타임스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDRElUUmN1V3ctejhES3R3S3FVaEVqUHdjd1FLWHcxYklzaWlWNEk4S0NSWmp6YlZ1eEdIS0hSdlBCQ3dyeGNRWnNnaWlGemxCWHNr?oc=5",
+      "published_at": "2026-04-22T07:00:00+00:00"
+    },
+    {
+      "id": "e7675436b2670aa0",
+      "category": "hospital",
+      "title": "HER2 음성 전이성 유방암, 항암주사 대신 먹는 약으로 치료 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "HER2 음성 전이성 유방암, 항암주사 대신 먹는 약으로 치료 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54RFg2b24ycW1DRkRKcngtZzBySzNqRlhNakJBMlBwcUdQVVBWa0tNUHBWRmpvaWViX2txVUpXWjJYazBTNmY1ZjdPSHREU0ZOYV83cXZubWRCX1JnaXRLLTdodEpwUkk?oc=5",
+      "published_at": "2026-04-15T00:14:48+00:00"
+    },
+    {
+      "id": "c0a089f7504a3059",
+      "category": "general",
+      "title": "\"가짜 뉴스에 내분비 질환 치료 포기\"… 임상 현장 흔드는 의학 오정보 - 매경헬스",
+      "summary": "\"가짜 뉴스에 내분비 질환 치료 포기\"… 임상 현장 흔드는 의학 오정보 &nbsp;&nbsp; 매경헬스",
+      "source": "매경헬스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WZmxUOTBBbTVHMW9BdW1JSXpid1ItS0RxWS0wUjZteUE2cXd4TGRfdkttbG1iQk5CQm5oSk9CY3RPb2YtczdaQjlpQzRJSnJYbmtlSEF2M0Zfc3p2b1NRZGl5UGdnT1Uyem1BZQ?oc=5",
+      "published_at": "2026-04-10T07:00:00+00:00"
+    },
+    {
+      "id": "acbe29afabdefe03",
+      "category": "industry",
+      "title": "[심층분석_보험업계] 보험료 250조, 보험시장 세계 7위의 그늘... 성장 둔화·CSM 착시에 흔들리는 한국 보험산업 - 뉴스워커",
+      "summary": "[심층분석_보험업계] 보험료 250조, 보험시장 세계 7위의 그늘... 성장 둔화·CSM 착시에 흔들리는 한국 보험산업 &nbsp;&nbsp; 뉴스워커",
+      "source": "뉴스워커",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93SDFkMHB1MlRrVjkzWFZuOWxhMHVITGZock1maS1JTXV3TzRHRXRxLXhsc3pHcEdJTzFFUDV2SkJ3MlN2QmFtOW5KRS14QmRGQnhQS0t1azNGajM0TFB3aVRQemxwSEZKa2p0ODBvMjHSAXRBVV95cUxNNW1Fb2JueDVacGYyWTBGVmxadUhmaFpNNlk2T282WHJMLXdlYjdaVlVHZ1ZyVW5BVGhPTWE5OHdjZXNpZmlFb3lWUU1jRXkwNFpBQ0FXdVFwNE5kamZpZENpWkc5UldPRjVDVGlQVGVuY2U5LQ?oc=5",
+      "published_at": "2026-03-26T07:00:00+00:00"
+    },
+    {
+      "id": "562980f3896aeb1b",
+      "category": "hospital",
+      "title": "서울아산병원 의료진, ‘제19회 암 예방의 날’ 맞아 유공자 포상 | 행사 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원 의료진, ‘제19회 암 예방의 날’ 맞아 유공자 포상 | 행사 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA4cERHU1pmMkhiM0djeXdwcFNaa0NUOFJhTXRhaVlTdXNZVUpBTnhnS3FiNWFCQ1VnSlIzNW1JZUtHVzlqZnNBMjd0LWRDM2JReU5Ldm9wRGRiLVFQc3BweDJWVlZzVFE?oc=5",
+      "published_at": "2026-03-17T04:09:51+00:00"
+    },
+    {
+      "id": "04ab225df60d013d",
+      "category": "general",
+      "title": "설탕부담금 논의 본격화...“증세 아닌 건강정책으로 설계해야” - 의학신문",
+      "summary": "설탕부담금 논의 본격화...“증세 아닌 건강정책으로 설계해야” &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBheWh5RVJFWDFDMlgwWW9UelJLbXgxMkNiRFU2cS1YMGRmQmxyT0JKUldhM29IR2pabEdsdEVjX1AyZ29mek1GampoQUFUdVlBME1qVzg5YUpXNExOYjZuWmotS2FBQ0d5dFE?oc=5",
+      "published_at": "2026-03-16T07:00:00+00:00"
+    },
+    {
+      "id": "163a663923bca154",
+      "category": "hospital",
+      "title": "중증 치료·디지털 혁신 삼성서울병원, 글로벌 26위·국내 1위 [Health&] - 중앙일보",
+      "summary": "중증 치료·디지털 혁신 삼성서울병원, 글로벌 26위·국내 1위 [Health&] &nbsp;&nbsp; 중앙일보",
+      "source": "중앙일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nR1RlR1hPRHBjVUxobnFmbkU5U0xXYXVKa0lIbzg5cGczT1lYUEluLWpubzJ6RlowRFBzaGtVLWdSLVBRTHFOdUlaaHZRZnpXN3VVeFF3?oc=5",
+      "published_at": "2026-03-08T08:00:00+00:00"
+    },
+    {
+      "id": "cecc028c64a352d8",
+      "category": "healthcare",
+      "title": "“도수치료 실손 믿고 ‘무제한’ 받다간 낭패”···가격 내리고 문턱 높인 ‘관리급여’ 시행 - 경향신문",
+      "summary": "“도수치료 실손 믿고 ‘무제한’ 받다간 낭패”···가격 내리고 문턱 높인 ‘관리급여’ 시행 &nbsp;&nbsp; 경향신문",
+      "source": "경향신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Ucnd4TTVnZTh6MkFzUEd5YmhOcjRfejRjR1hEUXdTTjZ5Nk5NUXBYRmdDcEZxR1VZd2cxWXlYbUdLZTJiRGlNMTJaUjQyUDlBX0k3NlhpMGpzZ9IBX0FVX3lxTE9sY2hGYXZlTXB5Tm1QdEZtbEVFTTJFNUpZeU1Ca1dRSTNnNG5ZNEVBbnhOamZLbjhMY3FfREM2VUZxM1AxTnY2S1F4OWdSZ09scVZxYjNDVzYzRUVncEpR?oc=5",
+      "published_at": "2026-02-18T08:00:00+00:00"
+    },
+    {
+      "id": "436bcca7dc4243af",
+      "category": "industry",
+      "title": "미국은 급등, 한국은 인하… 자동차보험 가격 ‘엇갈린 행보’ - 한국보험신문",
+      "summary": "미국은 급등, 한국은 인하… 자동차보험 가격 ‘엇갈린 행보’ &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1iX0ZtWUhIVi1wNU9qM3FMQVVMUzJNVXQ3elF4M0s0RGJqZHEwaWxLWGdHVVZ6S0xnN2NiaUZrZUR1aFI0QVozV3RJQm4xN0w0TG5DQXc3NzJHcnRndjg3YkQ3RXYtMHcwU0NJ0gFvQVVfeXFMUGRaRHF5UWlZWERwMW8xRGxCOHZTOWlJWWhvdDBPUGpLbDFmZzBfOEozRjl1QldNVnBZZV8tSXFIaUp5NU5RckRmRUNiT0ZyM0k3Q1hKXzh0TkJFWndNN0RPQW0xWEM3VnNudWcwbzF3?oc=5",
+      "published_at": "2026-02-16T08:00:00+00:00"
+    },
+    {
+      "id": "a90e411cd0c64045",
+      "category": "industry",
+      "title": "자동차보험료 2월부터 1.0%대 인상… 4년 연속 인하 후 처음 올려 - 한국보험신문",
+      "summary": "자동차보험료 2월부터 1.0%대 인상… 4년 연속 인하 후 처음 올려 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LSEVyTWN1clJYaFotUDdiZ1J1NjlQN2VyNHpmbkpsNmFqQVpPTDczc1RIUFlwRHNPakJGc2FRZkpCcllXMXdrZUNwajBRZXlSRTUxZVJSMGdJOEhRVFJ4clZaM0xDMmppQ3Bn0gFvQVVfeXFMTnI2bjhhOGhSTnYtbml0M1ZneUNBcGotakd4OHJDVUhuTTZYTGQyWnJmZDZreHdIUlk4TWtYaFhJaWhwTWtzUzhFQUtRNDdLMHdDeGZJTG1JMS1mSG9QZU5RY1RQR0FhQ01PM1JIc093?oc=5",
+      "published_at": "2026-02-09T08:00:00+00:00"
+    },
+    {
+      "id": "184999aad4dd3c35",
+      "category": "hospital",
+      "title": "분당서울대병원, ‘국내 첫 대규모 췌장암 유전체 연구·맞춤형 치료 길 열어’ - 경인일보",
+      "summary": "분당서울대병원, ‘국내 첫 대규모 췌장암 유전체 연구·맞춤형 치료 길 열어’ &nbsp;&nbsp; 경인일보",
+      "source": "경인일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBZaUZvMjF0SU1CcnBUX3BkZm1MLWd0b096dXp4THRmVVZGRndnekJ5OHRxMWNoVURCVTk2R0lsaWh5UlZYbG5MRjZlVGFaZTNIWFE?oc=5",
+      "published_at": "2026-01-23T08:00:00+00:00"
+    },
+    {
+      "id": "6fcac38a5f880307",
+      "category": "industry",
+      "title": "작년 車보험 손해율 87% 육박…적자 '눈덩이' - 한국경제",
+      "summary": "작년 車보험 손해율 87% 육박…적자 '눈덩이' &nbsp;&nbsp; 한국경제",
+      "source": "한국경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FMWt6blZTVnM4WkI1M2xLVmJ3dUpwWFNGSF9kT3F3aWhLMVZqbHppb2RwZHBwcGo4Skg2cWtKQUdybVEyTGk0di1xREk2X2tyNmRoZFZBNjAydw?oc=5",
+      "published_at": "2026-01-21T08:00:00+00:00"
+    },
+    {
+      "id": "e1ea8d788170d7a7",
+      "category": "industry",
+      "title": "자동차보험료 인상의 배경… 한국은 ‘완만한 조정’ - 한국보험신문",
+      "summary": "자동차보험료 인상의 배경… 한국은 ‘완만한 조정’ &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CWktMdkl3S1d3NkdENThkRHM4dTZaZ2pqUlVjVWxBelJvQVVPbGZReVd4OGlhbHljdElFOERFNEt2MlNKQWlPZldSSEg3LXhaRHJNQ0VvajFXWFJWZGU1Uzc5ZW9IZXA3bUdR0gFvQVVfeXFMTlJ3M3pfNkl2Ym1oRjkwMFBfMDl6dkVlXzhUNG9BaUxOVXRTS1l6STFQb1cwcmJjbTlKa1l2YUNhV00xUDNzekNvT2NYdUVkS0puVnNmZUlOVVNvM2VSMXVVZnVrbjRBZ0VkRE1NZk93?oc=5",
+      "published_at": "2026-01-05T08:00:00+00:00"
+    },
+    {
+      "id": "008edb10c1be9dcd",
+      "category": "industry",
+      "title": "[2026년 전망대] 보험업계, 성장 멈추고 수익성 시험대 오른다…보험료 증가율 2.3%로 급락 - 오피니언뉴스",
+      "summary": "[2026년 전망대] 보험업계, 성장 멈추고 수익성 시험대 오른다…보험료 증가율 2.3%로 급락 &nbsp;&nbsp; 오피니언뉴스",
+      "source": "오피니언뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE85cFBpVVR3eF95UE9BOFpRN05yMkJNV0ZGaE9pYUYzVnVGankzN1NXdTYxektHajJzOWExcHgtSXdwWV93MUd6UXBxUmRLekF0UU8wY1YyZGhSVkdEZHJRZGV0RXdXemxGNVl1aVREYlN6Zw?oc=5",
+      "published_at": "2025-12-31T08:00:00+00:00"
+    },
+    {
+      "id": "58fb6987586151f8",
+      "category": "claim",
+      "title": "“보험금 받기 힘든 이유 있네”…분쟁조정위 ‘지급 결정’에도 보험사 불복 이어져 - 매일경제",
+      "summary": "“보험금 받기 힘든 이유 있네”…분쟁조정위 ‘지급 결정’에도 보험사 불복 이어져 &nbsp;&nbsp; 매일경제",
+      "source": "매일경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TQWRxQWpwSFlqeF9ueHlqY1dRVmpwZktOdEk3OG1Jc3RWUHA5ZUZDc2JpRUtGS3RySlhodEV2V0NSeHBXMnBlTG1fSGV5RnpfZTFZag?oc=5",
+      "published_at": "2025-12-29T08:00:00+00:00"
+    },
+    {
+      "id": "c479bf6349b825cc",
+      "category": "industry",
+      "title": "[한국보험신문 선정 올해의 키워드⑨]＃시장트렌드 - 한국보험신문",
+      "summary": "[한국보험신문 선정 올해의 키워드⑨]＃시장트렌드 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ubm1SdmU3bHBPcVRmYXlzVzlVYTBZOVBiZi1halNJMHNZMXpNVF9YSlVISzZhLUZQYzdaLWQxYldtcjNtWldzRkRGcDJZT3dsUXBBNGJNNGttbVpYT3NUcFJHc001cmhPcG1N0gFvQVVfeXFMTkJxbDBSWkc2S091R2kzZjRydlQxaUVCbmVtenI5WlJNOGVZSlFvTUlEdjN5dmowb1pYcUE4dUdoTVRIbFoxTWFpQVFSYVREVVVnVnhWZDdRcDZDazNYS3B3dnZOYVQ4OHlFSG5UQkhN?oc=5",
+      "published_at": "2025-12-22T08:00:00+00:00"
+    },
+    {
+      "id": "48df2a617e77ba04",
+      "category": "product",
+      "title": "내년부터 보험상품 '추적·관찰' 가능해진다…금감원, 약관심사 개선 - 전자신문",
+      "summary": "내년부터 보험상품 '추적·관찰' 가능해진다…금감원, 약관심사 개선 &nbsp;&nbsp; 전자신문",
+      "source": "전자신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5NSVMweUNYb2NzYlJudWZfZ01jU0Q5SVJOVTNaeWFzZmFoOENrcDNBd281cnRTWFRNM1NRNnZaZ1ZQajVwQjFnMjVmUkN4QQ?oc=5",
+      "published_at": "2025-12-22T08:00:00+00:00"
+    },
+    {
+      "id": "bdf07719f074de93",
+      "category": "hospital",
+      "title": "삼성서울병원 양성자치료센터 개소 10周 심포지엄 - 데일리메디",
+      "summary": "삼성서울병원 양성자치료센터 개소 10周 심포지엄 &nbsp;&nbsp; 데일리메디",
+      "source": "데일리메디",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5YZmtiVmc4dVk5ZGlqX0NmaW9XUEdOX1BPS1RvazNwV0xaVUpKVl8yOXZIbmFzd3IyS3NrWDB0dDVuRVZ2Um5lUzdzb3Vyczljbm1xUDhlVGNQS2ViU2ZhQVJ1QkhZMnNH?oc=5",
+      "published_at": "2025-12-18T08:00:00+00:00"
+    },
+    {
+      "id": "9933abc84d9f09e9",
+      "category": "general",
+      "title": "2026년 보건·복지 정책 이렇게 달라집니다 - 정책뉴스 | 뉴스 - 대한민국 정책브리핑",
+      "summary": "2026년 보건·복지 정책 이렇게 달라집니다 - 정책뉴스 | 뉴스 &nbsp;&nbsp; 대한민국 정책브리핑",
+      "source": "대한민국 정책브리핑",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTNlNsUmNHZXQzMXcwQ1dPV1p4OHRWUEZmZjlfTWFWdllOMnBJLV90eUJHTnU4QmRWUWRFOG9EWGtUNVZWNldSM3FuUjlCM3c0MDkxcWM2eVZLSGJ6WEZlbUdGM3BWNGpkNlZZaw?oc=5",
+      "published_at": "2025-12-17T08:00:00+00:00"
+    },
+    {
+      "id": "416e35803e9baa23",
+      "category": "general",
+      "title": "‘나의 건강정보’ 이용, 보건소에서도 가능해져 - 의학신문",
+      "summary": "‘나의 건강정보’ 이용, 보건소에서도 가능해져 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95NGlsVnhpcnlpSE5UQ0h3Z3ByZjBuZ0V2ZUZfS2F6TTZGM3pyd3ZDbTdOVkMzOFk4LTh6bGJ3TU5IMHpidTJkUjljM3N3Y0tVOWpsS0JKOFZDZXlqQnBjVGtuVUY1US04VFE?oc=5",
+      "published_at": "2025-11-24T08:00:00+00:00"
+    },
+    {
+      "id": "cbb79f20c0c6b9f9",
+      "category": "industry",
+      "title": "올해 벌써 車보험 적자 952억…치솟는 손해율에 애타는 손보사 - 마켓인",
+      "summary": "올해 벌써 車보험 적자 952억…치솟는 손해율에 애타는 손보사 &nbsp;&nbsp; 마켓인",
+      "source": "마켓인",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zWUw1VWVBeFBLR3lCcHlDbF9nSjlCQXBsbzNJdEVHQ3Y3LW5iUVI5QjZ1dDQ5TXZEWUgwQlFyLXpzSlN6dTRteDJCbExpbkotM2gxV2ZHMTNiMG9KOVVhWE1ERkdKRlJ3MEd1RzF3MjVWcE0?oc=5",
+      "published_at": "2025-11-17T08:00:00+00:00"
+    },
+    {
+      "id": "8b929d09df2ef70f",
+      "category": "claim",
+      "title": "보험업계 “소비자원 ‘보험금 분쟁 90%’ 통계, 착시일 수도” - 한국보험신문",
+      "summary": "보험업계 “소비자원 ‘보험금 분쟁 90%’ 통계, 착시일 수도” &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBEcW9QZ2Iwd1g2QVNGOEhWR3pQT0IyQkdaV3M3Y2ZhcDJIV1hKcmhWQU5WMjVUb3VZaVVDbl9tYlRscndCcWowS1hVbWowbUhPdnVTTkZkQUZmMGpNcDBSWjJUTmlaT3JpQUUw0gFvQVVfeXFMTmlhNDcwa19GWUZISE9QWkRmSzlKYm9JSTBPQ3RwNGVlOUZzaE5DemZndy1iNlVkZXZSai1qb1M5LWhWOXlpUXZkZHJ1b1hOamYwa0FOeEpLVThwSTdWY2FTeDZvbml4MkdLb21UQlpF?oc=5",
+      "published_at": "2025-11-12T08:00:00+00:00"
+    },
+    {
+      "id": "9c54f838188df7e3",
+      "category": "general",
+      "title": "한국 의료 새 패러다임 제시 주목…‘예방의학 개원’ - 데일리메디",
+      "summary": "한국 의료 새 패러다임 제시 주목…‘예방의학 개원’ &nbsp;&nbsp; 데일리메디",
+      "source": "데일리메디",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA4Qk0tRTcyeTd2T0NLd3NDX2h4WEMtUGxwX0xLNUEyM3BvdnBXOENpa1h2R0g0QVJVRHZ5MWdRM0F3dVpxREFmWmtnUUxwenQwcXdfZnFaZFRkZDBZRWI5bDcwWQ?oc=5",
+      "published_at": "2025-11-10T08:00:00+00:00"
+    },
+    {
+      "id": "e64aefab4dda18e1",
+      "category": "claim",
+      "title": "“백내장, 실손보험 최악 사례” 금감원장 한마디에 뒤집어진 보험업계 - IT조선",
+      "summary": "“백내장, 실손보험 최악 사례” 금감원장 한마디에 뒤집어진 보험업계 &nbsp;&nbsp; IT조선",
+      "source": "IT조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBocjhjc1RIM1AwdVkxeHZfb2hKODI0QXVvcGN3ektaMXdIU0dvaFgwT1owOFBPWU9zTnZvRV9MOWZIcVBuRWg0YlJHRGNqMjRuTWZrb2NYN2d4dmxySk5WUFBzZFpLQWg0UlVHS0x2OVDSAXRBVV95cUxPZGRESnJRNXYzcDY1N25jTXVNN2R0RUgzNk9MdEEwaXJ3ZFZjS0hCbmJzal9wX25ucUg4VE9qbk9JQy05RDc3eXdaSjdjQVN2dmUybEFxZ0JWaHB2akRoTHprcVlldWdqblgxblhhMk1MUGE4WA?oc=5",
+      "published_at": "2025-11-06T08:00:00+00:00"
+    },
+    {
+      "id": "1fc23d187806284b",
+      "category": "hospital",
+      "title": "서울아산병원, 난치성 면역질환 치료 ‘줄기세포 기술’ 이전 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원, 난치성 면역질환 치료 ‘줄기세포 기술’ 이전 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9jQk5jeWk5eFE4R0xvOVhKUnRhUEdZcUxIMkJZdUo4N0dDMWhLMGozejJ3OEE2OWwzRWdraTNCREc1RVRwME5zWkhvVUtGdGxKb0xRMmlXaWhSRDJrVEtwUHc5QXZRZ2M?oc=5",
+      "published_at": "2025-11-06T08:00:00+00:00"
+    },
+    {
+      "id": "bf18a3f9e30560f6",
+      "category": "hospital",
+      "title": "서울아산병원, 일본 QST 병원과 ‘중입자 치료’ 업무협약 | 행사 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원, 일본 QST 병원과 ‘중입자 치료’ 업무협약 | 행사 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51Z2VxZXgwcTA5cWJxMlNWbE8wY0VIMk9ZNVg0dEZmMmNvbkxLQkhHRkM1dTdENVlUY3lOQ1VvRWlqWm1OMHZUYzl3d2VGbEc3UFhiYTRWdFRiZ19UMGxJa3FYTjFwcmc?oc=5",
+      "published_at": "2025-10-29T01:12:02+00:00"
+    },
+    {
+      "id": "4670b7cd51e53eb5",
+      "category": "industry",
+      "title": "[주간 보험 이슈] 9월 자동차보험 손해율 94%…내년 자동차보험료 오르나 外 - 금융신문",
+      "summary": "[주간 보험 이슈] 9월 자동차보험 손해율 94%…내년 자동차보험료 오르나 外 &nbsp;&nbsp; 금융신문",
+      "source": "금융신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9VQy1yVTVXYlpudGE4MGdWU1VQLVNoUDJqNVgwbHRqQlJLdEJjQ1dnVFdZSGlRY3Z1VHlBLU9FeUQzNzlOSmJiTDNXblRtMFJyamRKcU9vUTRuOC0tREZUOVpFSXdvMXp0UTk1WXFiTXdUeTVNQWlwaE83RDU?oc=5",
+      "published_at": "2025-10-26T07:00:00+00:00"
+    },
+    {
+      "id": "7e468c6bc6763eab",
+      "category": "industry",
+      "title": "대형 4사 자동차보험 누적 손해율 85.4%… 내년 보험료 상승 불가피 [자동차보험 손해율] - 금융신문",
+      "summary": "대형 4사 자동차보험 누적 손해율 85.4%… 내년 보험료 상승 불가피 [자동차보험 손해율] &nbsp;&nbsp; 금융신문",
+      "source": "금융신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1lX2hmbE9pdWZMREwwZHFGXzBQYjdOeGVMWl9tRGJYNV9Nd3UtUHd1NnV3bzM2VV9vd2Y3a184RVpjVDJLZHpOUWpra2dpc0htX3JsOGFzaWFqc2ZROEhuWk94eVRMbW5rbElmaWtOcFpMek9iTHVBU0JocnM?oc=5",
+      "published_at": "2025-10-22T07:00:00+00:00"
+    },
+    {
+      "id": "e1270d418d6775a6",
+      "category": "industry",
+      "title": "보험업계, 3분기 실적 전망 '먹구름'···보장성보험 CSM 확보 변수 - 시사저널e",
+      "summary": "보험업계, 3분기 실적 전망 '먹구름'···보장성보험 CSM 확보 변수 &nbsp;&nbsp; 시사저널e",
+      "source": "시사저널e",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5WYXFldnpIN1ZoYU4zd0o0Rlhoa1BxTXZaV3VXWE9ZdTdzbkVjcEZTdGlZa2l4MXRxamEzWUp3Wk1CR2JadEVLUzdQVkRFeV9paVRqRmJOV2dMY3Jfc2Rqc3hzZFJ2V3BBNmo0ZDRQejlTUdIBdkFVX3lxTE41VmM2a1pCM1lzdXh0Nm5PMmQ0RENpaGwySTE2WGVWc1dqb0p4R2JaNVR4bHBIVzVtNHY3dVBoYTlnVWw3Sk04VGk0RnhXZ29ZaWRiQlhwSWhhdHBpaHlFTzc4dndRTFItTnlFRnJTZlFNZUkyR1E?oc=5",
+      "published_at": "2025-10-14T07:00:00+00:00"
+    },
+    {
+      "id": "c48a8d3925794dc5",
+      "category": "industry",
+      "title": "어린이보험, ‘돈 먹는 하마’ 전락…수익성 적신호 - 한국보험신문",
+      "summary": "어린이보험, ‘돈 먹는 하마’ 전락…수익성 적신호 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44ei00dUxOSVljVG04OV94cHNIOXhaTWJRSWphbXdvdHBRc0NPYjdjOW93bFRwYTZUeDhxQjBVYnJPenotaFFZLW15RVVLenVkM0lGVjN5ZmRySTNGR01JVGxYZ2pYaUZjWDhZ0gFvQVVfeXFMUGJyX3k2NWdDZTZqNlliQVI1S0ZsVFJsZmxTR0tvdE8xRnZIRm9sLVBxc0VqZnlkemY0VTlqZFdoTFZ0aWg1aHp2aElVTXp3MmVDNDFDSnZRTFR6TkhaWGk3eFdjd1FFZ2FkbVpDT0hR?oc=5",
+      "published_at": "2025-09-22T07:00:00+00:00"
+    },
+    {
+      "id": "5b2f568103271f06",
+      "category": "product",
+      "title": "치매간병부터 중증질환 대비까지… 우체국보험 신상품 2종 출시 - 한국보험신문",
+      "summary": "치매간병부터 중증질환 대비까지… 우체국보험 신상품 2종 출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE04Z2dFWkNyM1FXazFQRmpfTW9CR1NmSDdqR0NEQldOaW96amxFcTdib0Y4NXp2Rzl3M3ctWHRfR04xeUxwOWtrX0ZXUTdOTEVyRWl2RER1TkJKcWZEYmJGYzdUU1JEczNkb2l30gFvQVVfeXFMTjhHdnJPSk1Ma0VnUDZqZFo2UHVCandROUFPbXVGVmxKNU9yRHZtSXRDQTBETkJIWDh1ZHZQMVlXZExDQlZqTUM0VEZWMkNOb3VzUGRLUmV6eE5ZLUthT2Q4MEhGVUJPOU5DeWRPaGs0?oc=5",
+      "published_at": "2025-09-16T07:00:00+00:00"
+    },
+    {
+      "id": "29b3c6b6b775d071",
+      "category": "disease",
+      "title": "담배 피우면 당뇨병 잘 걸리는 이유...딱 끊으면 “이렇게 좋을 수가” - 코메디닷컴",
+      "summary": "담배 피우면 당뇨병 잘 걸리는 이유...딱 끊으면 “이렇게 좋을 수가” &nbsp;&nbsp; 코메디닷컴",
+      "source": "코메디닷컴",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE51MTdEcmVWQnJ5emhlaFcyZVQzdC1CaWFMZ282eGFSdDFSdkhYeTBQTVYwUDZsc1FtQVhLYzU3Ty10UQ?oc=5",
+      "published_at": "2025-09-16T07:00:00+00:00"
+    },
+    {
+      "id": "b5d9fe604b9feff6",
+      "category": "hospital",
+      "title": "서울아산병원 윤덕현 교수팀, 차세대 CAR-T 치료제 연구 국책과제 선정 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원 윤덕현 교수팀, 차세대 CAR-T 치료제 연구 국책과제 선정 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83YVVtYXJJRkJkeFRucHhvekpYMTltNXJnSUxvbkljX2VaeUNpUDBMV3Zud05CUXVqQm95VGRhd00wb0NSWVEtNGhpblJ5cXhCWGtEeThYdkZFNG9oY082T1dnTzFCRGM?oc=5",
+      "published_at": "2025-09-15T00:39:23+00:00"
+    },
+    {
+      "id": "a00cd6b9a35caad8",
+      "category": "claim",
+      "title": "금감원 앞 백내장 수술 보험금 요구 시위 왜? - 마켓인",
+      "summary": "금감원 앞 백내장 수술 보험금 요구 시위 왜? &nbsp;&nbsp; 마켓인",
+      "source": "마켓인",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JcDFOa0ZqQ2V1ekZPWUFfakR6VzBYT1hGWXhmTmdqdURFcE1ncGdxWUkyV2pZSHR1VlR1TlZTM0ZtLUI2YzNrYWhCMldwOXNSVl9aUGtNSlJva2RCZ1R6YjNySTdOREdNQmFRODZXbGNFU2M?oc=5",
+      "published_at": "2025-08-31T07:00:00+00:00"
+    },
+    {
+      "id": "19bdb4755a106cc5",
+      "category": "medical",
+      "title": "“이제 더 이상 무섭지 않아요”...내 유전자에 맞는 항암신약 나온다는데 - 매일경제",
+      "summary": "“이제 더 이상 무섭지 않아요”...내 유전자에 맞는 항암신약 나온다는데 &nbsp;&nbsp; 매일경제",
+      "source": "매일경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15SUhNNTBoOE8taW42enNEYjFGT0RGeTk1aXVta054ejZ3TGVXVDk4V2hCOFVTajhxellrTlRvT1pHUkFQYXFXSGJ3a191QQ?oc=5",
+      "published_at": "2025-07-14T07:00:00+00:00"
+    },
+    {
+      "id": "231f7523252836d3",
+      "category": "medical",
+      "title": "'꿈의 癌치료' 현실로 … 유전자 맞춰 항암신약 쓰는 시대 연다 - 매일경제",
+      "summary": "'꿈의 癌치료' 현실로 … 유전자 맞춰 항암신약 쓰는 시대 연다 &nbsp;&nbsp; 매일경제",
+      "source": "매일경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wNE9tZzNwa0hZTllUbFotTnpJWndvUVJFUVVxbzktclhYWTJBd0FnWGRtZmFIVThSZGlrWVdWS2RpdTE5ZDE1SU85M2ZKRzN2dVhBaQ?oc=5",
+      "published_at": "2025-07-14T07:00:00+00:00"
+    },
+    {
+      "id": "77bfac58a4c598d4",
+      "category": "product",
+      "title": "신한라이프, ‘신한(간편가입)종신보험 밸런스핏(Fit)’ 출시 - 보험신보",
+      "summary": "신한라이프, ‘신한(간편가입)종신보험 밸런스핏(Fit)’ 출시 &nbsp;&nbsp; 보험신보",
+      "source": "보험신보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KekN3elY5d3g0LWllRXZkWW1yY01OSzNfWnp3dE5FZ2Y3WjRWMXo4ZklBbUlZcm1SMEpXQlh2QXdtMkJVVWFwcWg5Ny10Q2xSdU9oaGZEUUxhTWFMOTB2RXlXX2htV0lxTGtZ?oc=5",
+      "published_at": "2025-07-01T07:00:00+00:00"
+    },
+    {
+      "id": "962652815618a496",
+      "category": "medical",
+      "title": "죽음의 병에서 삶의 동반자로… 암 치료, 돌봄으로 확장 - 매경헬스",
+      "summary": "죽음의 병에서 삶의 동반자로… 암 치료, 돌봄으로 확장 &nbsp;&nbsp; 매경헬스",
+      "source": "매경헬스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zbi1qNmFOYlM5MzFabmNoNXZGcGZOSVEtekpnTU5PeUttOUttbndGSnQ3aEFsNFlUaDRkSV9TYVB5SG5ZSlU1THAyejhmZWxDeTNIeGhzc0Z0YlE4cDlxNkJraXAta1hoTXhoOA?oc=5",
+      "published_at": "2025-06-18T07:00:00+00:00"
+    },
+    {
+      "id": "78e4ab407fd4b03f",
+      "category": "medical",
+      "title": "연세암병원, 하반기 중입자 치료기 추가 가동...전방위 암치료 고도화 - 의학신문",
+      "summary": "연세암병원, 하반기 중입자 치료기 추가 가동...전방위 암치료 고도화 &nbsp;&nbsp; 의학신문",
+      "source": "의학신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXSmtsOWZHcHNYUnVQVXd6dUhXaEU3WDNkbWdRaVRHN183NzU3Qm1pb05Cd2hyQ1pQQUxpaWtTbEF1U0pJS2dLcG5aR3FPWnRkRjdQUS1xX0wtcFMwb0lNM1lNWV9qMTdneEE?oc=5",
+      "published_at": "2025-06-18T07:00:00+00:00"
+    },
+    {
+      "id": "ca0468f0d01fc65c",
+      "category": "medical",
+      "title": "연세암병원, 전 생애주기 암 케어 본격화…하반기 중입자 풀가동 - 지디넷코리아",
+      "summary": "연세암병원, 전 생애주기 암 케어 본격화…하반기 중입자 풀가동 &nbsp;&nbsp; 지디넷코리아",
+      "source": "지디넷코리아",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VLXJ6cWc4cUgzX09IRl83eUlvTjF4c3REZDFQQVREV095a1oxanlreGdMX0xHc05oNGxfbWwxOFlNY200SG4wM1lmNlZqa0ctTERua0V3?oc=5",
+      "published_at": "2025-06-18T07:00:00+00:00"
+    },
+    {
+      "id": "0198f7fa467a3446",
+      "category": "disease",
+      "title": "“잇몸병이 당뇨·치매 위험 높인다”…구강 건강을 위한 4가지 습관 - 하이닥",
+      "summary": "“잇몸병이 당뇨·치매 위험 높인다”…구강 건강을 위한 4가지 습관 &nbsp;&nbsp; 하이닥",
+      "source": "하이닥",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mMERUbm5EXzZoREI3X1g1ZXJtdWE5eFM1VmU5WElmSlRrQ2ZWVk9EYjFjZ2FEaG5uLV9WWUxxSWdHcHZ2azN3TEw2akVFLUNpOF9iMUNNeV9uNTFQdDVfLTJVejFYeWxLTGc?oc=5",
+      "published_at": "2025-06-13T07:00:00+00:00"
+    },
+    {
+      "id": "206e28cb2038bdf5",
+      "category": "hospital",
+      "title": "서울아산병원 조형우 교수팀, 난치성 림프종 CAR-T 치료제 연구 국책과제 선정 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원 조형우 교수팀, 난치성 림프종 CAR-T 치료제 연구 국책과제 선정 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1DNDhWNTByNlRZU1FzdEJPTVU4dzU4eHdvbkVRZU5ianhBQ3FXQTVMVTR5TEhqMENfYURKYzlPTGJkQndvdUZjdDF3WnM0WENXVnNWMjdCRVYyak5rTlJraFBWQm80NzQ?oc=5",
+      "published_at": "2025-06-02T07:00:00+00:00"
+    },
+    {
+      "id": "2977c47e9a570dfe",
+      "category": "product",
+      "title": "한국교직원공제회, 보험사업 30주년 맞아 신규 공제상품 출시 - 교육플러스",
+      "summary": "한국교직원공제회, 보험사업 30주년 맞아 신규 공제상품 출시 &nbsp;&nbsp; 교육플러스",
+      "source": "교육플러스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mdVg1RHpFbWhPSHBEbGFXdjlBR08tMWRhRFNZcjk1QmdCbjlnTG9EdUg5NHNsOEQwNTdiRkxfcmx3UEtJM0VaNHlJMnM0MkhvZnFmVXhobFpGWkNUWmc2RTNEV3JYM00?oc=5",
+      "published_at": "2025-05-12T07:00:00+00:00"
+    },
+    {
+      "id": "76d1f1fe0c93aa75",
+      "category": "product",
+      "title": "실손보험 개편 확정…임신·출산 보장하고 도수·비급여주사 ‘제외’ - 한겨레",
+      "summary": "실손보험 개편 확정…임신·출산 보장하고 도수·비급여주사 ‘제외’ &nbsp;&nbsp; 한겨레",
+      "source": "한겨레",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hQkxINVo1U29VVTY5VmU3MXNQV0F3bkpGMGZVQ1E0eEV3N2R5cUN6Y3c3VUNieFFtdDNxVGg0cEJMckhSSnNMek5oLW1qQTdlN0VCTFlqbXMwRlFudzlQMnJmOEdsa3c?oc=5",
+      "published_at": "2025-04-01T07:00:00+00:00"
+    },
+    {
+      "id": "d24253c014ff690b",
+      "category": "product",
+      "title": "MG새마을금고보험, 신상품 암뇌심 실속보장공제 출시 - 매일일보",
+      "summary": "MG새마을금고보험, 신상품 암뇌심 실속보장공제 출시 &nbsp;&nbsp; 매일일보",
+      "source": "매일일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqZk53OHRCQVZfLVBsTDN4aDA4blJEcURZNHJFNy1zaU5GcDVJbVc0Zk1RTGNkQ01VWFBkVlZwUTZXbTJ4aE1NX1hsUXZ4RzY2S3NRMHhNa2RBeFZwTVRMblhMLTU?oc=5",
+      "published_at": "2025-03-07T08:00:00+00:00"
+    },
+    {
+      "id": "fbd77a4998db5554",
+      "category": "industry",
+      "title": "[기업보험 이야기②] 매출 만능주의가 만든 딜레마, 단체상해보험 - 한국공제보험신문",
+      "summary": "[기업보험 이야기②] 매출 만능주의가 만든 딜레마, 단체상해보험 &nbsp;&nbsp; 한국공제보험신문",
+      "source": "한국공제보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9obEtVVUw3T29jUXVScjJ1T25rNFdLVHV3ZTE0aW00TXA3MFF5ZmJ0TlRwVWo4dTRsN0dUZnVrYzV0TUVGQTY3d3I2WEI2di05QjdublFleWt6UXpHNUhWLVFyUkFDalE?oc=5",
+      "published_at": "2025-03-05T08:00:00+00:00"
+    },
+    {
+      "id": "18f35dea78afb8aa",
+      "category": "product",
+      "title": "삼성생명, ‘삼성 더블보장보험’ 출시 - 한국보험신문",
+      "summary": "삼성생명, ‘삼성 더블보장보험’ 출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jUHpmVlpkdURzckV5cW1BSTlHV0xHcFRjeFBmM1dYYkZoUG5oby1DZkx2OGZGY0hDMjJlclRtdVVFbmJQM1c1ajNfZ3BwNlJEeWpfVGNJUThkOE1EUkl5ZzJHRXY1MWZpd1Bj0gFvQVVfeXFMT0JNRkdrNk1xMFd2N1kxRjBnX3dhWFBMeHJLa2JnWDV2cVlQdElzYzJMRi1uZ2ZZY2dSckN1eEpVTS1UVm0tY1ZSU0NCQkNKUkU1MTdaZml3anRhVkZ2dFdPZE5zWHBGQmxjdEVhcXNJ?oc=5",
+      "published_at": "2025-01-23T08:00:00+00:00"
+    },
+    {
+      "id": "9076dad366ed1426",
+      "category": "claim",
+      "title": "실손보험 지급 거절 증가… 소비자와 보험사 갈등 심화 - 팜뉴스",
+      "summary": "실손보험 지급 거절 증가… 소비자와 보험사 갈등 심화 &nbsp;&nbsp; 팜뉴스",
+      "source": "팜뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10YnZTdkQtOW16R0l4eDJQb0Niak5zMmV2Y1BQZm8tNVAtSFBMTmtSa1VFSURqbGhoR1ZDaEtoRWxFWjdOVFRKLVR6cmVSOXZLS0lUc1ZpZFhQZ1V3dHhaNWJOaHpmeFJWYm1hbw?oc=5",
+      "published_at": "2024-12-20T08:00:00+00:00"
+    },
+    {
+      "id": "7c82af3240754760",
+      "category": "hospital",
+      "title": "서울아산병원, 림프계 질환 치료 및 연구 세계 최고 수준 인정 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원, 림프계 질환 치료 및 연구 세계 최고 수준 인정 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5RU2liSnVzZXpLZTJjYkxiOVdTOWZoQVJzR1p2VmJMTFFJeHJrMnFzZkM5LTlmM2ZtbzNpZXdrNklqTEZDZ2w1OV9jWERoY1FZVHMyQnp3Y3hueUd5U0g4M0tGTG9oZ0U?oc=5",
+      "published_at": "2024-11-19T08:00:00+00:00"
+    },
+    {
+      "id": "9a61ade4a175730f",
+      "category": "hospital",
+      "title": "서울아산병원, 심혈관 스텐트 치료 분야 '세계 1위' | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원, 심혈관 스텐트 치료 분야 '세계 1위' | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1SSU9WNERZYXN1NU43U1YwUU90TEpvbWtNNFhvT2U3VEhrVTVZUWU4Z1JRSDFMNTFGOTBsR1Q0WnZaUF9JbnRjb1pPZmhzTVQ5SWF6djhiaVZOYWRGOFpQTjY3QlBsZHM?oc=5",
+      "published_at": "2024-11-12T08:00:00+00:00"
+    },
+    {
+      "id": "cb0b6fbf32c1fe88",
+      "category": "disease",
+      "title": "“세포막 1호 건강홍보매니저의 꿈, 나라사랑 열전!” - 새한일보",
+      "summary": "“세포막 1호 건강홍보매니저의 꿈, 나라사랑 열전!” &nbsp;&nbsp; 새한일보",
+      "source": "새한일보",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjS3BiVWMxWk1wRklWQjhsTFJrZ1QzQXd2VEx3blpuMjV2N3dTZUgxMkkyMHJqZTgyMFMtVGZrWlp4NzJEeVJKX3M5aWhEaDBFc1hXMFRJVUtaRlVzUkRWVGFyXzJfQdIBakFVX3lxTE8zenBRRHViaHJGT0NkdElrckRnTUJ2aHVROWx3aUs4Wk5oUjhrcFVZOVRWTkowdTBvczVlWWVROVRmX1ZyWnFTcVhianZhV0syMHVycnVqYmFLT2RZbDZPUEZsb19tenY2bXc?oc=5",
+      "published_at": "2024-10-31T07:00:00+00:00"
+    },
+    {
+      "id": "4e9b0147024b9100",
+      "category": "disease",
+      "title": "\"혈관은 또다른 장기\"…고규영 IBS 단장, '혈관내피세포' 분석한 종설 논문 발표 - DongA Science",
+      "summary": "\"혈관은 또다른 장기\"…고규영 IBS 단장, '혈관내피세포' 분석한 종설 논문 발표 &nbsp;&nbsp; DongA Science",
+      "source": "DongA Science",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5FZWEtdEt5U3AyVGdpcHJtdEZfNWxHRXN6c045ZEdZVE90RF9sSTBFMmtxYTNkSHdYZU1jUDFidFZmZ05icHhtZFFMZ01VdmpvOVZRTQ?oc=5",
+      "published_at": "2024-09-12T07:00:00+00:00"
+    },
+    {
+      "id": "9c278e8a0c053569",
+      "category": "product",
+      "title": "삼성생명 ‘돌봄 로봇’으로 치매 보장 공백 해소 - 한국보험신문",
+      "summary": "삼성생명 ‘돌봄 로봇’으로 치매 보장 공백 해소 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UbHRYVHRJRmpCWnhackJTV0haMnhqX1RZZEE3NXljZ1RvNkRmUjh4N0lFanRBZllTOXFHZEY2VGNsLTRVQ3g1VWR5MU83RTM4XzhjazZ5RkhUVS1KdGJnTkRGOUdmMlJOQTFR0gFvQVVfeXFMUG1QWjZpRkNpdlJ5cl9IanNLTTQxY2FmdHlqWGpKQkZ4QTJlUUZUbjkxQngxZFlMVHZFZlU2YWt4MHJMYzBfaEEzb3F3anJLVEIzM0dWU2FuT2xwV0ZLSkZnRDhLaEdlT3hTQXpPMmdZ?oc=5",
+      "published_at": "2024-07-22T07:00:00+00:00"
+    },
+    {
+      "id": "e5a2ddb98f131731",
+      "category": "healthcare",
+      "title": "실손보험 일반적인데, 혼합진료금지 효과 있을까 - 한스경제",
+      "summary": "실손보험 일반적인데, 혼합진료금지 효과 있을까 &nbsp;&nbsp; 한스경제",
+      "source": "한스경제",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SanVoQnFOcDFGZTBNT0ZIeDY3a0hXWE1Ca2tOTVgxbndRQVJnS2hBWUh2czlBQjZMRXpSQzR4bXJ2d3lDRkNYcjlfZHV4aFVURWc1ZndFbWQ1SFlGWG9UNlhFeURsT09manVv0gFvQVVfeXFMT1RCWG9VZC03M1BlXzJtWV9fZFRSNWNOUzFtTlZSM1hHY0lfQUJzSnJ6WDdiUzhQaXBLdG5aSzBTbTREZGFhNkNnRUVtXzRabnJDanZJS1ktaklrSzA2UkZvRDNkVFFqUHlEWF82WW5N?oc=5",
+      "published_at": "2024-06-28T07:00:00+00:00"
+    },
+    {
+      "id": "0be2bb88d8c63743",
+      "category": "healthcare",
+      "title": "다음 달부터 4세대 실손 비급여 과다 이용자 보험료 2배 ‘껑충’ - 한겨레",
+      "summary": "다음 달부터 4세대 실손 비급여 과다 이용자 보험료 2배 ‘껑충’ &nbsp;&nbsp; 한겨레",
+      "source": "한겨레",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93SlB4U0ExMW1JRW9FVlNhZnJSUFBNZ0pFLTBVankyZmVCM1J3b3E3dzU4RmpuQjZnZmU2Z2VUcEcxM1c3RWtGTGNVVmozVVpxYjRMNFViMDQtVGU4SmliU3lWUlRLN1doT09veU51ZlNiQQ?oc=5",
+      "published_at": "2024-06-06T07:00:00+00:00"
+    },
+    {
+      "id": "d3a818b3e9a1fcbd",
+      "category": "product",
+      "title": "삼성생명, ‘삼성 다(多)Dream 건강보험’ 출시 - 한국보험신문",
+      "summary": "삼성생명, ‘삼성 다(多)Dream 건강보험’ 출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UWXhuanR3TFJzYU1BSTNLcFpLMEY0ODhIQWN0WXNoWTdnMDhzdE1TbGh1amxFMEZOOGdTbTlnb2REb1A3RUNyQjFTNTFySEE4WmstLVoyZ2JHVXRXQ2VudG5scnhEeURVdm5F0gFvQVVfeXFMT0lUODlra2dOWDFyR3NEQ04zMUgzd29wMExlYWh0VmZTYUE0RlBQcm5XeHNXYzdRNFRQVF83dDlDUmp5cUNaVVdVbzZCbjM1Sm5Hd2Q5OGRrRzdkQjNtQ3JTR2d0V1JYY0M5eENvRFI0?oc=5",
+      "published_at": "2023-10-17T07:00:00+00:00"
+    },
+    {
+      "id": "bd8f39ab033fdd5c",
+      "category": "hospital",
+      "title": "서울아산병원, 연구중심병원 육성사업 성과교류회 개최 | 의료 | 뉴스 - 서울아산병원 뉴스룸",
+      "summary": "서울아산병원, 연구중심병원 육성사업 성과교류회 개최 | 의료 | 뉴스 &nbsp;&nbsp; 서울아산병원 뉴스룸",
+      "source": "서울아산병원 뉴스룸",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95SmZpMXRkaEhIOEVVeWxzWTlibTd3cF9QT0RuT3FZbmp5WWZLYjVCMGJ0V18yd2FxSm1xQ2h6ci14TldkcV9nVi1mTXRlTS1pTzgzLUZZRVZPbVZBRk5DLUdSdUhuUQ?oc=5",
+      "published_at": "2023-07-10T07:00:00+00:00"
+    },
+    {
+      "id": "32e0e9fd2c3ef601",
+      "category": "healthcare",
+      "title": "건강보험개혁! ‘거대한 담론’ 아닌 ‘세부적 접근’ - 뉴스프리존",
+      "summary": "건강보험개혁! ‘거대한 담론’ 아닌 ‘세부적 접근’ &nbsp;&nbsp; 뉴스프리존",
+      "source": "뉴스프리존",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84ODZoaXZYUHBqMjdVa2llVzRaMzJFTVYxZDM1TU03ZEpHWU4yX3BYYVdKRWM4cjA4RVltdG5CU2hoZTJXQnFLS1o5YkFKanZUV0ZoQXBlSDdQdFNOTUJBa0Ruc3d6N3RoTGNZaDRfX3RIU3fSAXdBVV95cUxQVEFELTFDMDk3QVlSNURsMnVhZTU2WVlic3RrQ1JUbzVZdUpWYm5zbW8xbnJ1bGp2MmRhYVZ0Z0xpd1FlSDNlWXAzbFprZ25tbkhMbm5ERFZyWG9weXZmd3U4c1h5R3hRWk9tMUJoczI4THdGN2JHVQ?oc=5",
+      "published_at": "2023-01-18T08:00:00+00:00"
+    },
+    {
+      "id": "1ad964260bda2d73",
+      "category": "product",
+      "title": "한화손보, ‘무배당 LIFEPLUS ON혈관튼튼 순환계건강보험’ 출시 - 한국보험신문",
+      "summary": "한화손보, ‘무배당 LIFEPLUS ON혈관튼튼 순환계건강보험’ 출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CVVQxUzAzb2hBeXdsQmdyeGZtazdualBrdDUyRFJQY2JvQjJIN1duamI1ZXBvb1VjeTZXYk9WT1Uxci1MXzdpLTltMFlhRUpXcGZqajNpSk9Oc0ptV2ZGazhNZ29OQ2JiTDNj0gFvQVVfeXFMTjFFY05JaWRRWW9NYTBvLVExVGw1emdCVXhZcVlhc3k2NnlqR0VjV1RGOEVBMTYtQUVXRndlTVg1ZG9rQmg0bkg3eXY5UmIzN2p0TF92RHlHd0w2ay1lLS1MU253UG1SdTY4X2ZEM1ZN?oc=5",
+      "published_at": "2021-10-05T07:00:00+00:00"
+    },
+    {
+      "id": "a7cf5a56d953eda7",
+      "category": "healthcare",
+      "title": "의학적 판단에 따른 비급여 진료인데 부당이득 주장…실손보험사 횡포에 제동 걸어야 - MEDI:GATE NEWS",
+      "summary": "의학적 판단에 따른 비급여 진료인데 부당이득 주장…실손보험사 횡포에 제동 걸어야 &nbsp;&nbsp; MEDI:GATE NEWS",
+      "source": "MEDI:GATE NEWS",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBpdXdPaFpoN1M3SEd1dnctVTU5RjlUYUZHS2JPbmVWU3laeW9ZeVBZTDI0d09aM0hWNC1qMF85WW1LS1NPY1lKVFpjY0hYa1ZHOEE?oc=5",
+      "published_at": "2021-07-20T07:00:00+00:00"
+    },
+    {
+      "id": "227a9c66d32904b5",
+      "category": "claim",
+      "title": "알다가도 모를 ‘실손의료보험’… 보험사 분쟁 심화 - 전북일보 인터넷신문",
+      "summary": "알다가도 모를 ‘실손의료보험’… 보험사 분쟁 심화 &nbsp;&nbsp; 전북일보 인터넷신문",
+      "source": "전북일보 인터넷신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1lTVpFeHloUGdzWVIybEN1Snl2aVRyX0tVYU5tNEFLV0ptTnpIc0J3Ri1aUVJNOFNIT3RqQmdsUTNaaWExaWQ4b0dMX2J3LUt4RU1qS9IBWEFVX3lxTE9LSks0Y1ExUk92WlhPS3dyZGpMMXh6Q3dlQ1pOYVN5NUtNZWs1UDBOcHYyXy1mWUFhazFSczlWRzV1eWw3QkpHRlRNWURVT2EtNUNmVUpWLWc?oc=5",
+      "published_at": "2021-06-10T07:00:00+00:00"
+    },
+    {
+      "id": "cd25c5018df77922",
+      "category": "healthcare",
+      "title": "증가하는 의료비 부담 ‘비급여 통제’가 답 될까? - 청년의사",
+      "summary": "증가하는 의료비 부담 ‘비급여 통제’가 답 될까? &nbsp;&nbsp; 청년의사",
+      "source": "청년의사",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5taklEWmRaSm1udlNWUjhNRE5WUnlEblp3TUhsbWdoSzU5TUZDTDhLODF5dTNQRXNMQVE2S2tnb1BhdU55LUpoYi1XUXR5UGUzR1F2QTNvMnpROVd4RXhHeVdPX2NuWDJWMjJtQTFMWdIBc0FVX3lxTFBwU0NtdTFxUGdONjFoTlR2SDY5NEV6V0JRdEc3VDRDcnd1Q2hEM2ZsYUpGLVluZjYwaW5lZzRUaUtOdmdkRUd2Y2R6Q2kxUEl6RkVyUVFEQk9WTXpHMnFNTDZOLU9ZdUxwRGZSb2JYc1NoTjQ?oc=5",
+      "published_at": "2021-05-11T07:00:00+00:00"
+    },
+    {
+      "id": "c1d076b7d4aa5d0a",
+      "category": "healthcare",
+      "title": "\"비급여 관리 미흡·낮은 보장률로 의료비 가속화…공급자 통제 정책 마련해야\" - MEDI:GATE NEWS",
+      "summary": "\"비급여 관리 미흡·낮은 보장률로 의료비 가속화…공급자 통제 정책 마련해야\" &nbsp;&nbsp; MEDI:GATE NEWS",
+      "source": "MEDI:GATE NEWS",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PbnpWelZlajVnb2JxU255dUtvZEhoY1lQZDNheF9vTDFLX0RYQVJuXzh5Vi13cE5MZ0xwU1dMUmpTeExwR3p4THU4NjVEbjdo?oc=5",
+      "published_at": "2021-05-10T07:00:00+00:00"
+    },
+    {
+      "id": "475d1255983e4b98",
+      "category": "medical",
+      "title": "[김길원의 헬스노트] 암 환자가 꼽은 '암치료 궁금증 10가지'-① - 연합뉴스",
+      "summary": "[김길원의 헬스노트] 암 환자가 꼽은 '암치료 궁금증 10가지'-① &nbsp;&nbsp; 연합뉴스",
+      "source": "연합뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tMnk4Z2xSZW15WkFlQkdDaWtEWDZIWW03c0VQbjZHcVdNRWVsYXJXSlBBYzY3a3NDLWNTMWFyRVNad3Yydk54eTNWQ0gtcHhVWEdqT3F1Z2o3Z2vSAWBBVV95cUxOY3lIOUZ1NFVLZEd0YW1HY3dMTWRrYU5YLXpvck9MWWpIV2NoR3lLRWt0ZFFXdFRMRFBVcFR1aDR4N3N5dnRjRUUwNE1OTnhYT0lUSUU2WkJEbXExT2ZzeWk?oc=5",
+      "published_at": "2021-04-09T07:00:00+00:00"
+    },
+    {
+      "id": "dfcd4852b6fd8f2e",
+      "category": "claim",
+      "title": "치과 악교정수술 실손보험금 지급 거절…금감원 “부당하지 않아” - 한겨레",
+      "summary": "치과 악교정수술 실손보험금 지급 거절…금감원 “부당하지 않아” &nbsp;&nbsp; 한겨레",
+      "source": "한겨레",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE55MkdjNHpuT1ZDSi1TY21xcVZxbm9QWDhSWnlIVThDb0xITDBCU3hLcEU0V0U5XzlIcERXdm1Oak94Vm9MRzhrN1M1a1V6Q3VxMmVTX0xYWFJLOFZWWlo3ZXdfd2IzQQ?oc=5",
+      "published_at": "2020-12-08T08:00:00+00:00"
+    },
+    {
+      "id": "b67d5658bf96e3b5",
+      "category": "disease",
+      "title": "어떻게 질병 없이 오래 살 것인가? - 메디칼업저버",
+      "summary": "어떻게 질병 없이 오래 살 것인가? &nbsp;&nbsp; 메디칼업저버",
+      "source": "메디칼업저버",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xX05UWFM1QUJQdlhMSzdMbFRLcFF3eVhoNFJhcUxBemJJR3UzZkh2eVpjZG90a3BxcGs4TnpTc1hDWnpnMTZfUUlTc2tPbXJmWElNM3pRRDg2T2NGX005Rlg4THNKMGpPc2U4?oc=5",
+      "published_at": "2020-04-27T07:00:00+00:00"
+    },
+    {
+      "id": "9589127dbc719dd4",
+      "category": "healthcare",
+      "title": "의사들은 왜 ‘문재인 케어’를 반대하나 - 주간조선",
+      "summary": "의사들은 왜 ‘문재인 케어’를 반대하나 &nbsp;&nbsp; 주간조선",
+      "source": "주간조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sb1BJYW1NREVZUHFlc2dyOEJ4ZXJtNWhNbnU0a1lrRFZ4SWc2QW1VakZmNFZCampQVXN5T2hLd2YtYU5kd0FvajRSYXZKcUpDdE9QMU9fQTVFVllDUlYzU2kzRlA5UTRjMWfSAW5BVV95cUxQXzFXQVU5eTlQUFdfSVByTHk2R19rUnFLWHl1aDNXQm1PY2wzTThfLUVPeGo5RXpzVWZXMmZ6ZGVzRkNid0JRQmk2ZEdaVGJCb3FQMUlXeUxyT0FFbU4wcDRPUTFqOFdQMjN3MFVyZw?oc=5",
+      "published_at": "2017-09-08T07:00:00+00:00"
+    },
+    {
+      "id": "ed33eb49042370be",
+      "category": "product",
+      "title": "메리츠화재, ‘(무)메리츠이목구비보장보험1601’출시 - 한국보험신문",
+      "summary": "메리츠화재, ‘(무)메리츠이목구비보장보험1601’출시 &nbsp;&nbsp; 한국보험신문",
+      "source": "한국보험신문",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5pX2dYYmEzeDlhQnJTYjhLRDY0QUhjMU93T3hiWWlpb1AyaXNZOVBBTnNYLWV6ZWdWUXNnSGtaby0wcm9CbVpneUkzWklfREhNNjVmZmx4WG5sWlVWUmlIMkhuem9SZmtpTHJj0gFvQVVfeXFMTmRfeGxEQlhnN0kzZGYwOHd4UjJTMFM4cFdTVTFfbGJ5TXNTWlNqczk5QmpzeTNsWUwydmp2SG0yb2hBUk8wVHM2NVdsUEdUYUFmTGZlaHk3MkdTenZ0NDlHcDc5cEVlRW93OVQ2VjBz?oc=5",
+      "published_at": "2016-01-07T08:00:00+00:00"
+    },
+    {
+      "id": "17360bea8786c941",
+      "category": "disease",
+      "title": "전 세계 사망원인 1위는…심혈관질환 - 연합뉴스",
+      "summary": "전 세계 사망원인 1위는…심혈관질환 &nbsp;&nbsp; 연합뉴스",
+      "source": "연합뉴스",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBnYWFyWHJwSXlGTzFTTzZPOHpWVFNfUTdvRER0UkNvWS1DblBPeE9MLTQ5ekVUYkR6QzZfUmMzUDJsVk90ODdGTktMQXczQmhSMmFuSl9ua3czWDg?oc=5",
+      "published_at": "2013-09-10T07:00:00+00:00"
+    },
+    {
+      "id": "3d17b3af25c5f881",
+      "category": "medical",
+      "title": "[암을 이긴다] 방사선암치료 신기술, 우리가 만든다 - 헬스조선",
+      "summary": "[암을 이긴다] 방사선암치료 신기술, 우리가 만든다 &nbsp;&nbsp; 헬스조선",
+      "source": "헬스조선",
+      "domain": "news.google.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1TSXNNUnQxRWFQekxkWDRKZFRLd2J6ZnMxUGI4WnJQb3IyMWtSV3lRTUpKYUVma05MOHl1UTFRYVhUYU4xUGVfeF9sNXFRTEF4amgwQ0tmSTdnY3NjTGVPOXRiUk1ubE9TT3hTYVdHS0xiekxwOHFzWExWVlNhWVE?oc=5",
+      "published_at": "2011-08-16T07:00:00+00:00"
+    }
+  ],
+  "notice": ""
 }
