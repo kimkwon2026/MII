@@ -172,7 +172,7 @@ function formatArticleText(value) {
 }
 
 // =====================================
-// 앱 내부 기사 상세 화면
+// 기사 상세 화면
 // =====================================
 
 function ensureArticleViewer() {
@@ -312,15 +312,15 @@ function ensureArticleViewer() {
       cursor: pointer;
     }
 
-    /* 전체 브리핑과 개별 카테고리 간격 */
+    /* 전체 브리핑과 하위 카테고리 간격 */
 
     [data-category="all"] {
-      margin-bottom: 16px;
+      margin-bottom: 4px !important;
     }
 
     #categoryNav {
-      margin-top: 8px;
-      padding-bottom: 12px;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
 
     @media(max-width:600px) {
@@ -1074,15 +1074,11 @@ async function load() {
           : "수집 대기";
     }
 
+    // 일부 RSS 수집 실패 안내는 화면에 표시하지 않음
+
     if ($("#notice")) {
-
-      if (data.notice) {
-        $("#notice").textContent = data.notice;
-        $("#notice").hidden = false;
-
-      } else {
-        $("#notice").hidden = true;
-      }
+      $("#notice").textContent = "";
+      $("#notice").hidden = true;
     }
 
   } catch (error) {
