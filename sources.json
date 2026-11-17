@@ -1,0 +1,52 @@
+[
+  {
+    "category": "policy",
+    "name": "금융위원회·보험 정책",
+    "query": "(보험 OR 보험업) (금융위원회 OR 금융감독원 OR 보험업법 OR 감독규정)"
+  },
+  {
+    "category": "industry",
+    "name": "보험업계 뉴스",
+    "query": "보험업계 보험시장 손해율 보험료 국내"
+  },
+  {
+    "category": "insurer",
+    "name": "보험사 뉴스",
+    "query": "(삼성생명 OR 한화생명 OR 교보생명 OR 삼성화재 OR 현대해상 OR DB손해보험 OR KB손해보험)"
+  },
+  {
+    "category": "product",
+    "name": "보험상품·보장",
+    "query": "보험 신상품 특약 보장 약관 출시"
+  },
+  {
+    "category": "claim",
+    "name": "보험금·분쟁",
+    "query": "보험금 지급 분쟁조정 보험 민원 실손보험"
+  },
+  {
+    "category": "healthcare",
+    "name": "건강보험·의료제도",
+    "query": "국민건강보험 실손보험 비급여 의료수가 건강보험 제도"
+  },
+  {
+    "category": "disease",
+    "name": "질병·건강정보",
+    "query": "암 심혈관 뇌혈관 당뇨 치매 질병 건강 연구"
+  },
+  {
+    "category": "medical",
+    "name": "의료기술·치료",
+    "query": "신약 임상시험 항암치료 로봇수술 의료기술"
+  },
+  {
+    "category": "hospital",
+    "name": "주요 대학병원",
+    "query": "(서울아산병원 OR 삼성서울병원 OR 서울대병원 OR 세브란스병원 OR 서울성모병원) 연구 치료"
+  },
+  {
+    "category": "general",
+    "name": "의료·건강 종합",
+    "query": "국내 의료 건강 정책 병원 의학 뉴스"
+  }
+]
