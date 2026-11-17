@@ -315,7 +315,7 @@ function ensureArticleViewer() {
     /* 전체 브리핑과 하위 카테고리 간격 */
 
     [data-category="all"] {
-      margin-bottom: 4px !important;
+      margin-bottom: 5px !important;
     }
 
     #categoryNav {
