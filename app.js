@@ -26,4 +26,29 @@ async function load(){try{let r=await fetch(`data/news.json?v=${Date.now()}`,{ca
  $("#todayLabel").textContent=new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"long",day:"numeric",weekday:"long"}).format(new Date());$("#year").textContent=new Date().getFullYear();renderNav();render();}
 document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{activeFilter=b.dataset.filter;render()});$("#searchInput").oninput=render;$("#sortSelect").onchange=render;$("#refreshBtn").onclick=load;
 document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{let v=b.dataset.jump;if(v==="saved"){activeFilter="saved";activeCategory="all"}else if(v==="insurance"){activeCategory="industry";activeFilter="all"}else if(v==="health"){activeCategory="disease";activeFilter="all"}else if(v==="hospital"){activeCategory="hospital";activeFilter="all"}render();});
-document.querySelectorAll(".bottom-link").forEach(b=>b.onclick=()=>{document.querySelectorAll(".bottom-link").forEach(x=>x.classList.remove("active"));b.classList.add("active")});load();
+
+document.querySelectorAll(".bottom-link").forEach(b=>b.onclick=()=>{
+  const v=b.dataset.jump;
+
+  document.querySelectorAll(".bottom-link").forEach(x=>x.classList.remove("active"));
+  b.classList.add("active");
+
+  activeFilter="all";
+  activeCategory="all";
+
+  if(v==="saved"){
+    activeFilter="saved";
+  }else if(v==="insurance"){
+    activeCategory="industry";
+  }else if(v==="health"){
+    activeCategory="disease";
+  }else if(v==="hospital"){
+    activeCategory="hospital";
+  }
+
+  render();
+
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+load();
