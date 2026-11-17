@@ -1,3 +1,4 @@
+
 const CATEGORIES = [
   ["policy", "정책·제도"],
   ["industry", "보험업계 뉴스"],
@@ -44,7 +45,9 @@ const esc = s => String(s ?? "").replace(
 
 const dateLabel = v => {
   if (!v) return "날짜 미상";
+
   const d = new Date(v);
+
   return isNaN(d)
     ? "날짜 미상"
     : new Intl.DateTimeFormat("ko-KR", {
@@ -116,6 +119,7 @@ function ensureArticleViewer() {
       background: #fff;
       color: #172b3a;
       font-size: 23px;
+      cursor: pointer;
     }
 
     .article-viewer-meta {
@@ -175,6 +179,7 @@ function ensureArticleViewer() {
       text-decoration: none;
       font-size: 13px;
       font-weight: 600;
+      cursor: pointer;
     }
 
     .article-viewer-action.secondary {
@@ -187,8 +192,14 @@ function ensureArticleViewer() {
     }
 
     @media(max-width:600px) {
+      .article-viewer {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
       .article-viewer-panel {
         padding: 19px 16px;
+        border-radius: 8px;
       }
 
       .article-viewer-title {
@@ -197,6 +208,10 @@ function ensureArticleViewer() {
 
       .article-viewer-body {
         font-size: 14px;
+      }
+
+      .article-viewer-action {
+        flex: 1 1 auto;
       }
     }
   `;
@@ -243,6 +258,8 @@ function ensureArticleViewer() {
   });
 }
 
+// 안전한 원문 URL 확인
+
 function safeArticleUrl(value) {
   try {
     const u = new URL(String(value || ""));
@@ -256,6 +273,10 @@ function safeArticleUrl(value) {
   }
 }
 
+// =====================================
+// 기사 상세 화면 열기
+// =====================================
+
 function openArticle(id) {
   const a = articles.find(
     item => String(item.id) === String(id)
@@ -265,17 +286,28 @@ function openArticle(id) {
 
   ensureArticleViewer();
 
+  // 본문 수집 데이터가 있는지 확인
+  // fetch_news.py 수정 후 저장될 필드까지 대응
+
   const fullText =
     a.content ||
     a.full_text ||
     a.body ||
-    a.description ||
+    a.article_text ||
     "";
 
+  const hasFullText = Boolean(
+    String(fullText).trim()
+  );
+
+  // 본문이 없으면 RSS 요약 표시
+
   const displayText =
-    fullText ||
-    a.summary ||
-    "현재 저장된 기사 요약이 없습니다. 언론사 원문을 확인해 주세요.";
+    hasFullText
+      ? fullText
+      : a.summary ||
+        a.description ||
+        "수집된 기사 내용이 없습니다. 아래 버튼을 눌러 언론사 원문을 확인해 주세요.";
 
   const url = safeArticleUrl(a.url);
 
@@ -291,7 +323,7 @@ function openArticle(id) {
     </h1>
 
     <h2 class="article-viewer-heading">
-      ${fullText ? "기사 내용" : "수집된 기사 요약"}
+      ${hasFullText ? "수집된 기사 내용" : "기사 요약"}
     </h2>
 
     <div class="article-viewer-body">
@@ -299,9 +331,13 @@ function openArticle(id) {
     </div>
 
     <div class="article-viewer-note">
-      이 화면은 보험 인사이트에 수집된 기사 정보입니다.
-      원문 전체가 수집되지 않은 기사는 요약만 표시될 수 있습니다.
-      보험·의료 관련 판단은 반드시 원문과 공식 자료를 확인하세요.
+      ${
+        hasFullText
+          ? "수집된 기사 내용을 앱 내부에서 보여드립니다. 원문과 세부 내용은 언론사 사이트에서도 확인할 수 있습니다."
+          : "이 기사는 원문 내용이 수집되지 않아 요약만 표시합니다. 아래 버튼을 눌러 언론사 원문을 확인해 주세요."
+      }
+
+      보험·의료 관련 판단은 반드시 원문과 공식 자료를 함께 확인하세요.
     </div>
 
     <div class="article-viewer-actions">
@@ -309,12 +345,14 @@ function openArticle(id) {
       ${
         url
           ? `<a
-              class="article-viewer-action"
-              href="${esc(url)}"
-              target="_blank"
-              rel="noopener noreferrer">
-              언론사 원문 보기 ↗
-            </a>`
+               class="article-viewer-action"
+               href="${esc(url)}"
+               target="_blank"
+               rel="noopener noreferrer">
+               ${hasFullText
+                 ? "언론사 원문도 새 창에서 보기 ↗"
+                 : "원문을 새 창에서 보기 ↗"}
+             </a>`
           : ""
       }
 
@@ -339,6 +377,10 @@ function openArticle(id) {
   document.querySelector("#articleViewerBack").onclick =
     closeArticle;
 }
+
+// =====================================
+// 기사 상세 화면 닫기
+// =====================================
 
 function closeArticle() {
   const viewer = document.querySelector("#articleViewer");
@@ -371,7 +413,9 @@ function getSectionName() {
   return names[activeSection] || "오늘의 뉴스";
 }
 
+// =====================================
 // 카테고리 메뉴
+// =====================================
 
 function renderNav() {
   const nav = $("#categoryNav");
@@ -398,7 +442,9 @@ function renderNav() {
   });
 }
 
+// =====================================
 // 뉴스 중요도 점수
+// =====================================
 
 function score(a) {
   const age =
@@ -416,7 +462,9 @@ function score(a) {
   return recency + important;
 }
 
+// =====================================
 // 하단 메뉴 콘텐츠 전환
+// =====================================
 
 function changeSection(section) {
   activeSection = section;
@@ -433,7 +481,9 @@ function changeSection(section) {
   });
 }
 
+// =====================================
 // 하단 메뉴 연결
+// =====================================
 
 function setupBottomNav() {
   document.querySelectorAll(".bottom-link").forEach(b => {
@@ -621,7 +671,9 @@ function render() {
       .slice(0, 10);
   }
 
+  // =====================================
   // 기사 목록
+  // =====================================
 
   const articleList = $("#articleList");
 
