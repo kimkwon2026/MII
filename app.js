@@ -98,11 +98,10 @@ function mergeDuplicateArticles(items) {
     const existing = unique.get(key);
 
     if (!existing) {
-      unique.set(key, article);
+      unique.set(key, { ...article });
       return;
     }
 
-    // 본문이 더 충실한 기사 우선
     const existingContent = String(
       existing.content || existing.full_text || ""
     );
@@ -112,12 +111,16 @@ function mergeDuplicateArticles(items) {
     );
 
     if (newContent.length > existingContent.length) {
-      existing.content = article.content || article.full_text;
-      existing.content_status = article.content_status;
-      existing.content_fetched_at = article.content_fetched_at;
+      existing.content =
+        article.content || article.full_text;
+
+      existing.content_status =
+        article.content_status;
+
+      existing.content_fetched_at =
+        article.content_fetched_at;
     }
 
-    // 요약이 더 긴 기사 우선
     if (
       String(article.summary || "").length >
       String(existing.summary || "").length
@@ -125,7 +128,6 @@ function mergeDuplicateArticles(items) {
       existing.summary = article.summary;
     }
 
-    // 날짜가 더 최근인 기사 우선
     const oldDate = new Date(
       existing.published_at || 0
     ).getTime();
@@ -138,9 +140,12 @@ function mergeDuplicateArticles(items) {
       existing.published_at = article.published_at;
     }
 
-    // URL이 없는 경우 다른 기사 URL 활용
     if (!existing.url && article.url) {
       existing.url = article.url;
+    }
+
+    if (!existing.publisher_url && article.publisher_url) {
+      existing.publisher_url = article.publisher_url;
     }
 
     if (!existing.domain && article.domain) {
@@ -305,6 +310,17 @@ function ensureArticleViewer() {
 
     .article-open-trigger {
       cursor: pointer;
+    }
+
+    /* 전체 브리핑과 개별 카테고리 간격 */
+
+    [data-category="all"] {
+      margin-bottom: 16px;
+    }
+
+    #categoryNav {
+      margin-top: 8px;
+      padding-bottom: 12px;
     }
 
     @media(max-width:600px) {
@@ -527,6 +543,7 @@ document.addEventListener("keydown", e => {
 function getSectionName() {
   const names = {
     home: "오늘의 핵심 뉴스 TOP 10",
+    briefing: "전체 브리핑",
     insurance: "보험 인사이트",
     health: "건강 인사이트",
     hospital: "대학병원 뉴스",
@@ -561,6 +578,52 @@ function renderNav() {
       activeFilter = "all";
 
       render();
+    };
+  });
+}
+
+// =====================================
+// 전체 브리핑 버튼 연결
+// =====================================
+
+function setupAllBriefingButton() {
+  const candidates = [
+    ...document.querySelectorAll(
+      '[data-category="all"], #allBriefing, .all-briefing'
+    )
+  ];
+
+  const textCandidates = [
+    ...document.querySelectorAll("button, a")
+  ].filter(el =>
+    el.textContent.trim().includes("전체 브리핑")
+  );
+
+  const buttons = [...new Set([
+    ...candidates,
+    ...textCandidates
+  ])];
+
+  buttons.forEach(button => {
+    button.onclick = event => {
+      event.preventDefault();
+
+      activeSection = "briefing";
+      activeCategory = "all";
+      activeFilter = "all";
+
+      const searchInput = $("#searchInput");
+      if (searchInput) searchInput.value = "";
+
+      const sortSelect = $("#sortSelect");
+      if (sortSelect) sortSelect.value = "new";
+
+      render();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     };
   });
 }
@@ -750,23 +813,17 @@ function render() {
   // 제목과 설명
 
   if ($("#feedTitle")) {
-
-    if (activeSection === "saved") {
-      $("#feedTitle").textContent = "내 스크랩";
-
-    } else if (activeSection !== "category") {
-      $("#feedTitle").textContent = getSectionName();
-
-    } else {
-      $("#feedTitle").textContent =
-        catName(activeCategory);
-    }
+    $("#feedTitle").textContent =
+      activeSection === "category"
+        ? catName(activeCategory)
+        : getSectionName();
   }
 
   if ($("#feedSubtitle")) {
 
     const subtitles = {
       home: "최신성과 주요 키워드를 기준으로 선정한 오늘의 브리핑입니다.",
+      briefing: "보험과 건강·의료 분야의 전체 수집 뉴스를 최신순으로 보여드립니다.",
       insurance: "보험정책, 보험사, 상품 및 보험금 관련 소식입니다.",
       health: "질병, 건강정보, 의료기술 관련 최신 소식입니다.",
       hospital: "대학병원과 의료기관의 주요 소식입니다.",
@@ -787,6 +844,7 @@ function render() {
   }
 
   // 홈에서는 핵심 뉴스 10개
+  // 전체 브리핑에서는 전체 기사 표시
 
   let shown = list;
 
@@ -957,10 +1015,17 @@ function render() {
   document.querySelectorAll("[data-category]")
     .forEach(b => {
 
+      const isAllBriefing =
+        b.dataset.category === "all" &&
+        activeSection === "briefing";
+
+      const isCategory =
+        activeSection === "category" &&
+        b.dataset.category === activeCategory;
+
       b.classList.toggle(
         "active",
-        activeSection === "category" &&
-        b.dataset.category === activeCategory
+        isAllBriefing || isCategory
       );
     });
 
@@ -999,7 +1064,6 @@ async function load() {
       ? data.articles
       : [];
 
-    // 화면 표시 전 최종 중복 제거
     articles = mergeDuplicateArticles(rawArticles);
 
     if ($("#updatedAt")) {
@@ -1064,6 +1128,8 @@ async function load() {
 function initialize() {
 
   ensureArticleViewer();
+
+  setupAllBriefingButton();
 
   setupBottomNav();
 
