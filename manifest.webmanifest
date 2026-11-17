@@ -1,11 +1,12 @@
+
 {
   "name": "김명길의 보험 인사이트",
-  "short_name": "MK Insurance",
+  "short_name": "MK insurance",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#061944",
-  "theme_color": "#061944",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "icon-192.png",
