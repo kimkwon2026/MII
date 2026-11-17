@@ -61,6 +61,112 @@ const catName = id =>
   CATEGORIES.find(c => c[0] === id)?.[1] || "기타";
 
 // =====================================
+// 중복 기사 판정
+// =====================================
+
+function normalizeArticleText(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/<[^>]*>/g, "")
+    .replace(/&nbsp;|&#160;/g, " ")
+    .replace(/[^\p{L}\p{N}]/gu, "");
+}
+
+function articleDuplicateKey(article) {
+  const title = normalizeArticleText(article.title);
+
+  const source = normalizeArticleText(
+    article.source || article.domain || ""
+  );
+
+  if (!title) {
+    return String(article.id || article.url || "");
+  }
+
+  return `${title}|${source}`;
+}
+
+function mergeDuplicateArticles(items) {
+  const unique = new Map();
+
+  items.forEach(article => {
+    const key = articleDuplicateKey(article);
+
+    if (!key) return;
+
+    const existing = unique.get(key);
+
+    if (!existing) {
+      unique.set(key, article);
+      return;
+    }
+
+    // 본문이 더 충실한 기사 우선
+    const existingContent = String(
+      existing.content || existing.full_text || ""
+    );
+
+    const newContent = String(
+      article.content || article.full_text || ""
+    );
+
+    if (newContent.length > existingContent.length) {
+      existing.content = article.content || article.full_text;
+      existing.content_status = article.content_status;
+      existing.content_fetched_at = article.content_fetched_at;
+    }
+
+    // 요약이 더 긴 기사 우선
+    if (
+      String(article.summary || "").length >
+      String(existing.summary || "").length
+    ) {
+      existing.summary = article.summary;
+    }
+
+    // 날짜가 더 최근인 기사 우선
+    const oldDate = new Date(
+      existing.published_at || 0
+    ).getTime();
+
+    const newDate = new Date(
+      article.published_at || 0
+    ).getTime();
+
+    if (newDate > oldDate) {
+      existing.published_at = article.published_at;
+    }
+
+    // URL이 없는 경우 다른 기사 URL 활용
+    if (!existing.url && article.url) {
+      existing.url = article.url;
+    }
+
+    if (!existing.domain && article.domain) {
+      existing.domain = article.domain;
+    }
+  });
+
+  return [...unique.values()];
+}
+
+// =====================================
+// 기사 본문 문단 정리
+// =====================================
+
+function formatArticleText(value) {
+  return String(value || "")
+    .replace(/\r\n?/g, "\n")
+    .replace(/\u00a0/g, " ")
+    .split("\n")
+    .map(line => line.replace(/[ \t]+/g, " ").trim())
+    .filter(Boolean)
+    .join("\n\n")
+    .trim();
+}
+
+// =====================================
 // 앱 내부 기사 상세 화면
 // =====================================
 
@@ -87,10 +193,11 @@ function ensureArticleViewer() {
     }
 
     .article-viewer-panel {
+      box-sizing: border-box;
       width: min(100%,760px);
       height: max-content;
       margin: 8px auto;
-      padding: 24px;
+      padding: 28px 32px;
       background: #fff;
       color: #172b3a;
       border-radius: 9px;
@@ -101,7 +208,7 @@ function ensureArticleViewer() {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     .article-viewer-kicker {
@@ -125,53 +232,62 @@ function ensureArticleViewer() {
     .article-viewer-meta {
       color: #849097;
       font-size: 12px;
-      line-height: 1.7;
-      margin-bottom: 12px;
+      line-height: 1.8;
+      margin-bottom: 14px;
     }
 
     .article-viewer-title {
-      margin: 0 0 22px;
-      font-size: 24px;
-      line-height: 1.45;
+      margin: 0 0 26px;
+      font-size: 25px;
+      line-height: 1.55;
+      font-weight: 750;
       word-break: keep-all;
+      overflow-wrap: break-word;
+      letter-spacing: -0.6px;
     }
 
     .article-viewer-heading {
-      margin: 0 0 10px;
+      margin: 0 0 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e8eceb;
       color: #a27d50;
       font-size: 14px;
     }
 
     .article-viewer-body {
       color: #46545c;
-      font-size: 15px;
-      line-height: 1.9;
-      white-space: pre-line;
-      overflow-wrap: anywhere;
+      font-size: 16px;
+      line-height: 2.05;
+      text-align: left;
+      white-space: pre-wrap;
+      word-break: normal;
+      overflow-wrap: break-word;
+      letter-spacing: -0.2px;
     }
 
     .article-viewer-note {
-      margin-top: 22px;
-      padding: 14px;
+      margin-top: 28px;
+      padding: 15px 16px;
       background: #f3f5f3;
       color: #71808a;
       font-size: 12px;
-      line-height: 1.7;
+      line-height: 1.8;
+      word-break: keep-all;
     }
 
     .article-viewer-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 9px;
-      margin-top: 22px;
+      margin-top: 24px;
     }
 
     .article-viewer-action {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 42px;
-      padding: 0 16px;
+      min-height: 44px;
+      padding: 0 18px;
       border: 1px solid #172b3a;
       border-radius: 5px;
       background: #172b3a;
@@ -193,21 +309,30 @@ function ensureArticleViewer() {
 
     @media(max-width:600px) {
       .article-viewer {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: calc(8px + env(safe-area-inset-top)) 7px 12px;
       }
 
       .article-viewer-panel {
-        padding: 19px 16px;
+        width: 100%;
+        margin: 4px auto;
+        padding: 22px 18px;
         border-radius: 8px;
       }
 
+      .article-viewer-top {
+        margin-bottom: 20px;
+      }
+
       .article-viewer-title {
-        font-size: 20px;
+        font-size: 21px;
+        line-height: 1.55;
+        margin-bottom: 23px;
       }
 
       .article-viewer-body {
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 2;
+        letter-spacing: -0.3px;
       }
 
       .article-viewer-action {
@@ -258,7 +383,9 @@ function ensureArticleViewer() {
   });
 }
 
+// =====================================
 // 안전한 원문 URL 확인
+// =====================================
 
 function safeArticleUrl(value) {
   try {
@@ -286,9 +413,6 @@ function openArticle(id) {
 
   ensureArticleViewer();
 
-  // 본문 수집 데이터가 있는지 확인
-  // fetch_news.py 수정 후 저장될 필드까지 대응
-
   const fullText =
     a.content ||
     a.full_text ||
@@ -300,16 +424,17 @@ function openArticle(id) {
     String(fullText).trim()
   );
 
-  // 본문이 없으면 RSS 요약 표시
-
-  const displayText =
+  const displayText = formatArticleText(
     hasFullText
       ? fullText
       : a.summary ||
         a.description ||
-        "수집된 기사 내용이 없습니다. 아래 버튼을 눌러 언론사 원문을 확인해 주세요.";
+        "수집된 기사 내용이 없습니다. 아래 버튼을 눌러 언론사 원문을 확인해 주세요."
+  );
 
-  const url = safeArticleUrl(a.url);
+  const url = safeArticleUrl(
+    a.publisher_url || a.url || a.google_news_url
+  );
 
   document.querySelector("#articleViewerContent").innerHTML = `
     <div class="article-viewer-meta">
@@ -326,9 +451,7 @@ function openArticle(id) {
       ${hasFullText ? "수집된 기사 내용" : "기사 요약"}
     </h2>
 
-    <div class="article-viewer-body">
-      ${esc(displayText)}
-    </div>
+    <div class="article-viewer-body">${esc(displayText)}</div>
 
     <div class="article-viewer-note">
       ${
@@ -447,9 +570,11 @@ function renderNav() {
 // =====================================
 
 function score(a) {
-  const age =
-    Date.now() -
-    new Date(a.published_at || 0).getTime();
+  const published = new Date(
+    a.published_at || 0
+  ).getTime();
+
+  const age = Date.now() - published;
 
   const recency = Number.isFinite(age)
     ? Math.max(0, 30 - age / 86400000)
@@ -590,18 +715,24 @@ function render() {
   // 스크랩 필터
 
   if (activeFilter === "saved") {
-    list = list.filter(a => saved.has(a.id));
+    list = list.filter(a => saved.has(String(a.id)));
   }
 
   // 기간 필터
 
   else if (["7", "30"].includes(activeFilter)) {
 
-    list = list.filter(a =>
-      a.published_at &&
-      now - new Date(a.published_at).getTime()
-        <= Number(activeFilter) * 86400000
-    );
+    list = list.filter(a => {
+      const published = new Date(
+        a.published_at || 0
+      ).getTime();
+
+      return (
+        a.published_at &&
+        Number.isFinite(published) &&
+        now - published <= Number(activeFilter) * 86400000
+      );
+    });
   }
 
   // 정렬
@@ -611,8 +742,8 @@ function render() {
 
   list.sort((a, b) =>
     sortOrder * (
-      new Date(a.published_at || 0) -
-      new Date(b.published_at || 0)
+      new Date(a.published_at || 0).getTime() -
+      new Date(b.published_at || 0).getTime()
     )
   );
 
@@ -695,7 +826,7 @@ function render() {
             </span>
 
             <span class="article-date">
-              ${dateLabel(a.published_at)}
+              ${esc(dateLabel(a.published_at))}
             </span>
 
           </div>
@@ -733,16 +864,16 @@ function render() {
         </div>
 
         <button
-          class="save-btn ${saved.has(a.id) ? "saved" : ""}"
+          class="save-btn ${saved.has(String(a.id)) ? "saved" : ""}"
           data-save="${esc(a.id)}"
           aria-label="스크랩">
-          ${saved.has(a.id) ? "★" : "☆"}
+          ${saved.has(String(a.id)) ? "★" : "☆"}
         </button>
 
       </article>
     `).join("");
 
-    // 제목 또는 내용 보기를 누르면 앱 내부 상세 화면
+    // 제목 또는 내용 보기
 
     articleList.querySelectorAll("[data-open-article]")
       .forEach(el => {
@@ -804,15 +935,21 @@ function render() {
     $("#savedCount").textContent = saved.size;
   }
 
-  const today =
-    new Date().toISOString().slice(0, 10);
+  const today = new Date().toLocaleDateString("en-CA", {
+    timeZone: "Asia/Seoul"
+  });
 
   if ($("#todayCount")) {
 
     $("#todayCount").textContent =
-      articles.filter(a =>
-        (a.published_at || "").slice(0, 10) === today
-      ).length;
+      articles.filter(a => {
+        if (!a.published_at) return false;
+
+        return new Date(a.published_at)
+          .toLocaleDateString("en-CA", {
+            timeZone: "Asia/Seoul"
+          }) === today;
+      }).length;
   }
 
   // 카테고리 선택 표시
@@ -858,9 +995,12 @@ async function load() {
 
     const data = await response.json();
 
-    articles = Array.isArray(data.articles)
+    const rawArticles = Array.isArray(data.articles)
       ? data.articles
       : [];
+
+    // 화면 표시 전 최종 중복 제거
+    articles = mergeDuplicateArticles(rawArticles);
 
     if ($("#updatedAt")) {
 
@@ -903,7 +1043,8 @@ async function load() {
         year: "numeric",
         month: "long",
         day: "numeric",
-        weekday: "long"
+        weekday: "long",
+        timeZone: "Asia/Seoul"
       }).format(new Date());
   }
 
@@ -922,11 +1063,7 @@ async function load() {
 
 function initialize() {
 
-  // 내부 기사 상세 화면 준비
-
   ensureArticleViewer();
-
-  // 하단 메뉴
 
   setupBottomNav();
 
