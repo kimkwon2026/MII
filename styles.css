@@ -861,4 +861,16 @@ footer {
     font-size: 8px;
   }
 }
+/* 전체 브리핑과 개별 카테고리 간격 */
+@media (max-width: 760px) {
 
+  .sidebar > .nav-item[data-category="all"] {
+    margin-bottom: 16px;
+  }
+
+  #categoryNav {
+    margin-top: 4px;
+    padding-bottom: 10px;
+  }
+
+}
