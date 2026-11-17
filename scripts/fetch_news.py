@@ -1,17 +1,12 @@
 
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 """
-김명길의 보험 인사이트
-Google News RSS 수집 및 기사 발췌 정보 저장
+Fetch Google News RSS feeds and enrich articles with publicly accessible
+publisher descriptions and limited article excerpts.
 
-기능
-1. Google News RSS 수집
-2. 언론사 페이지에서 공개 메타 설명 및 짧은 기사 발췌 수집
-3. 수집 실패 시 RSS 요약 사용
-4. data/news.json 생성
-5. 일부 기사 수집 실패에도 전체 작업 유지
+Output: data/news.json
+
+No third-party Python packages required.
 """
 
 import json
@@ -19,7 +14,9 @@ import hashlib
 import re
 import time
 import html
+import logging
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
@@ -29,33 +26,33 @@ from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
 
-# =====================================
+# ==========================================
 # 기본 설정
-# =====================================
+# ==========================================
 
 ROOT = Path(__file__).resolve().parents[1]
 
-SOURCES = json.loads(
-    (ROOT / "sources.json").read_text(encoding="utf-8")
-)
-
+SOURCES_FILE = ROOT / "sources.json"
 OUT = ROOT / "data" / "news.json"
 
 MAX_PER_FEED = 20
 
-# 피드별 실제 언론사 페이지 접속 시도 개수
-MAX_ARTICLE_FETCH_PER_FEED = 8
+# 본문을 가져올 최신 기사 수
+MAX_CONTENT_FETCH = 100
 
-# 내부 화면에 저장할 최대 발췌 길이
-MAX_CONTENT_CHARS = 700
+# 기사 본문에 저장할 최대 글자 수
+MAX_CONTENT_LENGTH = 1200
 
-# 네트워크 대기 시간
-REQUEST_TIMEOUT = 12
+# 동시에 접속할 언론사 페이지 수
+MAX_WORKERS = 6
+
+RSS_TIMEOUT = 25
+ARTICLE_TIMEOUT = 8
 
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 "
-        "(compatible; MyeonggilInsuranceInsight/1.0; "
+        "(compatible; MyeonggilInsuranceInsight/2.0; "
         "+https://github.com/kimkwon2026/MII)"
     ),
     "Accept": (
@@ -65,211 +62,48 @@ HEADERS = {
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.7"
 }
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s: %(message)s"
+)
 
-# =====================================
-# 공통 텍스트 정리
-# =====================================
+
+# ==========================================
+# 텍스트 정리
+# ==========================================
 
 def clean(value):
-    value = html.unescape(value or "")
+    if not value:
+        return ""
+
+    value = html.unescape(str(value))
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"\s+", " ", value)
+
     return value.strip()
 
 
-def limit_text(value, length=MAX_CONTENT_CHARS):
-    value = clean(value)
-
-    if len(value) > length:
-        value = value[:length].rsplit(" ", 1)[0] + "…"
-
-    return value
-
-
-# =====================================
-# 날짜 변환
-# =====================================
-
 def parse_date(value):
     try:
-        return (
-            parsedate_to_datetime(value)
-            .astimezone(timezone.utc)
-            .isoformat()
-        )
+        return parsedate_to_datetime(
+            value
+        ).astimezone(timezone.utc).isoformat()
+
     except Exception:
         return ""
 
 
-# =====================================
-# HTML 기사 정보 추출기
-# =====================================
-
-class ArticleParser(HTMLParser):
-
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-
-        self.meta = {}
-        self.paragraphs = []
-
-        self.current_paragraph = []
-        self.in_paragraph = False
-
-        self.skip_depth = 0
-
-        self.skip_tags = {
-            "script",
-            "style",
-            "noscript",
-            "svg",
-            "nav",
-            "footer",
-            "header",
-            "aside"
-        }
-
-    def handle_starttag(self, tag, attrs):
-
-        attrs = dict(attrs)
-
-        # 메타 설명 수집
-        if tag == "meta":
-
-            name = (
-                attrs.get("property")
-                or attrs.get("name")
-                or attrs.get("itemprop")
-                or ""
-            ).lower()
-
-            content = clean(attrs.get("content", ""))
-
-            if name and content:
-                self.meta[name] = content
-
-        # 불필요한 영역 제외
-        if tag in self.skip_tags:
-            self.skip_depth += 1
-
-        if tag == "p" and self.skip_depth == 0:
-            self.in_paragraph = True
-            self.current_paragraph = []
-
-    def handle_endtag(self, tag):
-
-        if tag in self.skip_tags and self.skip_depth > 0:
-            self.skip_depth -= 1
-
-        if tag == "p" and self.in_paragraph:
-
-            paragraph = clean(
-                " ".join(self.current_paragraph)
-            )
-
-            if len(paragraph) >= 35:
-                self.paragraphs.append(paragraph)
-
-            self.current_paragraph = []
-            self.in_paragraph = False
-
-    def handle_data(self, data):
-
-        if self.skip_depth > 0:
-            return
-
-        if self.in_paragraph:
-            self.current_paragraph.append(data)
-
-
-# =====================================
-# 언론사 페이지 접속 및 발췌 수집
-# =====================================
-
-def fetch_article_excerpt(url):
-
-    if not url:
-        return "", url
-
+def safe_domain(url):
     try:
+        return urlparse(url).netloc.lower().replace("www.", "")
 
-        req = Request(
-            url,
-            headers=HEADERS
-        )
-
-        with urlopen(
-            req,
-            timeout=REQUEST_TIMEOUT
-        ) as response:
-
-            final_url = response.geturl()
-
-            content_type = response.headers.get(
-                "Content-Type", ""
-            ).lower()
-
-            # HTML이 아닌 파일은 제외
-            if "html" not in content_type:
-                return "", final_url
-
-            raw = response.read(1024 * 1024)
-
-            charset = response.headers.get_content_charset()
-
-            if charset:
-                try:
-                    page = raw.decode(
-                        charset,
-                        errors="replace"
-                    )
-                except Exception:
-                    page = raw.decode(
-                        "utf-8",
-                        errors="replace"
-                    )
-            else:
-                page = raw.decode(
-                    "utf-8",
-                    errors="replace"
-                )
-
-        parser = ArticleParser()
-        parser.feed(page)
-
-        # 메타 설명 우선순위
-        description = (
-            parser.meta.get("og:description")
-            or parser.meta.get("description")
-            or parser.meta.get("twitter:description")
-            or parser.meta.get("dc.description")
-            or ""
-        )
-
-        # 메타 설명이 없는 경우 첫 문단 활용
-        if not description:
-
-            description = " ".join(
-                parser.paragraphs[:3]
-            )
-
-        excerpt = limit_text(description)
-
-        return excerpt, final_url
-
-    except Exception as exc:
-
-        print(
-            f"  ARTICLE WARN: "
-            f"{url[:100]} : {exc}"
-        )
-
-        return "", url
+    except Exception:
+        return ""
 
 
-# =====================================
-# Google News RSS 수집
-# =====================================
+# ==========================================
+# RSS 수집
+# ==========================================
 
 def fetch(feed):
 
@@ -279,16 +113,9 @@ def fetch(feed):
         + "&hl=ko&gl=KR&ceid=KR:ko"
     )
 
-    req = Request(
-        url,
-        headers=HEADERS
-    )
+    req = Request(url, headers=HEADERS)
 
-    with urlopen(
-        req,
-        timeout=REQUEST_TIMEOUT
-    ) as response:
-
+    with urlopen(req, timeout=RSS_TIMEOUT) as response:
         xml = response.read()
 
     root = ET.fromstring(xml)
@@ -297,42 +124,29 @@ def fetch(feed):
 
     for item in root.findall(".//item")[:MAX_PER_FEED]:
 
-        title = clean(
-            item.findtext("title")
-        )
+        title = clean(item.findtext("title"))
+        link = clean(item.findtext("link"))
+        desc = clean(item.findtext("description"))
 
-        link = clean(
-            item.findtext("link")
-        )
-
-        desc = clean(
-            item.findtext("description")
-        )
-
-        pub = parse_date(
-            item.findtext("pubDate")
-        )
+        pub = parse_date(item.findtext("pubDate"))
 
         source_el = item.find("source")
 
         source = clean(
-            source_el.text
-            if source_el is not None
-            else ""
+            source_el.text if source_el is not None else ""
         )
 
         if not title or not link:
+            continue
+
+        if not link.startswith(("http://", "https://")):
             continue
 
         uid = hashlib.sha1(
             (title + link).encode("utf-8")
         ).hexdigest()[:16]
 
-        domain = (
-            urlparse(link)
-            .netloc
-            .replace("www.", "")
-        )
+        domain = safe_domain(link)
 
         items.append({
             "id": uid,
@@ -340,149 +154,407 @@ def fetch(feed):
             "title": title,
             "summary": desc[:500],
             "content": "",
-            "content_type": "",
+            "content_status": "pending",
+            "content_source": "",
+            "content_fetched_at": "",
             "source": source or domain,
             "domain": domain,
             "url": link,
+            "publisher_url": "",
             "published_at": pub
         })
 
     return items
 
 
-# =====================================
-# 개별 기사 정보 보강
-# =====================================
+# ==========================================
+# 언론사 페이지 HTML 분석
+# ==========================================
 
-def enrich_articles(items):
+class ArticleParser(HTMLParser):
 
-    fetched_count = 0
+    SKIP_TAGS = {
+        "script",
+        "style",
+        "noscript",
+        "svg",
+        "nav",
+        "footer",
+        "header",
+        "aside",
+        "form"
+    }
 
-    for index, article in enumerate(items):
+    def __init__(self):
 
-        if fetched_count >= MAX_ARTICLE_FETCH_PER_FEED:
-            break
+        super().__init__(convert_charrefs=True)
 
-        print(
-            f"  ARTICLE "
-            f"{fetched_count + 1}/"
-            f"{MAX_ARTICLE_FETCH_PER_FEED}: "
-            f"{article['title'][:60]}"
+        self.meta = {}
+
+        self.paragraphs = []
+
+        self.current_paragraph = []
+
+        self.skip_depth = 0
+
+        self.in_paragraph = False
+
+    def handle_starttag(self, tag, attrs):
+
+        attrs = dict(attrs)
+
+        if tag in self.SKIP_TAGS:
+            self.skip_depth += 1
+            return
+
+        if self.skip_depth:
+            return
+
+        if tag == "meta":
+
+            name = (
+                attrs.get("property")
+                or attrs.get("name")
+                or ""
+            ).lower()
+
+            content = clean(attrs.get("content", ""))
+
+            if name and content:
+                self.meta[name] = content
+
+        elif tag == "p":
+
+            self.in_paragraph = True
+            self.current_paragraph = []
+
+    def handle_endtag(self, tag):
+
+        if tag in self.SKIP_TAGS:
+
+            if self.skip_depth:
+                self.skip_depth -= 1
+
+            return
+
+        if self.skip_depth:
+            return
+
+        if tag == "p" and self.in_paragraph:
+
+            text = clean(
+                " ".join(self.current_paragraph)
+            )
+
+            if len(text) >= 35:
+                self.paragraphs.append(text)
+
+            self.current_paragraph = []
+            self.in_paragraph = False
+
+    def handle_data(self, data):
+
+        if self.skip_depth:
+            return
+
+        if self.in_paragraph:
+            text = clean(data)
+
+            if text:
+                self.current_paragraph.append(text)
+
+
+# ==========================================
+# 언론사 기사 내용 수집
+# ==========================================
+
+def fetch_article_content(article):
+
+    url = article.get("url", "")
+
+    if not url.startswith(("http://", "https://")):
+        return article
+
+    try:
+
+        req = Request(url, headers=HEADERS)
+
+        with urlopen(
+            req,
+            timeout=ARTICLE_TIMEOUT
+        ) as response:
+
+            content_type = response.headers.get(
+                "Content-Type", ""
+            ).lower()
+
+            if "html" not in content_type:
+                article["content_status"] = "unavailable"
+                return article
+
+            # 너무 큰 페이지는 읽지 않음
+            raw_html = response.read(2_000_000)
+
+            publisher_url = response.geturl()
+
+        page = raw_html.decode(
+            "utf-8",
+            errors="replace"
         )
 
-        excerpt, final_url = fetch_article_excerpt(
-            article["url"]
+        parser = ArticleParser()
+        parser.feed(page)
+
+        meta = parser.meta
+
+        # 언론사가 제공하는 공식 설명
+        page_description = (
+            meta.get("og:description")
+            or meta.get("twitter:description")
+            or meta.get("description")
+            or ""
         )
 
-        fetched_count += 1
+        page_description = clean(page_description)
 
+        # 기사 본문 문단 추출
+        paragraphs = []
+
+        seen = set()
+
+        for paragraph in parser.paragraphs:
+
+            paragraph = clean(paragraph)
+
+            if not paragraph:
+                continue
+
+            if paragraph in seen:
+                continue
+
+            seen.add(paragraph)
+
+            # 광고 및 일반 메뉴 문구 제외
+            if len(paragraph) < 35:
+                continue
+
+            if re.search(
+                r"구독하기|로그인|회원가입|"
+                r"무단전재|저작권자|기자 구독",
+                paragraph
+            ):
+                continue
+
+            paragraphs.append(paragraph)
+
+        # 본문 일부만 저장
+        # 기사 전문을 무단 복제하지 않도록 길이 제한
+
+        excerpt = " ".join(paragraphs)
+
+        excerpt = clean(excerpt)
+
+        excerpt = excerpt[:MAX_CONTENT_LENGTH]
+
+        # 본문 수집 성공 여부
         if excerpt:
 
             article["content"] = excerpt
 
-            article["content_type"] = (
-                "publisher_excerpt"
-            )
+            article["content_status"] = "success"
 
-            article["content_source"] = (
-                "publisher_page"
-            )
-
-            print("  OK: 기사 발췌 수집")
+            article["content_source"] = "publisher_page"
 
         else:
 
-            # 원문 수집 실패 시 RSS 요약 유지
-            article["content"] = ""
+            article["content_status"] = "summary_only"
 
-            article["content_type"] = ""
+        # RSS보다 구체적인 설명이 있으면 요약 교체
+        if (
+            page_description
+            and len(page_description) > 30
+        ):
 
-            article["content_source"] = "rss"
+            article["summary"] = page_description[:500]
 
-            print("  INFO: RSS 요약 사용")
+        article["publisher_url"] = publisher_url
 
-        # 최종 접속 URL 기준 도메인 보정
-        try:
+        article["domain"] = (
+            safe_domain(publisher_url)
+            or article["domain"]
+        )
 
-            final_domain = (
-                urlparse(final_url)
-                .netloc
-                .replace("www.", "")
-            )
+        article["content_fetched_at"] = (
+            datetime.now(timezone.utc).isoformat()
+        )
 
-            if final_domain:
-                article["domain"] = final_domain
+    except Exception as exc:
 
-        except Exception:
-            pass
+        logging.warning(
+            "본문 수집 실패: %s / %s",
+            article.get("title", "")[:50],
+            str(exc)[:120]
+        )
 
-        time.sleep(0.3)
+        article["content_status"] = "unavailable"
 
-    return items
+    return article
 
 
-# =====================================
-# 전체 뉴스 수집
-# =====================================
+# ==========================================
+# 본문 수집 병렬 처리
+# ==========================================
+
+def enrich_articles(articles):
+
+    targets = articles[:MAX_CONTENT_FETCH]
+
+    logging.info(
+        "본문 수집 시작: %d개 기사",
+        len(targets)
+    )
+
+    with ThreadPoolExecutor(
+        max_workers=MAX_WORKERS
+    ) as executor:
+
+        futures = {
+            executor.submit(
+                fetch_article_content,
+                article
+            ): article
+            for article in targets
+        }
+
+        completed = 0
+
+        for future in as_completed(futures):
+
+            article = futures[future]
+
+            try:
+
+                result = future.result()
+
+                article.update(result)
+
+            except Exception as exc:
+
+                article["content_status"] = "unavailable"
+
+                logging.warning(
+                    "처리 오류: %s",
+                    str(exc)[:120]
+                )
+
+            completed += 1
+
+            if completed % 10 == 0:
+
+                logging.info(
+                    "본문 수집 진행: %d / %d",
+                    completed,
+                    len(targets)
+                )
+
+    # 본문 수집 대상이 아니었던 기사
+    # 기존 RSS 요약은 그대로 유지
+
+    for article in articles[MAX_CONTENT_FETCH:]:
+
+        article["content_status"] = "not_attempted"
+
+    return articles
+
+
+# ==========================================
+# 전체 실행
+# ==========================================
 
 def main():
+
+    if not SOURCES_FILE.exists():
+
+        raise FileNotFoundError(
+            "sources.json 파일을 찾을 수 없습니다."
+        )
+
+    SOURCES = json.loads(
+        SOURCES_FILE.read_text(encoding="utf-8")
+    )
 
     collected = {}
     errors = []
 
-    print("=" * 50)
-    print("김명길의 보험 인사이트 뉴스 수집 시작")
-    print("=" * 50)
+    # 1. RSS 수집
+
+    logging.info("Google 뉴스 RSS 수집 시작")
 
     for feed in SOURCES:
 
         try:
 
-            items = fetch(feed)
+            for item in fetch(feed):
 
-            # 먼저 RSS 기사 전체 저장
-            for item in items:
                 collected[item["id"]] = item
 
-            print(
-                f"OK: {feed['name']} "
-                f"RSS {len(items)}건"
+            logging.info(
+                "RSS 수집 성공: %s",
+                feed["name"]
             )
-
-            # 기사 일부에 대해 발췌 수집 시도
-            enrich_articles(items)
-
-            # 보강된 기사로 교체
-            for item in items:
-                collected[item["id"]] = item
 
         except Exception as exc:
 
             errors.append(
-                f"{feed['name']}: {exc}"
+                f'{feed["name"]}: {str(exc)[:100]}'
             )
 
-            print(
-                f"WARN: {feed['name']}: {exc}"
+            logging.warning(
+                "RSS 수집 실패: %s / %s",
+                feed["name"],
+                str(exc)[:100]
             )
 
-        time.sleep(0.4)
+        time.sleep(0.3)
 
-    # =================================
-    # 날짜순 정렬
-    # =================================
+    # 최신순 정렬
 
     articles = sorted(
         collected.values(),
-        key=lambda x: x.get(
-            "published_at", ""
-        ),
+        key=lambda x: x.get("published_at", ""),
         reverse=True
     )
 
-    # =================================
-    # JSON 저장
-    # =================================
+    logging.info(
+        "RSS 수집 완료: 총 %d개 기사",
+        len(articles)
+    )
+
+    # 2. 언론사 페이지 본문 일부 수집
+
+    articles = enrich_articles(articles)
+
+    # 3. 수집 통계
+
+    success_count = sum(
+        1 for a in articles
+        if a.get("content_status") == "success"
+    )
+
+    unavailable_count = sum(
+        1 for a in articles
+        if a.get("content_status") == "unavailable"
+    )
+
+    summary_count = sum(
+        1 for a in articles
+        if a.get("content_status") in (
+            "summary_only",
+            "not_attempted"
+        )
+    )
+
+    # 4. JSON 저장
 
     payload = {
 
@@ -490,25 +562,20 @@ def main():
             timezone.utc
         ).isoformat(),
 
+        "total_articles": len(articles),
+
+        "content_stats": {
+            "success": success_count,
+            "summary_only": summary_count,
+            "unavailable": unavailable_count
+        },
+
         "articles": articles,
 
         "notice": (
-            "일부 피드 수집에 실패했습니다: "
+            "일부 RSS 피드 수집에 실패했습니다: "
             + " / ".join(errors[:3])
-        ) if errors else "",
-
-        "article_fetch": {
-            "enabled": True,
-            "max_articles_per_feed": (
-                MAX_ARTICLE_FETCH_PER_FEED
-            ),
-            "max_content_chars": (
-                MAX_CONTENT_CHARS
-            ),
-            "content_policy": (
-                "공개 메타 설명 및 짧은 발췌만 저장"
-            )
-        }
+        ) if errors else ""
     }
 
     OUT.parent.mkdir(
@@ -525,43 +592,14 @@ def main():
         encoding="utf-8"
     )
 
-    # =================================
-    # 결과 출력
-    # =================================
-
-    excerpt_count = sum(
-        1 for a in articles
-        if a.get("content")
-    )
-
-    print()
-    print("=" * 50)
-    print("뉴스 수집 완료")
-    print("=" * 50)
-
-    print(
-        f"전체 기사: {len(articles)}건"
-    )
-
-    print(
-        f"발췌 수집: {excerpt_count}건"
-    )
-
-    print(
-        f"RSS 요약 사용: "
-        f"{len(articles) - excerpt_count}건"
-    )
-
-    print(
-        f"저장 위치: {OUT}"
-    )
-
-    if errors:
-        print(
-            f"수집 실패 피드: {len(errors)}개"
-        )
-
-    print("=" * 50)
+    logging.info("--------------------------------")
+    logging.info("뉴스 수집 및 저장 완료")
+    logging.info("전체 기사: %d", len(articles))
+    logging.info("본문 수집 성공: %d", success_count)
+    logging.info("요약만 제공: %d", summary_count)
+    logging.info("본문 수집 실패: %d", unavailable_count)
+    logging.info("저장 위치: %s", OUT)
+    logging.info("--------------------------------")
 
 
 if __name__ == "__main__":
