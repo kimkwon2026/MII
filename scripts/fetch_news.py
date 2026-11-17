@@ -7,6 +7,7 @@ Google News RSS -> publisher URL -> article text -> news.json
 
 import json
 import hashlib
+import html
 import logging
 import re
 import time
@@ -32,14 +33,9 @@ SOURCES_FILE = ROOT / "sources.json"
 OUT = ROOT / "data" / "news.json"
 
 MAX_PER_FEED = 20
-
-# Google URL 해석 및 본문 수집 대상 기사 수
 MAX_ARTICLES_TO_PROCESS = 40
-
-# 내부 화면에 저장할 본문 발췌 최대 길이
 MAX_CONTENT_LENGTH = 1500
 
-# Google 과다 요청 방지
 DECODE_INTERVAL = 1.0
 
 RSS_TIMEOUT = 25
@@ -64,13 +60,81 @@ logging.basicConfig(
 # ==========================================
 
 def clean(value):
+    """HTML 태그와 엔티티를 정리하는 일반 텍스트 함수."""
+
     if not value:
         return ""
 
-    value = re.sub(r"<[^>]+>", " ", str(value))
+    value = html.unescape(str(value))
+    value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"\s+", " ", value)
 
     return value.strip()
+
+
+def clean_article_text(value):
+    """기사 본문의 문단 구분을 보존한다."""
+
+    if not value:
+        return ""
+
+    value = html.unescape(str(value))
+
+    paragraphs = re.split(
+        r"\n\s*\n",
+        value
+    )
+
+    cleaned = []
+
+    for paragraph in paragraphs:
+        paragraph = re.sub(
+            r"[ \t]+",
+            " ",
+            paragraph
+        ).strip()
+
+        if paragraph:
+            cleaned.append(paragraph)
+
+    return "\n\n".join(cleaned)
+
+
+def normalize_text(value):
+    """중복 기사 판정을 위한 제목 정규화."""
+
+    value = html.unescape(str(value or ""))
+
+    value = re.sub(
+        r"<[^>]+>",
+        " ",
+        value
+    )
+
+    value = re.sub(
+        r"\s+",
+        "",
+        value
+    )
+
+    return value.casefold()
+
+
+def make_article_id(title, source):
+    """제목과 언론사 기준으로 고유 ID 생성."""
+
+    normalized_title = normalize_text(title)
+    normalized_source = normalize_text(source)
+
+    fingerprint = (
+        normalized_title
+        + "|"
+        + normalized_source
+    )
+
+    return hashlib.sha1(
+        fingerprint.encode("utf-8")
+    ).hexdigest()[:16]
 
 
 def parse_date(value):
@@ -78,6 +142,7 @@ def parse_date(value):
         return parsedate_to_datetime(
             value
         ).astimezone(timezone.utc).isoformat()
+
     except Exception:
         return ""
 
@@ -90,13 +155,20 @@ def valid_url(url):
             parsed.scheme in ("http", "https")
             and bool(parsed.netloc)
         )
+
     except Exception:
         return False
 
 
 def domain_of(url):
     try:
-        return urlparse(url).netloc.lower().replace("www.", "")
+        return (
+            urlparse(url)
+            .netloc
+            .lower()
+            .replace("www.", "")
+        )
+
     except Exception:
         return ""
 
@@ -113,9 +185,16 @@ def fetch_feed(feed):
         + "&hl=ko&gl=KR&ceid=KR:ko"
     )
 
-    req = Request(rss_url, headers=HEADERS)
+    req = Request(
+        rss_url,
+        headers=HEADERS
+    )
 
-    with urlopen(req, timeout=RSS_TIMEOUT) as response:
+    with urlopen(
+        req,
+        timeout=RSS_TIMEOUT
+    ) as response:
+
         xml_data = response.read()
 
     root = ET.fromstring(xml_data)
@@ -124,9 +203,17 @@ def fetch_feed(feed):
 
     for item in root.findall(".//item")[:MAX_PER_FEED]:
 
-        title = clean(item.findtext("title"))
-        google_url = clean(item.findtext("link"))
-        summary = clean(item.findtext("description"))
+        title = clean(
+            item.findtext("title")
+        )
+
+        google_url = clean(
+            item.findtext("link")
+        )
+
+        summary = clean(
+            item.findtext("description")
+        )
 
         published_at = parse_date(
             item.findtext("pubDate")
@@ -143,34 +230,39 @@ def fetch_feed(feed):
         if not title or not valid_url(google_url):
             continue
 
-        article_id = hashlib.sha1(
-            (title + google_url).encode("utf-8")
-        ).hexdigest()[:16]
+        article_id = make_article_id(
+            title,
+            source
+        )
 
         articles.append({
+
             "id": article_id,
+
             "category": feed["category"],
+
             "title": title,
+
             "summary": summary[:500],
 
-            # 앱 내부 상세 화면에서 읽을 내용
             "content": "",
 
-            # 수집 상태
             "content_status": "pending",
 
-            # 원래 Google 뉴스 주소 보존
             "google_news_url": google_url,
 
-            # 실제 언론사 주소
             "url": google_url,
+
             "publisher_url": "",
 
             "source": source,
+
             "domain": "news.google.com",
 
             "published_at": published_at,
+
             "content_fetched_at": ""
+
         })
 
     return articles
@@ -182,13 +274,18 @@ def fetch_feed(feed):
 
 def resolve_publisher_url(article):
 
-    google_url = article.get("google_news_url", "")
+    google_url = article.get(
+        "google_news_url",
+        ""
+    )
 
     if not google_url:
         return ""
 
-    # 이미 Google 주소가 아닌 경우 그대로 사용
-    if "news.google.com" not in urlparse(google_url).netloc:
+    if "news.google.com" not in urlparse(
+        google_url
+    ).netloc:
+
         return google_url
 
     try:
@@ -204,13 +301,20 @@ def resolve_publisher_url(article):
             and result.get("success")
         ):
 
-            publisher_url = result.get("decoded_url", "")
+            publisher_url = result.get(
+                "decoded_url",
+                ""
+            )
 
             if valid_url(publisher_url):
 
                 article["url"] = publisher_url
+
                 article["publisher_url"] = publisher_url
-                article["domain"] = domain_of(publisher_url)
+
+                article["domain"] = domain_of(
+                    publisher_url
+                )
 
                 logging.info(
                     "URL 해석 성공: %s",
@@ -220,7 +324,10 @@ def resolve_publisher_url(article):
                 return publisher_url
 
         message = (
-            result.get("message", "URL 해석 실패")
+            result.get(
+                "message",
+                "URL 해석 실패"
+            )
             if isinstance(result, dict)
             else "알 수 없는 응답"
         )
@@ -237,7 +344,6 @@ def resolve_publisher_url(article):
             str(exc)[:150]
         )
 
-    # 실패하더라도 Google 원본 링크는 보존
     article["content_status"] = "url_decode_failed"
 
     return ""
@@ -261,6 +367,7 @@ def extract_article(article, publisher_url):
         if not downloaded:
 
             article["content_status"] = "download_failed"
+
             return article
 
         extracted = trafilatura.extract(
@@ -275,28 +382,38 @@ def extract_article(article, publisher_url):
         if not extracted:
 
             article["content_status"] = "no_article_text"
+
             return article
 
-        extracted = clean(extracted)
+        extracted = clean_article_text(
+            extracted
+        )
 
         if len(extracted) < 100:
 
             article["content_status"] = "text_too_short"
+
             return article
 
-        # 전문 전체를 저장하지 않고 일부 발췌만 보관
-        article["content"] = extracted[:MAX_CONTENT_LENGTH]
+        # 전문 전체가 아닌 일부 발췌만 저장
+        article["content"] = (
+            extracted[:MAX_CONTENT_LENGTH]
+        )
 
         article["content_status"] = "success"
 
         article["content_fetched_at"] = (
-            datetime.now(timezone.utc).isoformat()
+            datetime.now(
+                timezone.utc
+            ).isoformat()
         )
 
-        # RSS 요약이 비어 있으면 본문 첫 부분을 요약으로 활용
+        # RSS 요약이 없으면 본문 앞부분 활용
         if not article.get("summary"):
 
-            article["summary"] = extracted[:300]
+            article["summary"] = clean(
+                extracted[:300]
+            )
 
         logging.info(
             "본문 추출 성공: %s",
@@ -329,7 +446,10 @@ def process_articles(articles):
         len(targets)
     )
 
-    for index, article in enumerate(targets, start=1):
+    for index, article in enumerate(
+        targets,
+        start=1
+    ):
 
         logging.info(
             "[%d/%d] %s",
@@ -338,7 +458,9 @@ def process_articles(articles):
             article.get("title", "")[:60]
         )
 
-        publisher_url = resolve_publisher_url(article)
+        publisher_url = resolve_publisher_url(
+            article
+        )
 
         if publisher_url:
 
@@ -347,8 +469,8 @@ def process_articles(articles):
                 publisher_url
             )
 
-        # Google 요청 간격
         if index < len(targets):
+
             time.sleep(DECODE_INTERVAL)
 
     # 처리하지 않은 나머지 기사
@@ -360,7 +482,7 @@ def process_articles(articles):
 
 
 # ==========================================
-# 5. 기존 기사와 중복 제거
+# 5. 기존 기사와 본문 재사용
 # ==========================================
 
 def load_previous_articles():
@@ -371,12 +493,17 @@ def load_previous_articles():
     try:
 
         data = json.loads(
-            OUT.read_text(encoding="utf-8")
+            OUT.read_text(
+                encoding="utf-8"
+            )
         )
 
         return {
             article["id"]: article
-            for article in data.get("articles", [])
+            for article in data.get(
+                "articles",
+                []
+            )
             if article.get("id")
         }
 
@@ -390,22 +517,27 @@ def load_previous_articles():
         return {}
 
 
-def preserve_previous_content(articles, previous):
+def preserve_previous_content(
+    articles,
+    previous
+):
 
     for article in articles:
 
-        old = previous.get(article["id"])
+        old = previous.get(
+            article["id"]
+        )
 
         if not old:
             continue
 
-        # 이미 성공한 기사라면 기존 본문을 재사용
         if (
             old.get("content_status") == "success"
             and old.get("content")
         ):
 
             article["content"] = old["content"]
+
             article["content_status"] = "success"
 
             article["publisher_url"] = (
@@ -430,7 +562,67 @@ def preserve_previous_content(articles, previous):
 
 
 # ==========================================
-# 6. 전체 실행
+# 6. 중복 기사 제거
+# ==========================================
+
+def remove_duplicates(articles):
+
+    unique = {}
+
+    for article in articles:
+
+        article_id = article.get("id")
+
+        if not article_id:
+            continue
+
+        if article_id not in unique:
+
+            unique[article_id] = article
+
+        else:
+
+            existing = unique[article_id]
+
+            # 기존 기사에 본문이 없고
+            # 중복 기사에 본문이 있으면 본문 보존
+            if (
+                not existing.get("content")
+                and article.get("content")
+            ):
+
+                existing["content"] = article["content"]
+
+                existing["content_status"] = article.get(
+                    "content_status",
+                    "success"
+                )
+
+                existing["content_fetched_at"] = article.get(
+                    "content_fetched_at",
+                    ""
+                )
+
+            # 요약이 더 충실한 쪽을 사용
+            if len(article.get("summary", "")) > len(
+                existing.get("summary", "")
+            ):
+
+                existing["summary"] = article["summary"]
+
+    result = list(unique.values())
+
+    logging.info(
+        "중복 제거: %d개 -> %d개",
+        len(articles),
+        len(result)
+    )
+
+    return result
+
+
+# ==========================================
+# 7. 전체 실행
 # ==========================================
 
 def main():
@@ -442,7 +634,9 @@ def main():
         )
 
     sources = json.loads(
-        SOURCES_FILE.read_text(encoding="utf-8")
+        SOURCES_FILE.read_text(
+            encoding="utf-8"
+        )
     )
 
     previous = load_previous_articles()
@@ -451,7 +645,9 @@ def main():
     errors = []
 
     # RSS 수집
-    logging.info("Google News RSS 수집 시작")
+    logging.info(
+        "Google News RSS 수집 시작"
+    )
 
     for feed in sources:
 
@@ -459,7 +655,11 @@ def main():
 
             for article in fetch_feed(feed):
 
-                collected[article["id"]] = article
+                article_id = article["id"]
+
+                if article_id not in collected:
+
+                    collected[article_id] = article
 
             logging.info(
                 "RSS 성공: %s",
@@ -482,7 +682,10 @@ def main():
 
     articles = sorted(
         collected.values(),
-        key=lambda a: a.get("published_at", ""),
+        key=lambda a: a.get(
+            "published_at",
+            ""
+        ),
         reverse=True
     )
 
@@ -491,67 +694,96 @@ def main():
         len(articles)
     )
 
-    # 기존에 성공한 본문은 다시 요청하지 않음
-    preserve_previous_content(articles, previous)
+    # 이전에 성공한 본문 재사용
+    preserve_previous_content(
+        articles,
+        previous
+    )
 
-    # 본문이 없는 기사만 대상으로 수집
+    # 본문이 없는 기사만 수집
     pending = [
-        a for a in articles
-        if a.get("content_status") != "success"
+        article
+        for article in articles
+        if article.get("content_status") != "success"
     ]
 
-    articles = process_articles(pending) + [
-        a for a in articles
-        if a.get("content_status") == "success"
-    ]
+    processed = process_articles(
+        pending
+    )
 
-    # 최신순 재정렬
-    articles.sort(
-        key=lambda a: a.get("published_at", ""),
+    # 기존 성공 기사 + 새로 처리한 기사
+    successful_ids = {
+        article["id"]
+        for article in processed
+    }
+
+    final_articles = [
+        article
+        for article in articles
+        if article["id"] not in successful_ids
+    ] + processed
+
+    # 최종 중복 제거
+    final_articles = remove_duplicates(
+        final_articles
+    )
+
+    # 최신순 정렬
+    final_articles.sort(
+        key=lambda a: a.get(
+            "published_at",
+            ""
+        ),
         reverse=True
     )
 
     # 통계
     success = sum(
-        a.get("content_status") == "success"
-        for a in articles
+        article.get("content_status") == "success"
+        for article in final_articles
     )
 
     decode_failed = sum(
-        a.get("content_status") == "url_decode_failed"
-        for a in articles
+        article.get("content_status") == "url_decode_failed"
+        for article in final_articles
     )
 
     other_failed = sum(
-        a.get("content_status") in (
+        article.get("content_status") in (
             "download_failed",
             "no_article_text",
             "text_too_short",
             "extraction_failed"
         )
-        for a in articles
+        for article in final_articles
     )
 
     # JSON 저장
     payload = {
+
         "updated_at": datetime.now(
             timezone.utc
         ).isoformat(),
 
-        "total_articles": len(articles),
+        "total_articles": len(final_articles),
 
         "content_stats": {
+
             "success": success,
+
             "url_decode_failed": decode_failed,
+
             "other_failed": other_failed
+
         },
 
-        "articles": articles,
+        "articles": final_articles,
 
         "notice": (
             "일부 RSS 수집에 실패했습니다: "
             + " / ".join(errors[:3])
         ) if errors else ""
+
     }
 
     OUT.parent.mkdir(
@@ -568,14 +800,42 @@ def main():
         encoding="utf-8"
     )
 
-    logging.info("================================")
-    logging.info("뉴스 수집 완료")
-    logging.info("전체 기사: %d", len(articles))
-    logging.info("본문 수집 성공: %d", success)
-    logging.info("URL 해석 실패: %d", decode_failed)
-    logging.info("본문 추출 실패: %d", other_failed)
-    logging.info("저장 위치: %s", OUT)
-    logging.info("================================")
+    logging.info(
+        "================================"
+    )
+
+    logging.info(
+        "뉴스 수집 완료"
+    )
+
+    logging.info(
+        "전체 기사: %d",
+        len(final_articles)
+    )
+
+    logging.info(
+        "본문 수집 성공: %d",
+        success
+    )
+
+    logging.info(
+        "URL 해석 실패: %d",
+        decode_failed
+    )
+
+    logging.info(
+        "본문 추출 실패: %d",
+        other_failed
+    )
+
+    logging.info(
+        "저장 위치: %s",
+        OUT
+    )
+
+    logging.info(
+        "================================"
+    )
 
 
 if __name__ == "__main__":
